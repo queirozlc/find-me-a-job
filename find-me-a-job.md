@@ -44,8 +44,8 @@ Seniority target: Senior preferred. A strong Mid role is acceptable.
   `preflight.jsonl` is the live triage queue. `run.complete.json` is the source
   completion sentinel. The full `events.jsonl` remains the audit record.
 - Triage knockouts, dropped by Maestro before any tailoring (Lucas,
-  2026-09-04): `Reposted`; over 100 applicants or Apply clicks; Gupy apply
-  destination; company blocklist **BairesDev**;
+  2026-09-04): `Reposted`; over 100 applicants or Apply clicks; company
+  blocklist **BairesDev**;
   hybrid or on-site anywhere; primary language or runtime outside JavaScript,
   TypeScript, Node.js, and Go; posting knockouts (work authorization, "not for
   freelancers" with no CLT/EOR path, mandatory location). Ruby or Rails,
@@ -237,9 +237,10 @@ Do not guess these. Each was checked against the live CLI.
 ## Review checks
 
 - **Hard.** The File Readability Check, Role Eligibility Check, and required
-  part of the Resume Evidence Check must fully PASS. Every required posting
-  token must appear in `Skills` and in one relevant `Experience` bullet. A
-  failed hard check means no package.
+  part of the Resume Evidence Check must fully PASS: no unsupported claim,
+  every required `CLAIM` token in `Skills` and in one relevant `Experience`
+  bullet, required coverage at least 70. A `GAP` token is never written. A
+  failed hard check means no package. See `CLAUDE.md` section 4.1.
 - **Reported, not blocking.** Preferred-token coverage in the Resume Evidence
   Check and the Recruiter Readability Score travel with the package.
 - **Required failure explanation.** Every blocked result must quote the exact

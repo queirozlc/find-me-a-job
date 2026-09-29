@@ -33,9 +33,10 @@ other language for the same posting.
 
 Set `\usepackage[english]{babel}` or `[brazilian]{babel}` per language.
 
-## Mandatory fixes to the current template
+## Build rules
 
-Each one is a confirmed defect, not a preference.
+Each rule comes from a confirmed parse defect in the retired Rails-era PDFs.
+The base CVs already comply. Keep them compliant.
 
 ### 1. Ligatures — File Readability Check 0.2, failed in all four existing PDFs
 
@@ -97,8 +98,8 @@ Replace `professional summary` with `Summary`, `technical skills` with
 
 ### 5. Dates — File Readability Check 0.6
 
-`Mon YYYY - Mon YYYY`, ASCII hyphen, everywhere. The current template mixes an
-ASCII hyphen with EN DASH U+2013 (`May 2021 -- Jan 2024`). One separator only.
+`Mon YYYY - Mon YYYY`, ASCII hyphen, everywhere. Never EN DASH U+2013 or
+`--`. One separator only.
 
 ## Content rules
 
@@ -107,15 +108,11 @@ The Summary must mention AI or LLM work once the dossier records it (Lucas, 2026
 ### Titles and dates
 
 **Strictly from LinkedIn**, per `CLAUDE.md` rule 1. The verbatim strings are in
-`DOSSIER.md` under **LinkedIn ground truth**. The current template is wrong on
-every one of them:
+`DOSSIER.md` under **LinkedIn ground truth**. Copy them from there. This file
+holds no titles or dates, so it cannot drift from LinkedIn.
 
-- Luizalabs ended **Jan 2026**, it is not `Present`.
-- **DexCare is missing entirely.** It is the current role.
-- Lippaus Distribuidora is **two roles, not one**. Entry-level Fullstack
-  Software Engineer `Mar 2021 - Jan 2023`, then Mid-level Software Engineer
-  `Jan 2023 - Jan 2024`. **Keep both.** The promotion is a seniority signal the
-  old resumes flattened away.
+Lippaus Distribuidora is two roles. Keep both. The promotion is a seniority
+signal.
 
 ### Stack
 
@@ -126,9 +123,12 @@ No Ruby or Rails token anywhere. Substitute the JS/TS equivalent: Sidekiq to
 ATS match is the first content objective for an accepted posting. The primary
 language or runtime must be JavaScript, TypeScript, Node.js, or Go. Triage
 drops postings with another primary stack before tailoring. For an accepted
-posting, place each exact required framework, library, data, messaging, cloud,
-tool, or practice token in `Skills` and in one relevant `Experience` bullet.
-Do not add claim-status markers.
+posting, resolve each posting token with the claim policy in `CLAUDE.md`
+section 4.1 and `ATS-KNOWLEDGE.v2.md` section 2. Place each `CLAIM` token in
+`Skills` and in one bullet of a role that its Skills Inventory entry lists,
+written in that role's real domain. Add the stack-depth building blocks that
+the inventory supports. Never write a `GAP` token. Do not add claim-status
+markers.
 
 DexCare stack is observed fact, read from the repos, safe to use: TypeScript,
 Node.js, Express, Koa, PostgreSQL, Sequelize, Drizzle ORM, DynamoDB, Redis,
@@ -171,19 +171,14 @@ Voice set by Lucas 2026-09-02: **first person with the subject**, `I build`,
 `I have`, `I integrate`. Present tense for what Lucas does today, past tense
 for what he did. Not a headline in third person.
 
-Rewrite entirely. The current one says "specializing in Ruby on Rails, React,
-and Node.js", claims Rails core contribution, and says the current focus is
-fiscal systems for a Brazilian e-commerce retailer. All three are wrong as of
-Jan 2026.
+The Summary never claims Rails, a Rails core contribution, or fiscal systems
+as the current focus. The current role is DexCare.
 
 ### Open-source section
 
-**Decision made, not yet applied. Do not act on this until Lucas says so.**
-Drop the `projects` / "Ruby on Rails Framework Ecosystem" block from the CV and
-move it to the LinkedIn About section. Reason: it puts Ruby and Elixir tokens
-in prime real estate on a document whose retrieval target is Node, TypeScript,
-React and Go, and the Resume Evidence Check penalizes tokens with no supporting evidence
-elsewhere in the document.
+The base CVs carry no open-source or projects block. Never add the retired
+"Ruby on Rails Framework Ecosystem" block. Adding any projects block needs
+Lucas's approval.
 
 ### Length
 
@@ -199,7 +194,8 @@ A CV is ready only when all of these hold:
    only the posting language.
 2. File Readability Check: all 8 checks PASS on the raw extraction.
 3. Role Eligibility Check: no FAIL against the target posting.
-4. Resume Evidence Check: every required token appears in `Skills` and in one relevant
-   `Experience` bullet.
+4. Resume Evidence Check: no unsupported claim, every required `CLAIM` token
+   appears in `Skills` and in one relevant `Experience` bullet, and required
+   coverage is at least 70.
 5. Every title and date matches `DOSSIER.md` **LinkedIn ground truth**
    character for character.

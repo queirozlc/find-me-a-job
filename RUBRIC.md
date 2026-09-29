@@ -14,6 +14,10 @@ Read `~/career/ATS-KNOWLEDGE.md` first. Every rule here traces to it.
    artifact under test.
 2. The job description, as raw text, saved to `~/career/jobs/<slug>.md`.
 3. The target segment: `us-direct`, `br-pj`, or `agency`.
+4. The `ats_profile` from the manifest, detected per `ATS-KNOWLEDGE.v2.md`
+   section 3. `generic` when no pattern matched.
+5. The Skills Inventory in `DOSSIER.md`. It is the only evidence source for
+   a technical token.
 
 ## Mandatory extraction step
 
@@ -66,10 +70,13 @@ silent, mark `not stated`, never `pass`.
 | Location or time-zone overlap | posting | PASS / FAIL / not stated |
 | Minimum years of experience | posting | PASS / FAIL / not stated |
 | English proficiency requirement | posting | PASS / FAIL / not stated |
-| Each required skill | posting | present verbatim in resume? |
 | Degree requirement | posting | PASS / FAIL / not stated |
 
-For every explicit posting requirement, absent resume evidence is a FAIL.
+Technical skill tokens are not judged here. The Resume Evidence Check handles
+them with the Skills Inventory and coverage.
+
+For every explicit non-skill requirement above, absent resume evidence is a
+FAIL.
 Do not infer evidence from an unrelated title, employer, or location.
 
 A failed status is not a sufficient result. Report one row for each failed
@@ -92,7 +99,7 @@ not meet it. Never convert silence into a claim that Lucas lacks experience.
 
 ---
 
-## Resume Evidence Check (required-token blocking, preferred coverage scored 0-100)
+## Resume Evidence Check (claim truth and placement blocking, coverage scored 0-100)
 
 Exact-token matching. This models the lexical floor, which is what most real
 recruiter search still is.
@@ -100,6 +107,16 @@ recruiter search still is.
 **Step 1.** Extract every hard requirement from the posting. Classify each as
 `required` or `preferred` using the posting's own words. Discard soft skills
 and buzzwords. They are not retrieval tokens.
+
+**Step 1b.** Resolve each token against the Skills Inventory with the claim
+policy (`ATS-KNOWLEDGE.v2.md` section 2.2): `CLAIM`, `ADJACENT`, `GAP`, or
+`EXCLUDE`. Record the result and the inventory entry in the token table.
+
+**Step 1c, unsupported claim, blocking.** Any technical token in the CV that
+has no inventory entry at E1 or above FAILS. Any `CLAIM` bullet placed in a
+role that its inventory entry does not list FAILS. Fix type: `CV FIX`,
+remove or move the token. This check covers every token in the CV, not only
+posting tokens.
 
 **Step 2.** For each token, search the raw extracted text:
 
@@ -118,21 +135,51 @@ coverage = 100 * sum(points * requirement_weight)
 requirement_weight: required = 3, preferred = 1
 ```
 
-**Step 4, hard result.** The Resume Evidence Check FAILS when any required token earns fewer than
-3 placement points. Send every missing placement back to the Architect and
-re-run the check. Preferred tokens affect the score but do not block.
+`GAP` and `EXCLUDE` tokens earn 0 and stay in the denominator. An `ADJACENT`
+token earns at most 1 point, for its true sibling placed in context.
 
-For each required token below 3 points, state exactly which placement is
-missing, quote the available evidence, and assign the same fix type used by
-the Role Eligibility Check. If the same underlying fact fails both checks,
-list it once in the Decision Explanation and cross-reference it here. Do not
-present one fact gap as two independent reasons.
+Also compute `required_coverage` with the same formula over required tokens
+only.
+
+**Step 4, hard result.** The Resume Evidence Check FAILS when:
+
+- Step 1c found an unsupported claim, or
+- a required `CLAIM` token earns fewer than 3 placement points, or
+- `required_coverage` is below 70 (Lucas, 2026-09-29).
+
+A `GAP` alone never produces a `CV FIX`. It lowers `required_coverage`. Its
+fix type is `LUCAS CONFIRMATION` when the inventory is silent, and `ROLE
+MISMATCH` when the inventory records E0. Preferred tokens affect the score
+but do not block.
+
+For each required `CLAIM` token below 3 points, state exactly which placement
+is missing, quote the inventory evidence, and use `CV FIX`. If the same
+underlying fact fails both checks, list it once in the Decision Explanation
+and cross-reference it here. Do not present one fact gap as two independent
+reasons.
 
 **Step 5, stuffing penalty.** Subtract 5 points per token that appears 4 or
 more times. This is a human-reaction penalty, not a machine one.
 
 **Report, always:** the full token table with placement and points. The number
 alone is useless. The table is the deliverable.
+
+---
+
+## ATS Profile Check (reported; one blocking case)
+
+Apply the adjustments of the detected profile in `ATS-KNOWLEDGE.v2.md`
+section 4. One row per adjustment: PASS, FAIL, or `not applicable`.
+
+| Profile | Check |
+|---|---|
+| all | Form pack exists and lists every screening question with a true answer |
+| `ashby`, `workday`, `workable`, criteria profiles | Every required `CLAIM` token has one explicit sentence that a model can quote |
+| `greenhouse` | Domain or industry word in each role line or first bullet |
+| `workday` | Total years stated and supported by dates |
+| `linkedin-easy-apply` | Every required `CLAIM` token is in the cached LinkedIn profile Skills. Report the missing ones to Lucas; agents never edit the profile |
+| `gupy` | No tailored CV. Coverage is computed against the master Gupy profile |
+| `workable` | **Blocking:** a required token marked must-have is a `GAP`. Report it to Lucas before he applies, because Workable can auto-disqualify |
 
 ---
 
@@ -178,9 +225,15 @@ Evidence checked, Evidence found, Why it failed, Fix type, Next action.>
 ## Role Eligibility Check
 <table>
 
-## Resume Evidence Check: NN/100, <PASS | FAIL>
-<full token table with requirement weight, placement and points>
-Required tokens without Skills and Experience placement: <list>
+## Resume Evidence Check: NN/100, required coverage NN/100, <PASS | FAIL>
+<full token table with requirement weight, claim result, inventory entry,
+placement and points>
+Unsupported claims: <list or none>
+Required CLAIM tokens without Skills and Experience placement: <list>
+GAP tokens: <list>
+
+## ATS Profile Check: <profile>
+<table from the ATS Profile Check>
 
 ## Recruiter Readability Score: NN/100
 <8-row table>
@@ -201,3 +254,5 @@ Required tokens without Skills and Experience placement: <list>
 - Never emit a single blended "ATS score". The checks are separate on purpose.
 - Never claim a vendor produces these numbers.
 - Never guess a job requirement the posting did not state.
+- Never ask the Architect to add a token that the Skills Inventory does not
+  support.

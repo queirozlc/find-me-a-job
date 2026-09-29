@@ -2,7 +2,9 @@
 
 Binding on every agent that touches this directory. These are not preferences.
 Ground truth lives in `ATS-KNOWLEDGE.md`, the rubric in `RUBRIC.md`, the facts
-in `DOSSIER.md`, the hunt config in `find-me-a-job.md`.
+in `DOSSIER.md`, the hunt config in `find-me-a-job.md`. ATS detection, ATS
+profiles, and the claim policy live in `ATS-KNOWLEDGE.v2.md` sections 2 to 4.
+Where the two knowledge files disagree, v2 wins.
 
 ## 1. Titles and dates come from LinkedIn, strictly
 
@@ -59,6 +61,31 @@ Use this weight order:
    in `Skills` and in one relevant `Experience` bullet.
 4. **Practices and adjacent terms, weight 1.** Match exact posting terms when
    they fit the role history.
+
+### 4.1 Claim policy (Lucas, 2026-09-29)
+
+Full rule: `ATS-KNOWLEDGE.v2.md` section 2.
+
+- **Evidence comes from the Skills Inventory in `DOSSIER.md`.** A token
+  enters a CV only when the inventory lists it at E1 or above. The posting
+  asking for a token is never evidence. Until that section exists, the stack
+  facts already recorded in `DOSSIER.md` count as E2 for the employer they
+  name, and nothing else counts.
+- **Pool, not list.** Inventory tokens stay out of a CV until a posting asks
+  for them. When asked, the token goes in `Skills` and in one bullet of a role
+  that its inventory entry lists, written in that role's real domain. Example:
+  SQS recorded for Luizalabs goes into a fiscal or invoicing bullet there.
+- **Stack depth.** For a requested high-level token, add its building blocks
+  that are also in the inventory, in `Skills` next to it (NestJS: Express,
+  Fastify).
+- **Exclude** true tokens that pull toward support, manual QA, BI, platform
+  admin, or a primary language outside the target stack.
+- **GAP.** A requested token with no inventory evidence is a `GAP`. It lowers
+  required coverage. It is never a CV defect and never makes the Architect
+  write the token. Ask Lucas once and record the answer in the inventory.
+- **Apply decision.** Deliver the package when every blocking check passes
+  and required coverage is at least 70%. The 70% is Lucas's choice, not a
+  vendor number.
 
 Frameworks, libraries, databases, cloud services, and tools do not decide
 primary-stack eligibility. Do not use verification markers for these tokens.
@@ -142,7 +169,6 @@ Maestro drops these at triage, before any tailoring (Lucas, 2026-09-02):
 - Any role labeled `Reposted`.
 - Any role that states `Over 100 applicants`, `100+ applicants`, or more than
   100 people clicked Apply.
-- Apply destination on Gupy (any `gupy.io` URL).
 - Company blocklist: BairesDev.
 - Hybrid or on-site anywhere. Remote only.
 - Primary language or runtime outside JavaScript, TypeScript, Node.js, and Go.
@@ -152,6 +178,11 @@ Maestro drops these at triage, before any tailoring (Lucas, 2026-09-02):
   "not for freelancers" when no CLT/EOR option, mandatory location.
 
 Triage is never skipped. The Maestro reports how many were dropped and why.
+
+Gupy is not a knockout (Lucas, 2026-09-29). A Gupy profile is one master
+profile for all postings, so a Gupy application gets no tailored CV. It gets
+the coverage check against the master profile and a form pack for the
+additional questions. See `ATS-KNOWLEDGE.v2.md` profile `gupy`.
 
 ## 11. One language per tailored CV
 
