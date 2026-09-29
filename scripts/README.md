@@ -62,5 +62,10 @@ python3 scripts/resume_gate.py \
 ```
 
 The application manifest is JSON with `application_id`, `language`,
-`required_tokens`, and `preferred_tokens`. Quill and Sieve write their own
+`required_tokens`, and `preferred_tokens` (`CLAIM` tokens only), plus optional
+`gap_tokens` and `preferred_gap_tokens`. The gate blocks when a token from the
+DOSSIER `### Blacklist` or a GAP token is added to the CV, and when required
+coverage (RUBRIC points, GAPs in the denominator) is below 70. `--dossier`
+defaults to `DOSSIER.md`. Self-check: `cd scripts && python3 -B
+test_resume_gate.py`. Quill and Sieve write their own
 atomic sentinels with `worker_sentinel.py` after all required artifacts exist.

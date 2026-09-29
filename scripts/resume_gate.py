@@ -16,6 +16,8 @@ from typing import Any
 
 
 FORBIDDEN_TERMS = ("ruby", "rails")
+MIN_REQUIRED_COVERAGE = 70  # Lucas, 2026-09-29. CLAUDE.md section 4.1.
+DOSSIER_PATH = Path(__file__).resolve().parent.parent / "DOSSIER.md"
 TIMEZONE_PATTERNS = (
     r"\bUTC\s*[+-]\s*\d+",
     r"\bGMT\s*[+-]\s*\d+",
@@ -194,6 +196,36 @@ def protected_claim_failures(base: str, tailored: str, manifest: dict[str, Any])
     return failures
 
 
+def blacklist_terms(dossier: str) -> list[str]:
+    """Read blocked tokens from the DOSSIER `### Blacklist` section: the
+    parenthesized examples on each bullet line and the first table column."""
+    match = re.search(r"(?m)^### Blacklist\b.*$", dossier)
+    if not match:
+        return []
+    end = re.search(r"(?m)^#{2,3} ", dossier[match.end() :])
+    section = dossier[match.end() : match.end() + end.start()] if end else dossier[match.end() :]
+    terms: list[str] = []
+    # Bullets wrap across lines; split into items first, then flatten each.
+    for item in re.split(r"\n(?=- |\|)", section):
+        line = " ".join(item.split())
+        if line.startswith("- "):
+            for group in re.findall(r"\(([^)]*)\)", line):
+                terms.extend(group.split(","))
+        elif line.startswith("|") and not re.match(r"\|\s*(Token\b|-)", line):
+            terms.extend(line.split("|")[1].split(","))
+    return [term.strip() for term in terms if term.strip()]
+
+
+def placement_points(skills: str, experience: str, token: str) -> int:
+    """RUBRIC Resume Evidence Check: Skills 1, Experience 2, both 3."""
+    return (1 if contains_token(skills, token) else 0) + (2 if contains_token(experience, token) else 0)
+
+
+def coverage(points: list[int], gaps: int) -> int:
+    total = 3 * (len(points) + gaps)
+    return round(100 * sum(points) / total) if total else 100
+
+
 def identity_failures(base_roles: list[tuple[str, str, str, str]], cache: dict[str, Any]) -> list[str]:
     snapshot = str(cache.get("snapshot", ""))
     failures: list[str] = []
@@ -211,9 +243,13 @@ def check_resume(
     manifest: dict[str, Any],
     identity: dict[str, Any],
     claims: dict[str, Any],
+    blacklist: list[str] | None = None,
 ) -> tuple[list[dict[str, Any]], dict[str, Any]]:
     language = str(manifest.get("language", "en"))
     required_tokens = [str(token) for token in manifest.get("required_tokens", [])]
+    preferred_tokens = [str(token) for token in manifest.get("preferred_tokens", [])]
+    gap_tokens = [str(token) for token in manifest.get("gap_tokens", [])]
+    preferred_gap_tokens = [str(token) for token in manifest.get("preferred_gap_tokens", [])]
     base_roles = roles(base)
     tailored_roles = roles(tailored)
     base_bullets = bullets(base)
@@ -257,6 +293,26 @@ def check_resume(
             token_failures.append(f"{token}: missing from {' and '.join(missing)}")
     add("required_token_placement", token_failures)
 
+    # A token counts as written for the posting only when the base CV lacks it,
+    # so facts already in the base (Java at Luizalabs) never fail these checks.
+    def introduced(token: str) -> bool:
+        return contains_token(tailored, token) and not contains_token(base, token)
+
+    add("blacklist", [f"Blacklisted token added: {term}" for term in (blacklist or []) if introduced(term)])
+    add("gap_tokens_written", [f"GAP token written: {token}" for token in gap_tokens + preferred_gap_tokens if introduced(token)])
+
+    required_points = [placement_points(skills, experience, token) for token in required_tokens]
+    preferred_points = [placement_points(skills, experience, token) for token in preferred_tokens]
+    scores = {
+        "required": coverage(required_points, len(gap_tokens)),
+        "preferred": coverage(preferred_points, len(preferred_gap_tokens)),
+        "minimum_required": MIN_REQUIRED_COVERAGE,
+    }
+    add(
+        "required_coverage",
+        [] if scores["required"] >= MIN_REQUIRED_COVERAGE else [f"Required coverage {scores['required']} is below {MIN_REQUIRED_COVERAGE}"],
+    )
+
     added_bullets = [item for item in tailored_bullets if folded(item) not in {folded(base_item) for base_item in base_bullets}]
     removed_bullets = [item for item in base_bullets if folded(item) not in {folded(tailored_item) for tailored_item in tailored_bullets}]
     delta = {
@@ -265,6 +321,7 @@ def check_resume(
         "removed_or_reworded_base_bullets": removed_bullets,
         "base_bullet_count": len(base_bullets),
         "tailored_bullet_count": len(tailored_bullets),
+        "coverage": scores,
     }
     return checks, delta
 
@@ -334,6 +391,7 @@ def parse_args(argv: list[str]) -> argparse.Namespace:
     parser.add_argument("--report", type=Path, required=True)
     parser.add_argument("--review-packet", type=Path, required=True)
     parser.add_argument("--sentinel", type=Path, required=True)
+    parser.add_argument("--dossier", type=Path, default=DOSSIER_PATH)
     return parser.parse_args(argv)
 
 
@@ -347,7 +405,8 @@ def main(argv: list[str] | None = None) -> int:
         identity = load_json(args.identity_cache)
         claims = load_json(args.claim_allowlist)
         extracted = pdf_text(args.pdf)
-        checks, delta = check_resume(base, tailored, extracted, manifest, identity, claims)
+        blacklist = blacklist_terms(args.dossier.read_text(encoding="utf-8"))
+        checks, delta = check_resume(base, tailored, extracted, manifest, identity, claims, blacklist)
         passed = all(check["status"] == "PASS" for check in checks)
         report = {
             "schema_version": 1,
