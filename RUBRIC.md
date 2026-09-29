@@ -16,8 +16,8 @@ Read `~/career/ATS-KNOWLEDGE.md` first. Every rule here traces to it.
 3. The target segment: `us-direct`, `br-pj`, or `agency`.
 4. The `ats_profile` from the manifest, detected per `ATS-KNOWLEDGE.v2.md`
    section 3. `generic` when no pattern matched.
-5. The Skills Inventory in `DOSSIER.md`. It is the only evidence source for
-   a technical token.
+5. The **Skills policy** in `DOSSIER.md`: attested umbrella, gray-zone
+   categories, whitelist, blocklist.
 
 ## Mandatory extraction step
 
@@ -73,7 +73,7 @@ silent, mark `not stated`, never `pass`.
 | Degree requirement | posting | PASS / FAIL / not stated |
 
 Technical skill tokens are not judged here. The Resume Evidence Check handles
-them with the Skills Inventory and coverage.
+them with the Skills policy and coverage.
 
 For every explicit non-skill requirement above, absent resume evidence is a
 FAIL.
@@ -108,15 +108,19 @@ recruiter search still is.
 `required` or `preferred` using the posting's own words. Discard soft skills
 and buzzwords. They are not retrieval tokens.
 
-**Step 1b.** Resolve each token against the Skills Inventory with the claim
-policy (`ATS-KNOWLEDGE.v2.md` section 2.2): `CLAIM`, `ADJACENT`, `GAP`, or
-`EXCLUDE`. Record the result and the inventory entry in the token table.
+**Step 1b.** Resolve each token with the Skills policy (`CLAUDE.md` section
+4.1): `CLAIM` (umbrella or whitelist), `GAP` (blocklist, or gray zone waiting
+for Lucas), or `EXCLUDE` (gray-zone category Lucas has not approved). Record
+the result and the policy line in the token table.
 
-**Step 1c, unsupported claim, blocking.** Any technical token in the CV that
-has no inventory entry at E1 or above FAILS. Any `CLAIM` bullet placed in a
-role that its inventory entry does not list FAILS. Fix type: `CV FIX`,
-remove or move the token. This check covers every token in the CV, not only
-posting tokens.
+**Step 1c, blocked claim, blocking.** Any token in the CV that is on the
+blocklist, or in a gray-zone category and not on the whitelist, FAILS. Fix
+type: `CV FIX`, remove it, or `LUCAS CONFIRMATION` to whitelist it.
+
+**Step 1d, anchor fit, reported.** For each posting token placed in a bullet,
+check that the role's domain and platform fit it (for example an AWS service
+in a GCP-only role). A poor fit is a `CV FIX` suggestion to move the token to
+a better role. It does not block.
 
 **Step 2.** For each token, search the raw extracted text:
 
@@ -135,25 +139,23 @@ coverage = 100 * sum(points * requirement_weight)
 requirement_weight: required = 3, preferred = 1
 ```
 
-`GAP` and `EXCLUDE` tokens earn 0 and stay in the denominator. An `ADJACENT`
-token earns at most 1 point, for its true sibling placed in context.
+`GAP` and `EXCLUDE` tokens earn 0 and stay in the denominator.
 
 Also compute `required_coverage` with the same formula over required tokens
 only.
 
 **Step 4, hard result.** The Resume Evidence Check FAILS when:
 
-- Step 1c found an unsupported claim, or
+- Step 1c found a blocked claim, or
 - a required `CLAIM` token earns fewer than 3 placement points, or
 - `required_coverage` is below 70 (Lucas, 2026-09-29).
 
-A `GAP` alone never produces a `CV FIX`. It lowers `required_coverage`. Its
-fix type is `LUCAS CONFIRMATION` when the inventory is silent, and `ROLE
-MISMATCH` when the inventory records E0. Preferred tokens affect the score
-but do not block.
+A `GAP` never produces a `CV FIX`. It lowers `required_coverage`. Its fix
+type is `LUCAS CONFIRMATION` for a gray-zone token, and `ROLE MISMATCH` for a
+blocklisted token. Preferred tokens affect the score but do not block.
 
 For each required `CLAIM` token below 3 points, state exactly which placement
-is missing, quote the inventory evidence, and use `CV FIX`. If the same
+is missing and use `CV FIX`. The Architect adds it; it needs no confirmation. If the same
 underlying fact fails both checks, list it once in the Decision Explanation
 and cross-reference it here. Do not present one fact gap as two independent
 reasons.
@@ -226,9 +228,10 @@ Evidence checked, Evidence found, Why it failed, Fix type, Next action.>
 <table>
 
 ## Resume Evidence Check: NN/100, required coverage NN/100, <PASS | FAIL>
-<full token table with requirement weight, claim result, inventory entry,
+<full token table with requirement weight, claim result, Skills policy line,
 placement and points>
-Unsupported claims: <list or none>
+Blocked claims: <list or none>
+Anchor-fit suggestions: <list or none>
 Required CLAIM tokens without Skills and Experience placement: <list>
 GAP tokens: <list>
 
@@ -254,5 +257,4 @@ GAP tokens: <list>
 - Never emit a single blended "ATS score". The checks are separate on purpose.
 - Never claim a vendor produces these numbers.
 - Never guess a job requirement the posting did not state.
-- Never ask the Architect to add a token that the Skills Inventory does not
-  support.
+- Never ask the Architect to add a blocklisted or unapproved gray-zone token.

@@ -17,9 +17,9 @@ that the procedure names.
    requirements or qualifications section. Preferred tokens come from the
    nice-to-have section. Tokens in the company description or responsibilities
    are context, not criteria (U5).
-3. **Resolve every token against the Skills Inventory** in `DOSSIER.md` with
-   the claim policy (section 2). Each token gets one result: `CLAIM`,
-   `ADJACENT`, `GAP`, or `EXCLUDE`.
+3. **Resolve every token against the Skills policy** in `DOSSIER.md` with
+   the claim policy (section 2). Each token gets one result: `CLAIM`, `GAP`,
+   or `EXCLUDE`. Ask Lucas only for gray-zone tokens.
 4. **Tailor** with the universal rules (section 1) plus the adjustments of the
    detected profile (section 4).
 5. **Prepare the form pack.** For profiles where forms or profile fields are
@@ -58,7 +58,7 @@ documented behavior; label it when used.
 |---|---|---|---|
 | U1 | Every `CLAIM` token appears literally, in the posting's spelling. Recruiter search is boolean and literal. | DOC (Greenhouse, Lever, LinkedIn Recruiter boolean help) | grep raw text |
 | U2 | Write acronym and long form once: `Amazon Web Services (AWS)`, `Continuous Integration (CI/CD)`. | DOC (Lever search does not expand abbreviations) [P-snip] | both forms present |
-| U3 | Every `CLAIM` token is in `Skills` and in one Experience bullet of the role where it was used. Semantic engines weight skills with context. | ENG (LinkedIn Skills Graph), DOC (Eightfold) | placement table in RUBRIC |
+| U3 | Every `CLAIM` token is in `Skills` and in one Experience bullet of its anchored role (section 2.3). Semantic engines weight skills with context. | ENG (LinkedIn Skills Graph), DOC (Eightfold) | placement table in RUBRIC |
 | U4 | Put the strongest tokens in the most recent role. Eightfold scores recent skills separately. | DOC (Eightfold eng blog) | token present in current role |
 | U5 | Weight posting sections: requirements and qualifications first, then nice-to-have. A skill in the qualifications section is more important than one in the company description. | ENG (LinkedIn Skills Graph) | manifest splits required and preferred |
 | U6 | Target title in the top of the document and in the LinkedIn headline. Title is a structured field in every ranker we can read. | ENG (LinkedIn Galene), DOC (Greenhouse, HiredScore, Eightfold) | title in first 15% |
@@ -72,41 +72,42 @@ documented behavior; label it when used.
 
 ## 2. Claim policy
 
-The objective is to pass automated screening **and** survive the first
-interview. The ATS does not verify a claim. The first interviewer does. A
-required token that Lucas cannot discuss costs the interview that the token
-bought.
+Set by Lucas 2026-09-29. The objective is to match the posting as closely as
+the ATS can measure, inside the technologies Lucas knows. The posting decides
+what enters the CV. Lucas decides only the gray zone.
 
-### 2.1 Evidence levels, recorded in the Skills Inventory
+### 2.1 Sources
 
-| Level | Meaning | Where it may appear |
-|---|---|---|
-| E3 | Designed, built, or owned it in production. | Skills, bullet, Summary |
-| E2 | Used it in production code that Lucas changed. | Skills, bullet of that role |
-| E1 | Hands-on outside production: current side project, study project with code. | Skills, or a `Projects` line that names the project. Never inside an employer bullet. |
-| E0 | Read about it, tutorial only, or never used. | Nowhere. |
+The **Skills policy** in `DOSSIER.md`:
 
-**Interview test for E2 and E3:** Lucas can explain for 10 minutes where it
-was used, one design decision, and one failure. If not, the level is E1 or E0.
+- **Attested umbrella.** Families of technologies Lucas attests he knows.
+- **Gray-zone categories.** Ask Lucas once.
+- **Whitelist and blocklist.** Lucas's past answers. Never ask twice.
 
 ### 2.2 Token results
 
 | Result | Condition | Action |
 |---|---|---|
-| `CLAIM` | Inventory level E1 to E3 and the token fits the target job family. | Place per level (table 2.1) and U3. |
-| `ADJACENT` | Inventory has a true sibling for the requested token. | Write the true sibling and name the category. Example: posting asks SQS, inventory has RabbitMQ and BullMQ, write `message queues (RabbitMQ, BullMQ)`. Semantic engines give partial credit; boolean search gives none. Accept that. |
-| `GAP` | Inventory is silent or E0. | Ask Lucas once (`LUCAS CONFIRMATION`). Record the answer in the inventory. If the answer is no, the gap stays. It lowers coverage and never blocks as a CV defect. |
-| `EXCLUDE` | True, but it pulls the profile toward a job family Lucas does not want (2.4). | Leave it out. |
+| `CLAIM` | Token is in the umbrella or on the whitelist. | Add it automatically: `Skills` plus one bullet in its anchored role (2.3). No confirmation. |
+| `GAP` | Token is on the blocklist, or is gray zone and Lucas has not answered. | Never write it. Ask Lucas once for a gray-zone token and record the answer. It lowers coverage and never blocks as a CV defect. |
+| `EXCLUDE` | Gray-zone category that Lucas has not approved (2.4). | Leave it out. |
 
-### 2.3 Relations between tokens
+### 2.3 Placement and relations
 
-A relation is only as strong as the fact behind it.
-
+- **Anchored placement.** A `CLAIM` token goes into one bullet of the role
+  where it fits best. First the role's domain: fiscal and invoicing at
+  Luizalabs, healthcare scheduling at DexCare, orders and distribution at
+  Lippaus. Then the role's platform: AWS services at DexCare, GCP at
+  Luizalabs. Write it as part of work that role really did. Example: SQS
+  goes into a fiscal or invoicing flow at Luizalabs, or into booking events
+  at DexCare where AWS fits the platform. The Analyzer reports a poor fit as a
+  move suggestion.
+- **Only what the posting asks.** An umbrella token that the posting does not
+  ask for stays out, except base CV content and stack-depth blocks.
 - **Stack depth: requested token plus its building blocks.** When the posting
   asks for a higher-level token (framework, platform, managed service), add
-  the lower-level tokens it is built on or competes with, when each is `CLAIM`
-  on its own evidence. Put them in `Skills`, grouped next to the requested
-  token. Examples: posting asks NestJS, add `Express`, `Fastify`. Posting asks
+  the lower-level umbrella tokens it is built on or competes with. Put them
+  in `Skills`, grouped next to the requested token. Examples: posting asks NestJS, add `Express`, `Fastify`. Posting asks
   Next.js, add `React`, `Node.js`. Posting asks Prisma, add `PostgreSQL`,
   `Drizzle ORM`. Posting asks Kubernetes, add `Docker`, `Helm`.
   Why it helps: boolean searches often use OR groups (`NestJS OR Express OR
@@ -121,31 +122,15 @@ A relation is only as strong as the fact behind it.
   Embedding engines (Eightfold, Gupy, LinkedIn two-tower) may lose some
   similarity from off-target text [INF]. Rule: an unrequested sibling may stay
   in `Skills`. It does not get a bullet.
-- **Skill pool and anchored placement.** The Skills Inventory is a pool. A
-  pool token that the posting does not ask for stays out of the tailored CV.
-  When a posting asks for it, it enters `Skills` and one Experience bullet.
-  The bullet goes in a role that the inventory entry lists under `roles`, and
-  it is written in that role's real domain. Example: SQS listed for
-  Luizalabs goes into a fiscal or invoicing bullet there, not into a DexCare
-  scheduling bullet. Check the anchor against the role's platform: Luizalabs
-  ran on GCP, so an AWS service anchored there must match what Lucas
-  recorded. The interviewer asks why it was there.
-- **Cloud families.** `AWS` as a family is supported by S3, DynamoDB, Secrets
-  Manager, RDS. A named service (Lambda, SQS, SNS, API Gateway, Step
-  Functions) needs its own inventory entry. Claim at service level.
 - **Patterns.** CQRS, event sourcing, DDD, idempotency, retry with DLQ, saga:
-  claim only when Lucas implemented the mechanism. The bullet names what the
-  mechanism separated or protected. A pattern word without a mechanism reads
-  as a buzzword to the human and is the first thing a senior interviewer
-  probes.
-- **DevOps and infrastructure.** Docker, Kubernetes, CI/CD, ArgoCD,
-  Terraform, observability: claim at E2 and above, like any tool. They help
-  most postings. They are not an exception to evidence.
+  the bullet names what the mechanism separated or protected. A pattern word
+  without a mechanism reads as a buzzword to the human reader.
 
-### 2.4 Exclude list: true tokens that hurt
+### 2.4 Gray zone: ask before adding
 
-Leave these out even when true. They move embedding similarity and recruiter
-perception toward the wrong job family.
+Not added automatically. They move embedding similarity and recruiter
+perception toward a job family Lucas does not want. Lucas answers once; the
+answer goes to the DOSSIER whitelist or blocklist.
 
 | Category | Examples | Exception |
 |---|---|---|
@@ -157,10 +142,11 @@ perception toward the wrong job family.
 | Primary languages outside the target stack | Java, Python, Ruby, Elixir, PHP, C# | A true fact may stay inside the bullet of the role (Java at Luizalabs). Never in `Skills`, never in the Summary. |
 | Management titles and duties that exceed the target level | "managed a team of 8" when it did not happen, "Engineering Manager" | Mentoring and leading a project are fine when true. |
 
-### 2.5 Never, at any level
+### 2.5 Never
 
 - A credential, certification, degree, or regulated-domain qualification.
-- A yes on a screening question when the true answer is no.
+- A yes on a screening question when the true answer is no. Screening answers
+  are attestations, and they are the main automatic rejection point (U10).
 - A years-of-experience number that the dates do not support.
 - A metric that is not in the DOSSIER.
 - A change to title, date, employer, location, or language level.
@@ -218,15 +204,15 @@ weights.** Everything below is inputs and output format.
 - **Rejects:** only on eliminatory additional questions. Missing requirements
   lower the rank. [DOC]
 - **Adjust:**
-  - Portuguese. The profile is the CV. The master profile holds every E2 and
-    E3 token of the inventory in Habilidades, and each Experiência names the
-    tokens used in that role. The form pack per posting holds only the
+  - Portuguese. The profile is the CV. The master profile holds, in
+    Habilidades, the umbrella tokens most requested across the saved postings
+    in `jobs/`, and each Experiência names tokens by anchored placement. The form pack per posting holds only the
     additional-question answers.
   - Gupy prefers DOCX upload for parsing. Lucas reviews every parsed field.
   - Complete every test. Treat them as ranked until shown otherwise.
 - **One profile for all postings.** A Gupy profile is usually not changed per
   posting. Tailoring happens once, on a master Gupy profile built from the
-  full Skills Inventory. Per posting, only the additional questions and tests
+  DOSSIER Skills policy. Per posting, only the additional questions and tests
   change. A `GAP` cannot be closed per posting, so the apply decision uses
   required coverage (RUBRIC) against the master profile.
 

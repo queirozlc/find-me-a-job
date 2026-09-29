@@ -27,6 +27,53 @@ status, work authorization, or language proficiency to improve a match. Do
 not invent a posting, recruiter, primary programming language, credential, or
 regulated-domain qualification.
 
+## Skills policy
+
+Set by Lucas 2026-09-29. Rule: `CLAUDE.md` section 4.1.
+
+### Attested umbrella
+
+Lucas attests that he knows every technology in these families. A posting
+that asks for one gets it in the CV automatically, with no confirmation.
+
+- JavaScript, TypeScript, Node.js, Go, and their ecosystems: server
+  frameworks (Express, Fastify, NestJS, Koa, Hono, Gin), frontend (React,
+  Next.js, Vite, state and data-fetching libraries), ORMs and query builders
+  (Prisma, TypeORM, Drizzle, Sequelize, Knex), testing (Jest, Vitest,
+  Playwright, Cypress, Testing Library), validation and API tooling (Zod,
+  OpenAPI, GraphQL, tRPC, gRPC).
+- Databases and caches: PostgreSQL, MySQL, MongoDB, DynamoDB, Redis,
+  Elasticsearch.
+- Messaging and async: queues, streams, and workers (SQS, SNS, RabbitMQ,
+  Kafka, BullMQ, EventBridge, Pub/Sub).
+- Cloud services on AWS and GCP (Lambda, API Gateway, ECS, S3, Step
+  Functions, Secrets Manager, Cloud Run, and similar).
+- DevOps and infrastructure: Docker, Kubernetes, Helm, CI/CD systems,
+  ArgoCD, Terraform, Serverless Framework, observability (Datadog,
+  OpenTelemetry, Grafana, Sentry).
+- Architecture and practices: microservices, event-driven architecture,
+  serverless, CQRS, DDD, idempotency, retries and DLQ, multi-tenancy, feature
+  flags, code review, TDD.
+- AI tooling: Claude Code, Codex, agentic workflows, LLM APIs.
+
+### Gray-zone categories: ask Lucas once
+
+Support and helpdesk platforms, manual QA, BI and reporting tools, CRM or
+platform administration, mobile-native (Swift, Kotlin), languages outside
+the target stack (Java, Python, Ruby, PHP, C#, Elixir, Rust), and any token
+that is not clearly in the umbrella.
+
+### Whitelist (Lucas approved, add without asking)
+
+| Token | Date | Note |
+|---|---|---|
+
+### Blocklist (never add)
+
+| Token | Date | Note |
+|---|---|---|
+| Ruby, Rails | 2026-09-01 | `CLAUDE.md` section 2 |
+
 ---
 
 ## Identity

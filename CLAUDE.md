@@ -66,26 +66,33 @@ Use this weight order:
 
 Full rule: `ATS-KNOWLEDGE.v2.md` section 2.
 
-- **Evidence comes from the Skills Inventory in `DOSSIER.md`.** A token
-  enters a CV only when the inventory lists it at E1 or above. The posting
-  asking for a token is never evidence. Until that section exists, the stack
-  facts already recorded in `DOSSIER.md` count as E2 for the employer they
-  name, and nothing else counts.
-- **Pool, not list.** Inventory tokens stay out of a CV until a posting asks
-  for them. When asked, the token goes in `Skills` and in one bullet of a role
-  that its inventory entry lists, written in that role's real domain. Example:
-  SQS recorded for Luizalabs goes into a fiscal or invoicing bullet there.
-- **Stack depth.** For a requested high-level token, add its building blocks
-  that are also in the inventory, in `Skills` next to it (NestJS: Express,
-  Fastify).
-- **Exclude** true tokens that pull toward support, manual QA, BI, platform
-  admin, or a primary language outside the target stack.
-- **GAP.** A requested token with no inventory evidence is a `GAP`. It lowers
-  required coverage. It is never a CV defect and never makes the Architect
-  write the token. Ask Lucas once and record the answer in the inventory.
+- **Attested umbrella, automatic.** Lucas attests that he knows every
+  technology in the umbrella listed in `DOSSIER.md` **Skills policy**. When a
+  posting asks for an umbrella token, the Architect adds it without asking:
+  in `Skills` and in one Experience bullet. The posting decides what enters
+  the CV, not a confirmation from Lucas.
+- **Anchored placement.** The bullet goes in the role where the token fits
+  best: the role's domain first (fiscal and invoicing at Luizalabs,
+  healthcare scheduling at DexCare, orders and distribution at Lippaus), then
+  the role's platform (AWS services at DexCare, GCP at Luizalabs). Write it
+  as part of work that role really did.
+- **Stack depth.** For a requested high-level token, add its umbrella
+  building blocks in `Skills` next to it (NestJS: Express, Fastify).
+- **Only what the posting asks.** Umbrella tokens the posting does not ask
+  for stay out, except the base CV content and stack-depth blocks.
+- **Gray zone: ask once.** A requested token outside the umbrella, or in a
+  gray-zone category (support and helpdesk, manual QA, BI, platform admin,
+  a language outside the target stack, anything unclear), is not added
+  automatically. Ask Lucas once. His answer goes to the DOSSIER whitelist or
+  blocklist, and every later posting uses it without asking again.
+- **GAP.** A blocklisted token, or a gray-zone token that waits for Lucas, is
+  a `GAP`. It lowers required coverage and is never written.
 - **Apply decision.** Deliver the package when every blocking check passes
   and required coverage is at least 70%. The 70% is Lucas's choice, not a
   vendor number.
+- **Still never:** a credential, certification, or degree; a false answer to
+  a screening question; a years-of-experience number beyond what the dates
+  support; a change to titles, dates, employers, or metrics.
 
 Frameworks, libraries, databases, cloud services, and tools do not decide
 primary-stack eligibility. Do not use verification markers for these tokens.
