@@ -92,7 +92,8 @@ Full rule: `ATS-KNOWLEDGE.v2.md` section 2.
 - **Apply decision.** Deliver the package when every blocking check passes
   and required coverage is at least 70%. The 70% is Lucas's choice, not a
   vendor number.
-- **Still never:** a credential, certification, or degree; a false answer to
+- **Still never:** a credential, certification, or degree that Lucas does not
+  hold (his real degree, Information Systems at FAESA, always stays); a false answer to
   a screening question; a years-of-experience number beyond what the dates
   support; a change to titles, dates, employers, or metrics.
 

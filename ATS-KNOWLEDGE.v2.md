@@ -146,7 +146,9 @@ exception column is the only way a related token enters.
 
 ### 2.5 Never
 
-- A credential, certification, degree, or regulated-domain qualification.
+- A credential, certification, degree, or regulated-domain qualification that
+  Lucas does not hold. His real degree (Information Systems, FAESA) always
+  stays.
 - A yes on a screening question when the true answer is no. Screening answers
   are attestations, and they are the main automatic rejection point (U10).
 - A years-of-experience number that the dates do not support.
