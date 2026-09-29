@@ -102,9 +102,9 @@ reasoning, Codex for light portal manipulation. Commands verified on
 
 | Seat | Agent | Role | When | Launch command | Reset cmd |
 | ---- | ----- | ---- | ---- | -------------- | --------- |
-| Maestro | Recruiter | — | Always | `claude --model fable --effort high` (Lucas, 2026-09-02: Claude runs the Maestro seat) | `/clear` |
-| ATS Analyzer | Sieve | `ATS Analyzer` | Every application | `claude --model fable --effort high` for routine Posting Analysis; `claude --model opus --effort high` only for unresolved semantic ambiguity | `/clear` |
-| Resume Architect | Quill | `Resume Architect` | Every application | `claude --dangerously-skip-permissions --model "claude-fable-5-1[1m]" --effort medium` (swapped by Lucas 2026-09-04, observed live) | `/clear` |
+| Maestro | Recruiter | — | Always | `claude --model opus --effort medium` (Lucas, 2026-09-29: Opus 5.5 for orchestration) | `/clear` |
+| ATS Analyzer | Sieve | `ATS Analyzer` | Every application | `claude --model sonnet --effort medium` for routine Posting Analysis; `claude --model opus --effort medium` only for unresolved semantic ambiguity (Lucas, 2026-09-29) | `/clear` |
+| Resume Architect | Quill | `Resume Architect` | Every application | `claude --dangerously-skip-permissions --model sonnet --effort medium` (Lucas, 2026-09-29). If the writing quality is weak, move Quill only to `--model opus` | `/clear` |
 | Market Scout | Kestrel | `Market Scout` | Fallback only when the deterministic source runner cannot parse a LinkedIn layout | `codex -m gpt-5.6-luna -c model_reasoning_effort=high -c service_tier=fast` | `/new` |
 | Profile SEO | Codex | — | Only when the profile itself needs work. Not part of the application. | unchanged (luna, fast) | `/new` |
 
