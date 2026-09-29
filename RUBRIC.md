@@ -16,8 +16,8 @@ Read `~/career/ATS-KNOWLEDGE.md` first. Every rule here traces to it.
 3. The target segment: `us-direct`, `br-pj`, or `agency`.
 4. The `ats_profile` from the manifest, detected per `ATS-KNOWLEDGE.v2.md`
    section 3. `generic` when no pattern matched.
-5. The **Skills policy** in `DOSSIER.md`: attested umbrella, gray-zone
-   categories, whitelist, blocklist.
+5. The **Skills policy** in `DOSSIER.md`: attested umbrella, blacklist,
+   gray zone, whitelist.
 
 ## Mandatory extraction step
 
@@ -109,13 +109,12 @@ recruiter search still is.
 and buzzwords. They are not retrieval tokens.
 
 **Step 1b.** Resolve each token with the Skills policy (`CLAUDE.md` section
-4.1): `CLAIM` (umbrella or whitelist), `GAP` (blocklist, or gray zone waiting
-for Lucas), or `EXCLUDE` (gray-zone category Lucas has not approved). Record
-the result and the policy line in the token table.
+4.1): `CLAIM` (umbrella or whitelist) or `GAP` (blacklist, or gray zone
+waiting for Lucas). Record the result and the policy line in the token table.
 
-**Step 1c, blocked claim, blocking.** Any token in the CV that is on the
-blocklist, or in a gray-zone category and not on the whitelist, FAILS. Fix
-type: `CV FIX`, remove it, or `LUCAS CONFIRMATION` to whitelist it.
+**Step 1c, blocked claim, blocking.** Any token added for the posting that is
+blacklisted, or gray zone and not on the whitelist, FAILS. Fix type: `CV
+FIX`, remove it, or `LUCAS CONFIRMATION` for a gray-zone token.
 
 **Step 1d, anchor fit, reported.** For each posting token placed in a bullet,
 check that the role's domain and platform fit it (for example an AWS service
@@ -139,7 +138,7 @@ coverage = 100 * sum(points * requirement_weight)
 requirement_weight: required = 3, preferred = 1
 ```
 
-`GAP` and `EXCLUDE` tokens earn 0 and stay in the denominator.
+`GAP` tokens earn 0 and stay in the denominator.
 
 Also compute `required_coverage` with the same formula over required tokens
 only.
@@ -152,7 +151,7 @@ only.
 
 A `GAP` never produces a `CV FIX`. It lowers `required_coverage`. Its fix
 type is `LUCAS CONFIRMATION` for a gray-zone token, and `ROLE MISMATCH` for a
-blocklisted token. Preferred tokens affect the score but do not block.
+blacklisted token. Preferred tokens affect the score but do not block.
 
 For each required `CLAIM` token below 3 points, state exactly which placement
 is missing and use `CV FIX`. The Architect adds it; it needs no confirmation. If the same
@@ -257,4 +256,4 @@ GAP tokens: <list>
 - Never emit a single blended "ATS score". The checks are separate on purpose.
 - Never claim a vendor produces these numbers.
 - Never guess a job requirement the posting did not state.
-- Never ask the Architect to add a blocklisted or unapproved gray-zone token.
+- Never ask the Architect to add a blacklisted or unanswered gray-zone token.

@@ -80,12 +80,14 @@ Full rule: `ATS-KNOWLEDGE.v2.md` section 2.
   building blocks in `Skills` next to it (NestJS: Express, Fastify).
 - **Only what the posting asks.** Umbrella tokens the posting does not ask
   for stay out, except the base CV content and stack-depth blocks.
-- **Gray zone: ask once.** A requested token outside the umbrella, or in a
-  gray-zone category (support and helpdesk, manual QA, BI, platform admin,
-  a language outside the target stack, anything unclear), is not added
-  automatically. Ask Lucas once. His answer goes to the DOSSIER whitelist or
-  blocklist, and every later posting uses it without asking again.
-- **GAP.** A blocklisted token, or a gray-zone token that waits for Lucas, is
+- **Blacklist: blocked.** Tokens in the DOSSIER blacklist (support and
+  helpdesk, manual QA, BI, CRM and platform admin, mobile-native, languages
+  outside the target stack) are never added for a posting.
+- **Gray zone: ask once.** A requested token that is undefined or unclear (in
+  no umbrella family and not blacklisted) is not added automatically. Ask
+  Lucas once. His answer goes to the DOSSIER whitelist or blacklist, and every
+  later posting uses it without asking again.
+- **GAP.** A blacklisted token, or a gray-zone token that waits for Lucas, is
   a `GAP`. It lowers required coverage and is never written.
 - **Apply decision.** Deliver the package when every blocking check passes
   and required coverage is at least 70%. The 70% is Lucas's choice, not a

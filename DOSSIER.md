@@ -56,23 +56,35 @@ that asks for one gets it in the CV automatically, with no confirmation.
   flags, code review, TDD.
 - AI tooling: Claude Code, Codex, agentic workflows, LLM APIs.
 
-### Gray-zone categories: ask Lucas once
+### Blacklist (blocked, never add)
 
-Support and helpdesk platforms, manual QA, BI and reporting tools, CRM or
-platform administration, mobile-native (Swift, Kotlin), languages outside
-the target stack (Java, Python, Ruby, PHP, C#, Elixir, Rust), and any token
-that is not clearly in the umbrella.
+Categories, Lucas 2026-09-29. Never added for a posting. Facts already in the
+base CV stay (Java inside the Luizalabs bullet).
+
+- Support and helpdesk platforms and duties (Zendesk, Freshdesk, ServiceNow,
+  ticket handling).
+- Manual QA.
+- Sysadmin and ops-only duties.
+- BI and reporting tools (Power BI, Tableau, Excel reporting).
+- CRM and platform administration (Salesforce admin, HubSpot admin).
+- Mobile-native (Swift, Kotlin).
+- Languages outside the target stack (Java, Python, Ruby, PHP, C#, Elixir,
+  Rust).
+
+| Token | Date | Note |
+|---|---|---|
+| Ruby, Rails | 2026-09-01 | `CLAUDE.md` section 2 |
+
+### Gray zone: ask Lucas once
+
+A requested token that is undefined or unclear: in no umbrella family, no
+blacklist category, and no table below. Ask once. The answer goes to the
+whitelist or the blacklist table.
 
 ### Whitelist (Lucas approved, add without asking)
 
 | Token | Date | Note |
 |---|---|---|
-
-### Blocklist (never add)
-
-| Token | Date | Note |
-|---|---|---|
-| Ruby, Rails | 2026-09-01 | `CLAUDE.md` section 2 |
 
 ---
 

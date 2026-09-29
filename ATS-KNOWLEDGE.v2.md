@@ -18,8 +18,8 @@ that the procedure names.
    nice-to-have section. Tokens in the company description or responsibilities
    are context, not criteria (U5).
 3. **Resolve every token against the Skills policy** in `DOSSIER.md` with
-   the claim policy (section 2). Each token gets one result: `CLAIM`, `GAP`,
-   or `EXCLUDE`. Ask Lucas only for gray-zone tokens.
+   the claim policy (section 2). Each token gets one result: `CLAIM` or
+   `GAP`. Ask Lucas only for gray-zone tokens.
 4. **Tailor** with the universal rules (section 1) plus the adjustments of the
    detected profile (section 4).
 5. **Prepare the form pack.** For profiles where forms or profile fields are
@@ -81,16 +81,18 @@ what enters the CV. Lucas decides only the gray zone.
 The **Skills policy** in `DOSSIER.md`:
 
 - **Attested umbrella.** Families of technologies Lucas attests he knows.
-- **Gray-zone categories.** Ask Lucas once.
-- **Whitelist and blocklist.** Lucas's past answers. Never ask twice.
+  Added automatically.
+- **Blacklist.** Blocked categories and tokens (2.4). Never added.
+- **Gray zone.** Undefined or unclear: in no umbrella family and not
+  blacklisted. Ask Lucas once.
+- **Whitelist.** Gray-zone tokens Lucas approved. Never ask twice.
 
 ### 2.2 Token results
 
 | Result | Condition | Action |
 |---|---|---|
 | `CLAIM` | Token is in the umbrella or on the whitelist. | Add it automatically: `Skills` plus one bullet in its anchored role (2.3). No confirmation. |
-| `GAP` | Token is on the blocklist, or is gray zone and Lucas has not answered. | Never write it. Ask Lucas once for a gray-zone token and record the answer. It lowers coverage and never blocks as a CV defect. |
-| `EXCLUDE` | Gray-zone category that Lucas has not approved (2.4). | Leave it out. |
+| `GAP` | Token is blacklisted, or is gray zone and Lucas has not answered. | Never write it. Ask Lucas once for a gray-zone token and record the answer in the whitelist or blacklist. It lowers coverage and never blocks as a CV defect. |
 
 ### 2.3 Placement and relations
 
@@ -126,11 +128,11 @@ The **Skills policy** in `DOSSIER.md`:
   the bullet names what the mechanism separated or protected. A pattern word
   without a mechanism reads as a buzzword to the human reader.
 
-### 2.4 Gray zone: ask before adding
+### 2.4 Blacklist: blocked
 
-Not added automatically. They move embedding similarity and recruiter
-perception toward a job family Lucas does not want. Lucas answers once; the
-answer goes to the DOSSIER whitelist or blocklist.
+Never added for a posting (Lucas, 2026-09-29). They move embedding similarity
+and recruiter perception toward a job family Lucas does not want. The
+exception column is the only way a related token enters.
 
 | Category | Examples | Exception |
 |---|---|---|
