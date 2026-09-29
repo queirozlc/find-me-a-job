@@ -1,0 +1,78 @@
+Lucas Queiroz
+
+Vitória, ES, Brasil | +55 (27) 99203-0170 | sepulchrolucas@gmail.com | linkedin.com/in/queiroz-lucas | github.com/queirozlc
+
+RESUMO
+Senior Software Engineer com mais de 5 anos (5+ years) construindo scalable backend systems, Core APIs e
+microsserviços (microservices) em TypeScript e Node.js, com uso de Go na Luizalabs. Entrega agendamento em tempo
+real (real-time) com SQL, DynamoDB e Redis e usa agentic workflows com IA nas entregas diárias. Trabalha em inglês
+Advanced/C1 (English).
+
+HABILIDADES
+Linguagens: TypeScript | Node.js | Go | JavaScript
+Backend e Multi-tenant security: Core APIs | Microservices | Express | Koa | OpenAPI/Swagger | RabbitMQ | AMQP | BullMQ
+Dados: SQL | PostgreSQL | DynamoDB | Redis | Drizzle ORM | Sequelize
+Frontend: React | React Native
+Cloud e operação: AWS | Docker | Kubernetes | GCP | ArgoCD | CI/CD | Datadog | LaunchDarkly | OpenFeature | Auth0
+Testes (Testing): Vitest | Jest
+Ferramentas de IA (AI tooling): Claude Code | Codex | Agentic workflows
+
+EXPERIÊNCIA
+DexCare
+Senior Software Engineer
+
+Jan 2026 - Present
+Remoto
+
+• Entrega processamento de dados em tempo real (real-time data processing) para Core APIs construindo serviços backend
+TypeScript e Node.js orientados a eventos sobre DynamoDB Streams com Express e Koa.
+• Corta em 25% o atrito de autenticação e isola tenants aplicando Auth0 JWT e contratos OpenAPI/Swagger em serviços
+multi-tenant.
+• Atende dados de reservas modelando dados SQL em PostgreSQL com Sequelize, Drizzle ORM e Redis na AWS.
+• Diminui o risco de releases em 7% usando flags LaunchDarkly/OpenFeature e monitorando React com Datadog RUM e browser
+logging.
+• Reduz reservas incorretas em 15% sincronizando horários hospitalares por uma integração Epic EMR.
+• Habilita agentic workflows a produzir código de alta qualidade construindo ambientes Claude Code e Codex com regras
+compartilhadas, lint, limites de complexidade e testes.
+• Mitiga em 33% o atrito de pilotos ajudando a implementar serviços SPI compartilhados com configuração, segredos e dados
+isolados.
+
+Luizalabs
+Mid-level Software Engineer
+
+Jan 2024 - Jan 2026
+Remoto
+
+• Entregou emissão fiscal no Magazine Luiza construindo microsserviços distribuídos em Java e Go.
+• Melhorou em 20% a vazão de notas e a tolerância a falhas levando a comunicação SEFAZ para filas BullMQ assíncronas.
+• Melhorou a confiabilidade (reliability) de serviços production-grade implantando Docker e Kubernetes no GCP via ArgoCD e
+usando Vitest, Jest e CI/CD.
+• Reduziu chamados em 18% dando visibilidade aos fluxos fiscais com dashboards de backoffice.
+
+Lippaus Distribuidora
+Mid-level Software Engineer
+
+Jan 2023 - Jan 2024
+Remoto
+
+• Aumentou em 26% a capacidade de processamento de pedidos, notificações e integrações usando jobs assíncronos BullMQ.
+• Construiu uma plataforma web e mobile React Native multi-tenant em PostgreSQL.
+• Converteu requisitos de clientes em entregas liderando o escopo de projetos e a comunicação com stakeholders.
+
+Lippaus Distribuidora
+Entry-level Fullstack Software Engineer
+
+Mar 2021 - Jan 2023
+Remoto
+
+• Apoiou operações construindo dashboards de backoffice em JavaScript.
+• Entregou funcionalidades para clientes de ponta a ponta equilibrando requisitos de negócio e restrições técnicas.
+
+FORMAÇÃO
+FAESA
+Bacharelado em Sistemas de Informação
+
+Feb 2022 - Dec 2025
+Vitória, ES, Brasil
+
+

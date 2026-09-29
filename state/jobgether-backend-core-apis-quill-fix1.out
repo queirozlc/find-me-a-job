@@ -1,0 +1,42 @@
+         ry-stack depth.
+     95 +9. Rewrote the Luizalabs deployment bullet to carry the exact terms `reliability` and `production-grade` alo
+  … Diff preview limited (ctrl + t to view transcript).
+
+• Ran for lang in en pt; do
+  │   stem="resumes/jobgether-backend-core-apis-$lang"
+  │   echo "$lang pages=$(pdfinfo "$stem.pdf" | awk '/^Pages:/ {print $2}')"
+  │ … +33 lines
+  └ pt unsupported=0
+    pt blocked=0
+    … +4 lines (ctrl + t to view transcript)
+    EN verbs=Deliver,Cut,Serve,Lower,Reduce,Enable,Decrease
+    PT verbs=Entrega,Corta,Atende,Diminui,Reduz,Habilita,Mitiga
+
+─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+• Final checks passed: APIs is capped at three in each extraction, both Summaries carry capitalized Core APIs and
+  scoped Go usage, the approved deploy/security/frontend/testing terms are present, and neither DexCare block adds Go
+  or messaging claims.
+
+• Ran rm tmp/pdfs/jobgether-en.png tmp/pdfs/jobgether-pt.png && rmdir tmp/pdfs 2>/dev/null || true && rmdir tmp 2>/
+  │ dev/null || true
+  └ (no output)
+
+─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+• Fix round 1 completed:
+
+  - Updated /Users/lucasqueiroz/career/resumes/jobgether-backend-core-apis-en.tex and /Users/lucasqueiroz/career/
+    resumes/jobgether-backend-core-apis-pt.tex.
+
+  - Applied items 1, 4, 5, and 9–15, including hanging indents and distinct DexCare openers.
+  - Removed unsupported Lippaus wording and the hours-overlap clause.
+  - Rebuilt both PDFs and regenerated raw/layout extractions; both remain one page.
+  - Appended the complete change list to /Users/lucasqueiroz/career/reports/jobgether-backend-core-apis-draft.md.
+
+─ Worked for 9m 01s ─────────────────────────────────────────────────────────────────────────────────────────────────
+ 
+ 
+› Ask Codex to do anything
+ 
+  gpt-5.6-sol high fast · Context 34% left · Context 66% used · Full Access

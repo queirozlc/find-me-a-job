@@ -1,0 +1,42 @@
+  │ Gate 1, knockouts          │ FAIL, 2 blockers │
+  ├────────────────────────────┼──────────────────┤
+  │ Gate 2, retrieval coverage │ 57 / 100, FAIL   │
+  ├────────────────────────────┼──────────────────┤
+  │ Gate 3, human scan         │ 85 / 100         │
+  └────────────────────────────┴──────────────────┘
+  
+  Exact blockers, both candidate-fact gaps with no document fix:
+
+  1. You should have experience working with well-maintained, widely-used repos with 5000+ stars and familiar with 
+     high-quality public GitHub repositories. No CV evidence. DOSSIER.md records none and excludes the old
+     open-source claim. GitHub appears once, in the contact-block URL only.
+  2. We are looking for experienced software engineers (tech lead level). Verified titles are Senior, Mid-level,
+     Mid-level, Entry-level. No lead role in the dossier.
+
+  Gate 2 required tokens at 0 points: GitHub, repos with 5000+ stars. The other five required tokens score 3 each:
+  JavaScript, Git, Docker, pipeline setup, complex codebases. Stuffing penalty 0.
+
+  Profile Check: every employer, title, start month and end month matches LinkedIn, read live today. Education
+  matches. The profile was not edited.
+    
+  Gate 0 is clean, including 0.5 to 0.8. The tailored file dropped the base tabular* role header, which removes the
+  header-only findings carried by earlier builds.
+    
+  Other defects reported, not fixed: the Summary claim I run, modify, and test complex codebases locally with Git and
+  Docker joins two separately sourced facts into one unsourced statement; three posting phrases sit in Skills as if
+  they were technologies; the three most relevant DexCare bullets are at positions 1, 6 and 7. Quill correctly
+  omitted open-source, LLM evaluation, issue triage, test-coverage evaluation, Dockerization as a task, and
+  junior-engineer leadership.
+ 
+  Workspace defect, not a CV defect: CV-SPEC.md still says Luizalabs ended Jan 2026. LinkedIn says Mar 2026. The CV
+  is right.
+  
+  Report: /Users/lucasqueiroz/career/state/mavila-senior-software-engineer-javascript-sieve.report.md
+
+✻ Worked for 6m 39s · done 2:38 PM
+
+─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+❯ 
+─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  Opus 5 · lucasqueiroz · ctx 14% · cache 93% · [█░░░░░░░░░] 135.2k/1.0M · effort high                          /rc
+  ⏵⏵ auto mode on (shift+tab to cycle) · ← 10 agents

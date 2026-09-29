@@ -1,0 +1,31 @@
+Feed post
+
+Anand Patha
+  • 3rd+
+Senior Technical Recruiter, PTR Global | a Pinnacle Groupe Company Connecting Professionals with Great Opportunity
+1h • 
+
+Follow
+
+Please share Experienced Profiles to patha.kumar@ptrglobal.com high-priority Jobs immediate interview
+
+For below roles need candidates local to Phoenix, AZ/Las Vegas, NV/Salt lake City, UT
+#Windows Cloud Specialist- Nutanix Servers, HP Servers, Microsoft Windows, AHV, VMware, KVM, Hyper-V, and Cloud Providers,Active Directory, Citrix, Microsoft Cluster Services, IIS, Antivirus, Patch Management, Exchange and Skype On Line, PowerShell, Ansible, Python, Jinja2 Experience & Windows, Nutanix and/or VMware certification desire-Remote role
+#Data Security Architecture Assessment Contractor-GCP IAM, VPC / Shared VPC, Cloud Run / GKE,BigQuery, Cloud Storage,Datastore / Firestore, Cloud KMS / Secret Manager, PII, PCI, API security, OAuth, mTLS, token handling, gateways, and service-to-service authentication,
+#GCP Engineer/Architect wit Big Query, Cloud Dataflow (PySpark/Beam), Cloud Composer (Airflow), and GCP Pub/Sub.Vertex AI, Gemini models, and agentic orchestration frameworks (e.g., Google ADK). implementing Model Context Protocol (MCP) tools/servers and Agent-to-Agent (A2A) Experience
+#Technical Program Manager (TPM) – Mainframe wit COBOL, JCL, DB2 and/or IMS DB, CICS, VSAM, Batch Processing, z/OS & Agile/Scrum Experience.
+#Automation Tester + GCP-Selenium + Java/TestNG/Cucumber, Postman/REST Assured, Git/Jenkins, Big Query, Cloud Storage, GKE & Sql Experience
+#BI Developer-AI; API; BI; CI/CD; Data Analytics; Grafana; Linux Experience
+#React Developer-React, TypeScript, JavaScript, Cypress, HTML5/CSS3, REST APIs, Git/Nice to Have: Java, Spring Boot, Azure/AWS, Docker, Kubernetes, React Query & Redux Experience.
+#Java Backend Developer with Java (JDK 17-25), Spring frameworks, Spring Boot, REST / RPC APIs, Reactive frameworks, JUnit, Gradle, Maven, Jenkins, GitLab, CI/CD, automated testing, PostgreSQL, MongoDB, Redis, Cassandra, Kafka, Kafka Streams, event-driven architecture, workflow orchestration, (Good-to-have-LLM apps, RAG, embeddings, vector search, tool/function calling, MCP concepts, AI guardrails) Good-to-have Cloud / DevOps-AWS EC2, RDS, S3, SQS, cloud-native architecture, DevOps practices)-Good-to-have Governance- Data governance, secure data access, shared schemas, service contracts, auditability, compliance controls, risk-aware engineering, Good-to-have Platform Architecture-Shared services, APIs, identity, payments, partner ecosystems, data governance, modernization… more
+1 reaction1
+1 comment1 comment
+
+Like
+
+
+Comment
+
+Repost
+Send
+

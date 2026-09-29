@@ -1,0 +1,42 @@
+
+  Thought for 27s, ran 3 shell commands 
+
+⏺ Now I write the tailored tex from base-pt.tex, build it, and verify.
+
+  Thought for 10s, ran 2 shell commands 
+
+⏺ Build is good. Two pages, same as the approved base and the Maxxi PT CV. All 16 bullets and 7 metrics survived. Now
+  I write the note, the report, and the sentinel.
+
+  Ran 1 shell command 
+  
+⏺ Report path: /Users/lucasqueiroz/career/state/turbi-fullstack-senior-golang-web-quill.report.md
+
+  Draft complete. Sentinel written and verified at state/turbi-fullstack-senior-golang-web-quill.complete.json,
+  task-id turbi-fullstack-senior-golang-web-quill.
+
+  Artifacts, all under resumes/hunts/2026-09-04-g/turbi-fullstack-senior-golang-web/:
+  - Lucas-Queiroz-Resume-pt.tex and .pdf. Started from base-pt.tex. Preamble and role headers unchanged. 16 of 16
+    bullets, all 7 metrics. Two pages, the same as the base and the Maxxi PT CV. Zero Ruby or Rails tokens.
+  - application-note.md. Portuguese message plus screening answers. Inhire apply link recorded. Recruiter not
+    observable.
+
+  Required tokens: all 12 appear in Habilidades and in one Experiência bullet. Counts in the raw extraction are in
+  the report.
+
+  Not claimed:
+  - Weekend support scale. Recorded as unanswered, before submission. The note does not state acceptance.
+  - IoT experience. Absent from the CV and the note. Listed as unanswered in the screening answers.
+  - Vue.js, Angular, security certification, code review.
+     
+  Derived tokens the Maestro should accept or reject: OAuth 2.0 from the verified Auth0 JWT work, HTTP and CSS from
+  the web dashboard and REST API facts, Linux/Unix from the Docker and Kubernetes deployments. The report lists each
+  with its source fact.
+
+✻ Crunched for 3m 31s · done 6:33 PM
+
+─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+❯ 
+─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  Fable 5.1 · lucasqueiroz · ctx 11% · cache 94% · [█░░░░░░░░░] 110.7k/1.0M · effort medium                     /rc
+  ⏵⏵ bypass permissions on (shift+tab to cycle) · ← 10 agents

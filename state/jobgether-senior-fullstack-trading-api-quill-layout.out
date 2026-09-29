@@ -1,0 +1,42 @@
+
+⏺ Zero Ruby hits stopped the chain early. Two pages now. I check the base page count, bullet count, and both
+  extractions.
+ 
+  Thought for 9s, ran 1 shell command 
+
+⏺ The page break falls between the two Lippaus roles. I confirm the per-page split, the preamble hash equality the
+  gate uses, and that the note's AGENTS.md reference resolves.
+
+  Thought for 3s, ran 1 shell command 
+
+⏺ All checks hold. The note is already complete, so I leave it unchanged. Now the report and sentinel.
+
+  Ran 1 shell command 
+
+⏺ Done. Report path:
+ 
+  state/jobgether-senior-fullstack-trading-api-quill-layout.report.md
+ 
+  Summary of the round:
+
+  - Tailored preamble replaced with the corrected base preamble, byte for byte. The gate's layout hash matches the
+    base. The body is unchanged, confirmed by an empty diff.
+  - PDF rebuilt at resumes/hunts/2026-09-04-g/jobgether-senior-fullstack-trading-api/Lucas-Queiroz-Resume-en.pdf. Two
+    pages, same as the corrected base. The break falls between the two Lippaus roles, with the header kept with its
+    bullets.
+  - Raw and layout extraction now read Company, Title, Dates, Location in the same order for every role. No tabular*
+    remains. All 16 bullets, seven metrics, LinkedIn titles and dates, and manifest token placements preserved. Zero
+    Ruby or Rails tokens. 
+  - Application note left as is. It was already complete, with unknowns marked not recorded.
+  - Sentinel written and verified at state/jobgether-senior-fullstack-trading-api-quill-layout.complete.json.
+
+  Not applied: Sieve's non-blocking defects 2 to 5. The dispatch forbade semantic rewrites, and the role gap lives in
+  the preamble that must match the base. Next step is Sieve review.
+
+✻ Worked for 1m 42s · done 6:15 PM
+
+─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+❯ 
+─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  Fable 5.1 · lucasqueiroz · ctx 11% · cache 97% · [█░░░░░░░░░] 114.1k/1.0M · effort medium                     /rc
+  ⏵⏵ bypass permissions on (shift+tab to cycle) · ← 10 agents

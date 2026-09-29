@@ -1,0 +1,22 @@
+{
+  "application_id": "kake-senior-fullstack-engineer-react-golang",
+  "language": "en",
+  "required_tokens": [
+    "Go",
+    "Golang",
+    "React",
+    "AWS",
+    "Docker",
+    "Kubernetes",
+    "testing",
+    "observability",
+    "code reviews"
+  ],
+  "preferred_tokens": [
+    "feature flags",
+    "metrics",
+    "logging",
+    "tracing",
+    "incident response"
+  ]
+}

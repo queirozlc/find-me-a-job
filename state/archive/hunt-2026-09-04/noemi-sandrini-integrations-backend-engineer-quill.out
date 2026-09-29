@@ -1,0 +1,42 @@
+    30 +- Employment blocks: DexCare, Luizalabs, and two Lippaus Distribuidora roles.
+    31 +- Contact fields: location, phone, email, LinkedIn, and GitHub retained in raw and layout text.
+    32 +- Education block: FAESA, degree, location, and date period retained in raw and layout text.
+    33 +- Ruby or Rails count in source: 0.
+    34 +- Ruby or Rails count in raw text: 0.
+    35 +- Ruby or Rails count in layout text: 0.
+    36 +- Unsupported requirement count in the resume: 0.
+    37 +- Visual result: no clipping, overlap, or missing content.
+
+• Ran tex=resumes/hunts/2026-09-04/noemi-sandrini-integrations-backend-engineer/Lucas-Queiroz-Resume-en.tex
+  │ pdf=resumes/hunts/2026-09-04/noemi-sandrini-integrations-backend-engineer/Lucas-Queiroz-Resume-en.pdf
+  │ raw=/tmp/noemi-resume-qa.pBkbbE/raw.txt
+  │ … +31 lines
+  └ 1111111
+    layout.txt_HEADERS=4
+    … +12 lines (ctrl + t to view transcript)
+    f48d530a585648bf214932e524119bf93875292158576b9bbd13dad385eeb7f7  state/
+    noemi-sandrini-integrations-backend-engineer-quill.report.md
+
+─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+• The final checks are complete.
+  The PDF is one page and both extractions retain all required blocks.
+  The supported tokens appear in Skills and Experience.
+  The resume contains zero forbidden or unsupported claims from the brief.
+
+• Ran unlink /tmp/noemi-resume-qa.pBkbbE/raw.txt
+  │ unlink /tmp/noemi-resume-qa.pBkbbE/layout.txt
+  │ unlink /tmp/noemi-resume-qa.pBkbbE/page.png
+  │ … +2 lines
+  └ temporary QA files removed
+
+─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+• DONE state/noemi-sandrini-integrations-backend-engineer-quill.report.md
+
+─ Worked for 2m 51s ─────────────────────────────────────────────────────────────────────────────────────────────────
+ 
+ 
+› Ask Codex to do anything
+ 
+  gpt-5.6-sol high fast · Context 50% left · Context 50% used · Full Access

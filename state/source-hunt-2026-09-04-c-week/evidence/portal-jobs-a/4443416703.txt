@@ -1,0 +1,64 @@
+CARD
+
+Senior Backend Engineer (Verified job)Senior Backend Engineer 
+TRACTIAN
+São Paulo, SP (Remote)
+
+Posted 1 day ago1 day ago
+
+
+
+HEADER
+São Paulo, São Paulo, Brazil · Reposted 1 day ago · Over 100 people clicked apply
+
+DESCRIPTION
+Engineering at TRACTIAN
+
+At TRACTIAN, the Backend Engineering team plays a critical role in building and scaling the infrastructure that powers our entire platform: from our advanced monitoring products to our CMMS (Computerized Maintenance Management System). We design and develop robust systems that handle large volumes of real-time and historical data from industrial assets.
+
+Our team is responsible for crafting and maintaining data-intensive microservices, resilient APIs, and scalable ETL pipelines. We work across multiple domains: from designing relational and non-relational database schemas to implementing event-driven architectures and optimizing performance under high-throughput workloads.
+
+As part of a product-led company, Backend Engineers at TRACTIAN operate with strong ownership. We collaborate closely with firmware, frontend, data, and product teams to deliver high-impact features that directly improve equipment reliability, reduce downtime, and modernize industrial operations.
+
+What you'll do
+
+As a Backend Software Engineer at our company, you will design and build critical APIs, microservices, and ETLs that power our core products, from industrial monitoring systems to our CMMS platform. You’ll play a key role in evolving our backend architecture to meet the demands of scale, performance, and product excellence. Your work will directly impact thousands of users across industries that rely on us to keep their operations running.
+
+Responsibilities
+
+Design, build, and maintain data-intensive, high-performance backend services based on an event-driven architecture.
+Develop and maintain APIs and services that power both real-time monitoring features and complex maintenance workflows.
+Work closely with a cross-functional team to ensure our backend applications align with the overall product vision and user experience goals.
+Optimize applications and data processing workflows for performance, focusing on enhancing speed, efficiency, and reliability across various operating environments
+Continuously evolve our systems through refactoring, introducing best practices, and improving maintainability and observability.
+Document architectural decisions and technical implementations clearly for the team and future maintainers.
+
+Requirements
+
+Bachelor’s degree in Computer Science, Engineering, or a related technical field.
+5+ years of backend development experience, with a strong focus developing user-facing products.
+Solid experience in event-driven applications using messaging technologies like Kafka, RabbitMQ, BullMQ or similar.
+Strong programming skills in Go, Python, Node.js, and/or Rust.
+Deep understanding of microservices architecture and distributed system design.
+Proficiency in both relational (e.g., PostgreSQL, ClickHouse) and non-relational databases (e.g., ScyllaDB, Cassandra,, MongoDB), with a focus on performance and scalability.
+Experience building mission-critical backend services in high-growth, product-driven environments.
+Fluency in Portuguese.
+
+Bonus points
+
+Contributions to open-source or personal projects demonstrating backend architecture or data processing expertise.
+Fluency in English.
+
+Compensation & Benefits
+
+Competitive Compensation
+30 days of paid annual leave
+Education and courses stipend
+Earn a trip anywhere in the world every 4 years
+R$1.035/month for meals allowance
+Health plan with national coverage and without coparticipation
+Dental Insurance: we help you with dental treatment for a better quality of life.
+Wellhub Membership: Access a wide range of gyms and training programs.
+
+… more
+

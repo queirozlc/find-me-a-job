@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "task": "deterministic-resume-gate",
+  "application_id": "p7-group-fullstack",
+  "status": "complete",
+  "completed_at": "2026-09-04T21:18:27+00:00",
+  "artifacts": [
+    "/Users/lucasqueiroz/career/state/p7-group-fullstack-deterministic-gate.json",
+    "/Users/lucasqueiroz/career/state/p7-group-fullstack-review-packet.md"
+  ]
+}

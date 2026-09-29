@@ -1,0 +1,42 @@
+
+⏺ EN is clean. The PT edits never ran because the earlier script crashed first. Running them now.
+
+  Ran 1 shell command 
+  
+⏺ Both files build clean. Viewing both renders against the reference.
+
+  Thought for 3s, read 2 files 
+  
+⏺ Renders match the reference except the role header line and the six Skills lines. Writing the round 2 report.
+
+  Thought for 3s, ran 1 shell command 
+  
+⏺ CLAUDE.md now settles the FAESA separator: ASCII hyphen wins. Updating that line in the report.
+
+  Ran 1 shell command 
+
+⏺ Round 2 done. Report overwritten at ~/career/reports/base-cv-draft.md.
+
+  - Header shape: A, the CV-SPEC item 2 macro verbatim. Raw extraction shows one block per role with the date on the
+    title line, for all four roles and Education. No tabular token in either file.
+  - Markers: 0 in both .tex files and both raw extractions.
+  - Skills: six labelled lines (Languages, Backend, Data, Frontend, Cloud and operations, Testing and AI tooling),
+    same list and font as the reference. All round 1 tokens kept, plus Claude Code | Codex | Agentic workflows. REST
+    now has evidence in the DexCare Auth0 bullet.
+  - One page: yes, EN and PT.
+  - Visual: name, contact line, headers, bullets, indent, and margins match the reference PNG. Two ordered
+    differences: the role header is one | line with no italic title or right-aligned date, and Skills is six short
+    lines with a small gap between them instead of one wrapped line. PNGs are in ~/career/reports/visual/.
+
+  Open items in the report: no bullet carries a number, no AI Experience bullet exists yet, role locations still say
+  Remote, and React Native stays off the CV because it would push React past the 3-appearance cap. The FAESA
+  separator question is closed by the CLAUDE.md clarification. No Analyzer is connected on the canvas, so the rubric
+  run was not requested.
+
+✻ Worked for 3m 37s · done 5:37 PM
+                                             
+─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+❯ 
+─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  Fable 5.1 · lucasqueiroz · ctx 20% · cache 99% · [██░░░░░░░░] 202.3k/1.0M · effort medium                     /rc
+  ⏵⏵ auto mode on (shift+tab to cycle) · ← 10 agents

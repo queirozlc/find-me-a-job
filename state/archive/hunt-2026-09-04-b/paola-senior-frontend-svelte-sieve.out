@@ -1,0 +1,42 @@
+       9 - PDF: `resumes/hunts/2026-09-04-b/paola-senior-frontend-svelte/Lucas-Queiroz-Resume-en.pdf` (1 page,
+          612x792 pt, xdvipdfmx)
+      10 - Raw extraction: `pdftotext Lucas-Queiroz-Resume-en.pdf -` (64 lines)
+     … +265 lines 
+  ⎿  Allowed by auto mode classifier
+     
+⏺ Verdict: BLOCKED at Gate 1.
+
+  - Gate 0 — Parse integrity: PASS, all 8 checks. No ligature damage (office 2, workflow 5, zero U+FB0x codepoints).
+    Four employment blocks segment cleanly. Raw and layout reading order identical. No images, no tables.
+  - Gate 1 — Knockouts: FAIL. Svelte, a stated must-have, has 0 occurrences in the raw extraction and 0 in the .tex.
+    JavaScript and TypeScript PASS. Location PASS. Years of experience PASS but weak. Work authorization, time zone,
+    English level, degree: not stated.
+  - Gate 2 — Retrieval coverage: 64/100, FAIL. Required tokens without Skills plus Experience placement: Svelte.
+    JavaScript 3/3, TypeScript 3/3, Svelte 0/3. Preferred: Node.js 3/3, AWS Lambda 0. Stuffing penalty 0; no token
+    reaches 4 appearances.
+  - Gate 3 — Human scan: 60/100. Lost 15 on the absent target title, 20 on backend-only first bullets in the current
+    role, 5 on posting-mirrored practice terms. 
+   
+  Exact blockers
+    
+  1. Svelte absent. DOSSIER.md carries no Svelte fact, so the Architect cannot place it. This needs a new fact from
+     Lucas or the application is abandoned.
+  2. Four unsupported practice claims reached the document: Agile teams (Skills line and Luizalabs bullet 4),
+     Cross-functional remote teams (Skills line and DexCare bullet 1), fast-paced (Summary), and UX as a Skills
+     token. Clean code is a rewording of the dossier's high-quality code, not a fabrication. Stakeholder 
+     communication is supported.
+  3. The 5+ years claim covers general experience, not frontend. Luizalabs (Jan 2024 - Mar 2026) carries no frontend
+     token, which leaves a 2-year hole in the frontend narrative.
+    
+  Profile Check: every employer, title, and start and end month matches LinkedIn, including both Lippaus sub-roles
+  and the FAESA dates. The profile was not edited.
+    
+  Report: /Users/lucasqueiroz/career/state/paola-senior-frontend-svelte-sieve.report.md
+
+✻ Worked for 5m 17s · done 1:32 PM
+
+─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+❯ 
+─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  Opus 5 · lucasqueiroz · ctx 14% · cache 94% · [█░░░░░░░░░] 137.8k/1.0M · effort high                          /rc
+  ⏵⏵ auto mode on (shift+tab to cycle) · ← 10 agents

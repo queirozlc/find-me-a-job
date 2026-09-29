@@ -1,0 +1,74 @@
+Feed post
+
+Tayyab Piracha
+ • 3rd+
+xFloret Capitals | xABL Funds |
+1m • 
+
+Follow
+
+Oak Street Technologies - Pakistan is expanding its engineering team and we're looking for talented professionals to join us onsite in Islamabad.
+
+If you're an Al/LLM Engineer or Angular Frontend Engineer looking for your next opportunity, we'd love to hear from you.
+
+1. Team Lead - Al
+
+Islamabad, Onsite | 3:00 PM - 12:00 AM
+
+Experience: 4-6 Years
+
+Key Responsibilities:
+
+• Lead and mentor a team of Al Engineers
+• Build and scale Al/LLM features
+• Design multi-agent, RAG, and Al workflow solutions
+• Drive Al initiatives from R&D to production
+• Collaborate with Product, Backend & Frontend teams
+
+What we're looking for:
+
+• 4-6 years of hands-on Al/LLM engineering experience
+• Experience leading or mentoring engineers
+• Strong Python & LLM development skills
+• Hands-on experience with RAG, vector databases & LLM orchestration
+• Experience with LangChain, LangGraph or similar frameworks
+• Understanding of Al security, privacy & responsible Al
+
+2. Frontend Engineer - Angular
+
+Islamabad, Onsite | 3:00 PM - 12:00 AM
+
+Experience: 2-4 Years
+
+Key Responsibilities:
+
+• Develop responsive Angular interfaces
+• Build reusable components and integrate REST APIs
+• Write clean and scalable TypeScript code
+• Troubleshoot Ul and performance issues
+• Collaborate with Product, Design, Backend & QA teams
+
+What we're looking for:
+
+• 2-4 years of professional Angular experience (Angular 19+)
+• Strong TypeScript, JavaScript, HTML & CSS/SCSS skills
+• Good understanding of RxJS & REST APIs
+• Experience with Angular CLI, Git & Ul component libraries
+• Strong problem-solving and communication skills
+
+Interested in joining our team?
+
+Send your updated resume to careers@9ostech.com and mention the position title in the subject line.
+
+Know someone who would be a great fit? Tag them below or share this opportunity with your network.
+
+#Hiring #IslamabadJobs #TechJobs #AIJobs #AlEngineering #LLM #Angular #FrontendDeveloper #SoftwareEngineering #PakistanJobs #TechCareers #EngineeringJobs… more
+
+Like
+
+
+Comment
+
+Repost
+Send
+

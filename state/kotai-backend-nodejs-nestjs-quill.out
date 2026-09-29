@@ -1,0 +1,43 @@
+    23 +- 19:41 Quill wrote the Portuguese CV, PDF extracts, recruiter message, and draft report; verified one page a
+        nd zero Ruby or Rails tokens
+
+• Ran printf 'pages='; pdfinfo resumes/kotai-backend-nodejs-nestjs-pt.pdf | awk '/^Pages:/{print $2}'
+  │ printf 'unverified_markers='; rg -o '\[UNVERIFIED\]' resumes/kotai-backend-nodejs-nestjs-pt.tex | wc -l
+  │ printf 'unverified_lines='; grep -n UNVERIFIED resumes/kotai-backend-nodejs-nestjs-pt.tex | cut -d: -f1 | paste
+  │ … +7 lines
+  └ pages=1
+    unverified_markers=      16
+    … +8 lines (ctrl + t to view transcript)
+    -rw-r--r--@ 1 lucasqueiroz  staff   3.4K Sep  2 19:41 resumes/kotai-backend-nodejs-nestjs-pt.raw.txt
+    -rw-r--r--@ 1 lucasqueiroz  staff   6.8K Sep  2 19:41 resumes/kotai-backend-nodejs-nestjs-pt.tex
+
+─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+• Concluí o /Users/lucasqueiroz/career/resumes/kotai-backend-nodejs-nestjs-pt.tex, /Users/lucasqueiroz/career/
+  resumes/kotai-backend-nodejs-nestjs-pt.pdf, /Users/lucasqueiroz/career/reports/kotai-backend-nodejs-nestjs-
+  message.md e /Users/lucasqueiroz/career/reports/kotai-backend-nodejs-nestjs-draft.md.
+  O PDF tem uma página, quatro seções, cinco blocos e o contato completo.
+  O CV prioriza Node.js, TypeScript, APIs REST, PostgreSQL, filas e serviços distribuídos.
+  UNVERIFIED: 16 marcadores nas linhas 67, 69, 71, 72, 82, 83, 84 e 95.
+  A busca por ruby|rails não encontrou ocorrências no CV ou nas extrações.
+
+• Stop hook (blocked)
+  feedback: Ledger guard: work landed under ~/career/ but these ledgers did not move. Append the log line and update
+  the head before you stop, then finish your reply.
+      - app-brasil-em-dobro-backend-senior.md (Phase: 1-context)
+      - app-brivia-fullstack-pj.md (Phase: 3-gate)
+      - app-ciandt-senior-fullstack.md (Phase: 1-context)
+      - app-conta-simples-engenheira-software-senior.md (Phase: 3-gate)
+      - app-diana-neves-fullstack-314-26.md (Phase: 3-gate)
+      - app-goodway-global-fullstack.md (Phase: 3-gate)
+      - app-indi-node-developer.md (Phase: 1-context)
+      - app-micro1-frontend-specialist.md (Phase: 1-context)
+      - app-techmunity-senior-fullstack-ai.md (Phase: 3-gate)
+    Format: `- HH:MM <what happened>` from `date +%H:%M`. Append, never rewrite. If nothing happened worth logging,
+    touch the ledger and stop again.
+ 
+ 
+› Ask Codex to do anything
+ 
+  gpt-5.6-sol high fast · Context 70% left · Context 30% used · Full Access
+EXIT 0

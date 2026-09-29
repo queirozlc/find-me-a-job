@@ -1,0 +1,42 @@
+
+
+⏺ LinkedIn shows dates that differ from the CV. I verify education next.
+
+  Thought for 2m 15s, read 1 file, ran 5 shell commands 
+
+⏺ Verification is complete. I write the two reports now.
+
+  Thought for 6s, read 1 file, ran 2 shell commands 
+
+⏺ The projected score in the state report was wrong. I correct it.
+
+  Ran 1 shell command 
+
+⏺ Verdict: BLOCKED. Gate 0 passes 8/8. Gate 1 FAILS. Gate 2 is 67/100 FAIL. Gate 3 is 93/100. Two role dates also
+  contradict live LinkedIn.
+ 
+  Fix list, blocking:
+
+  1. .tex line 70: {DexCare}{Jan 2026 - Present} to {DexCare}{Mar 2026 - Present}. LinkedIn reads Mar 2026 - Present 
+     · 7 mos.
+  2. .tex line 82: {Luizalabs}{Jan 2024 - Jan 2026} to {Luizalabs}{Jan 2024 - Mar 2026}. LinkedIn reads Jan 2024 - 
+     Mar 2026 · 2 yrs 3 mos.
+  3. Place DynamoDB in one DexCare Experience bullet. The posting requires relational and non-relational databases.
+     DynamoDB and Redis sit in Skills only, so the non-relational half scores 1 of 3.
+  4. Portuguese fluency. Not fixable from current sources. The posting Requirements state "Fluency in Portuguese."
+     The CV has zero Portuguese tokens, and DOSSIER.md records no Portuguese level. Escalate to Lucas.
+     
+  Non-blocking: cut one React (5 uses) and one multi-tenant (4 uses), a -10 stuffing penalty; AWS has no Experience
+  placement; role gap is 2pt and too tight.
+
+  Also: DOSSIER.md LinkedIn ground truth, captured 2026-09-01, is stale on those two date rows. I did not edit it.
+
+  DONE state/tractian-senior-backend-engineer-sieve.report.md
+
+✻ Churned for 7m 22s · done 10:57 AM
+
+─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+❯ 
+─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  Opus 5 · lucasqueiroz · ctx 13% · cache 98% · [█░░░░░░░░░] 127.9k/1.0M · effort high                          /rc
+  ⏵⏵ auto mode on (shift+tab to cycle) · ← 10 agents

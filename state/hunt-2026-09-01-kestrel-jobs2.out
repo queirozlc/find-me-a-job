@@ -1,0 +1,42 @@
+• Edited ~/career/jobs/hunt-2026-09-01-jobs-raw.md (+1 -0)
+    29  - Posting URL: https://www.linkedin.com/jobs/view/4460629511/
+    30 +- Posting date (calendar): not shown in the retrieved page
+    31  - Posting date / age: `21 hours ago`
+
+─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+• Completed Jobs-tab run.
+
+  Runs executed:
+
+  - ("typescript" or "node.js") AND "senior" AND "latam" — 92
+  - ("typescript" or "node.js") AND "senior" AND "brazil" — 99+
+  - ("typescript" or "node.js") AND "pj" AND "remoto" — 99+
+  - ("golang" or "go") AND "senior" AND "latam" — 25
+  - ("react" or "typescript") AND "contractor" AND "latam" — 76
+  - ("node.js" or "typescript") AND "pj" AND "brazil" — 78
+
+  Raw retained: 1
+
+  - us-direct: 0
+  - br-pj: 0
+  - agency: 1
+
+  Files:
+
+  - /Users/lucasqueiroz/career/jobs/hunt-2026-09-01-jobs-raw.md
+  - /Users/lucasqueiroz/career/keywords/search-log.md
+  - /Users/lucasqueiroz/career/keywords/agency.md
+  - /Users/lucasqueiroz/career/keywords/us-direct.md
+  - /Users/lucasqueiroz/career/keywords/br-pj.md
+  - /Users/lucasqueiroz/career/ATS-KNOWLEDGE.md
+
+  Surface problems: sort was not observable; the PJ/remoto query exposed no Remote filter after date filtering. No
+  auth wall, no applications, and Posts Search was not touched. Resume Architect was not connected for handoff.
+
+─ Worked for 10m 16s ────────────────────────────────────────────────────────────────────────────────────────────────
+ 
+ 
+› Ask Codex to do anything
+ 
+  gpt-5.6-luna high fast · Context 17% left · Context 83% used · Full Access

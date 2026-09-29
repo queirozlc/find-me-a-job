@@ -1,0 +1,66 @@
+CARD
+
+Senior Frontend Software Engineer (Verified job)Senior Frontend Software Engineer 
+TRACTIAN
+São Paulo, SP (Remote)
+
+Be an early applicant
+ · 
+Posted 3 hours ago3 hours ago
+
+
+
+HEADER
+São Paulo, São Paulo, Brazil · Reposted 3 hours ago · Over 100 people clicked apply
+
+DESCRIPTION
+Why join us
+
+TRACTIAN is transforming the industrial world by empowering frontline maintenance workers to achieve more. We’ve fused cutting-edge hardware with innovative software into one powerful platform, disrupting legacy systems and delivering smarter, faster solutions for our clients.
+
+Software at TRACTIAN
+
+The software department at TRACTIAN is at the forefront of innovation, crafting an integrated ecosystem that revolutionizes maintenance and process management. Comprising a dynamic team of experts, the department develops an all-in-one software solution that seamlessly combines predictive maintenance capabilities with a comprehensive Computerized Maintenance Management System (CMMS). This visionary approach empowers maintenance and process teams with a unified platform, enabling them to proactively predict equipment failures, optimize maintenance workflows, and enhance operational efficiency. In daily work the software department drives the convergence of cutting-edge technology and maintenance excellence to propel businesses toward unparalleled success.
+
+What you'll do
+
+As a Senior Frontend Software Engineer, your role will focus on the development and enhancement of key features for our Web applications. You will be responsible for creating and refining features that are both user-centric and technologically advanced, contributing significantly to our product's overall functionality and user experience.
+
+Responsibilities
+
+Architect and develop a robust and scalable frontend platform, ensuring seamless integration with supporting systems and services.
+Lead the design and implementation of a consistent and reusable component library, improving the efficiency and maintainability of our web interfaces.
+Collaborate with backend engineers, UI/UX designers, and product managers to ensure frontend alignment with the overall product strategy.
+Optimize the platform for performance, ensuring fast loading times and a smooth user experience across various devices and browsers.
+Regularly review and update the frontend architecture to keep up with emerging technologies and industry trends.
+
+Requirements
+
+Bachelor's degree in Computer Science or a related field.
+Over 5 years of experience in front-end development, with a minimum of 3 years dedicated to React.
+Deep understanding of React principles, including but not limited to hooks, context, and component lifecycle.
+Experience in implementing and maintaining state management solutions (Redux, Zustand, Jotai).
+Strong knowledge in web performance optimization, responsive design, and cross-platform compatibility.
+Experience in implementing caching strategies or asynchronous state management for high data load applications.
+Experience in developing applications for managing complex workflows, such as ERPs.
+Proficiency in React testing frameworks like Jest/Vitest.
+
+Bonus Points
+
+Experience in creating offline applications or desktop applications using Electron/Tauri.
+Experience in data processing using Web Workers.
+Familiarity with modern frontend build tools and pipelines (Vite, pnpm, Rollup, Turborepo).
+
+Compensation & Benefits
+
+Competitive Compensation
+30 days of paid annual leave
+Education and courses stipend
+Earn a trip anywhere in the world every 4 years
+R$1.035/month for meals allowance
+Health plan with national coverage and without coparticipation
+Dental Insurance: we help you with dental treatment for a better quality of life.
+Wellhub Membership: Access a wide range of gyms and training programs.
+
+… more
+

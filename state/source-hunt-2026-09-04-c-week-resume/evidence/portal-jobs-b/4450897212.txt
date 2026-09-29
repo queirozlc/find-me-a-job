@@ -1,0 +1,67 @@
+CARD
+
+Senior Fullstack EngineerSenior Fullstack Engineer
+CodiLime
+Brazil (Remote)
+
+$3,700/month - $4,800/month
+Viewed
+ · 
+Posted 3 days ago3 days ago
+
+
+
+HEADER
+Brazil · Reposted 3 days ago · Over 100 people clicked apply
+
+DESCRIPTION
+Get to know us betterCodiLime is a software and network engineering industry expert and the first-choice service partner for top global networking hardware providers, software providers and telecoms. We create proofs-of-concept, help our clients build new products, nurture existing ones and provide services in production environments. Our clients include both tech startups and big players in various industries and geographic locations (US, Japan, Israel, Europe).While no longer a startup - we have 250+ people on board and have been operating since 2011 we’ve kept our people-oriented culture. Our values are simple:
+Act to deliver.
+Disrupt to grow.
+Team up to win.
+
+The project and the teamYou will work on a workplace management platform trusted by enterprise customers to manage offices, desks, meeting rooms, visitors, parking, and shared workplace resources.You will be a hands-on Lead Engineer, responsible for setting the technical direction and helping build the next generation of the platform. You’ll join a small team and take ownership of the stack from day one, spending most of your time writing production code while also owning architecture, cloud infrastructure, engineering standards, and overall technical direction.
+What else you should know:
+We use Agile methodology
+The team operates within a startup environment
+The client is based in the US
+
+We work on multiple interesting projects at the time, so it may happen that we’ll invite you to the interview for another project, if we see that your competencies and profile are well suited for it.
+B2B Contract: 3 700 - 4 800 USD/month
+Your role
+Own feature delivery end to end across frontend, backend, APIs, databases, and infrastructure
+Own technical direction and architecture while remaining a hands-on contributor
+Build workplace experiences spanning desk booking, room scheduling, visitor management, analytics, and interactive floorplans
+Design and maintain integrations with Google Workspace, Microsoft 365, Slack, Teams, and Stripe
+Operate and improve GCP infrastructure: deployments, monitoring, performance, security, and reliability
+Modernize an established enterprise platform while maintaining the reliability the customers depend on
+Work directly with enterprise customers to understand requirements and deliver quickly
+Define engineering standards, mentor engineers, and build the team as we hire
+You’ll have broad ownership across the platform and the autonomy to improve systems where you see opportunities
+
+Do we have a match?As a Senior Fullstack Engineer, you must meet the following criteria:
+7+ years building production SaaS applications
+Strong experience with React and TypeScript
+Strong experience with Node.js
+Working comfort in Python and Django
+Experience building and operating multi-tenant SaaS in production, on MySQL or a comparable relational database
+Strong grounding in secure API design
+Experience operating production cloud infrastructure (we use Google Cloud Platform, though comparable AWS or Azure experience transfers well)
+A track record of owning production incidents from alert through resolution
+Hands-on approach with comfort moving between frontend, backend, infrastructure, and customer conversations
+Experience incorporating LLMs or AI capabilities into production applications
+Good knowledge of English (minimum C1 level)
+
+Beyond the criteria above, we would appreciate the following nice-to-haves:
+Google Workspace APIs, Microsoft Graph, or other enterprise collaboration platforms
+Enterprise scheduling, workplace management, or facilities software
+Startup or early-stage company experience
+
+More reasons to join us
+Flexible working hours and approach to work: fully remotely, in the office or hybrid
+Professional growth supported by internal training sessions and a training budget
+Solid onboarding with a hands-on approach to give you an easy start
+A great atmosphere among professionals who are passionate about their work
+The ability to change the project you work on
+… more
+

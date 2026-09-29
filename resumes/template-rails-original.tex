@@ -1,0 +1,112 @@
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+% Font options
+\usepackage[sfdefault]{roboto}  % Sans-serif font
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Section formatting
+\titleformat{\section}{\Large\bfseries\scshape\raggedright}{}{0em}{}[\titlerule]
+
+% Ensure PDF is machine readable
+\pdfgentounicode=1
+
+% Custom commands
+\newcommand{\resumeItem}[1]{\item\small{#1}}
+\newcommand{\resumeSubheading}[4]{
+\vspace{-1pt}\item
+  \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & #2 \\
+    \textit{#3} & \textit{#4} \\
+  \end{tabular*}\vspace{-7pt}
+}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\newcommand{\resumeSubHeadingList}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+
+\begin{document}
+
+\begin{center}
+  \textbf{\Huge Lucas Queiroz} \\
+  \small +55 (27) 99203-0170 $|$ \href{mailto:sepulchrolucas@gmail.com}{sepulchrolucas@gmail.com} $|$ 
+  \href{https://linkedin.com/in/queiroz-lucas}{linkedin.com/in/queiroz-lucas} $|$
+  \href{https://github.com/queirozlc}{github.com/queirozlc}
+\end{center}
+
+\section*{professional summary}
+Software Engineer with solid experience in high-scale back-end and fullstack environments, specializing in Ruby on Rails, React, and Node.js. Proven track record of contributing to the Ruby on Rails core framework and community gems. Expert in architecting microservices and scalable systems, integrating AI-driven agentic workflows to accelerate development cycles. Currently focused on engineering mission-critical fiscal systems for one of Brazil’s largest e-commerce retailers while continuing to foster open-source innovation.
+
+\section{technical skills}
+\resumeSubHeadingList
+\resumeItem{Ruby on Rails \textbar{} React \textbar{} Node JS \textbar{} ActiveRecord \textbar{} Hotwire \textbar{} TypeScript \textbar{} PostgreSQL \textbar{} Redis \textbar{} Docker \textbar{} Kubernetes \textbar{} GCP \textbar{} RabbitMQ \textbar{} Sidekiq \textbar{} BullMQ \textbar{} Agentic IDEs (Cursor/Windsurf) \textbar{} LLM Integration \textbar{} CI/CD}\resumeSubHeadingListEnd
+
+\section{projects}
+\resumeSubHeadingList
+  \resumeSubheading
+      {Open Source Contributions}{}
+      {Ruby on Rails Framework Ecosystem}{}{}
+      \resumeSubHeadingList
+          \resumeItem{\textbullet\ Regularly contribute to the Ruby on Rails framework and associated gems to improve performance and developer experience for the global Ruby community.}
+      \resumeSubHeadingListEnd
+\resumeSubHeadingListEnd
+
+\section{work experience}
+\resumeSubHeadingList
+  \resumeSubheading
+      {LuizaLabs}{Jan 2024 - Present}
+      {Mid-Level Software Engineer}{Brazil}
+      \resumeSubHeadingList
+          \resumeItem{Worked on large-scale e-commerce tax and fiscal systems supporting high-volume transactions.}
+          \resumeItem{\textbullet\ Distributed tax microservices built and maintained using Ruby on Rails, React, and Golang, ensuring reliability and compliance with Brazilian fiscal regulations.}
+          \resumeItem{\textbullet\ Asynchronous service orchestration implemented via Sidekiq to process invoices and communicate with State Departments of Finance, improving throughput and fault tolerance.}
+          \resumeItem{\textbullet\ Internal dashboards and backoffice tools developed with Rails and React JS to support operational and fiscal workflows with better visibility and usability.}
+          \resumeItem{\textbullet\ Cloud-native deployments executed using Docker and Kubernetes on GCP, enabling scalable and resilient production environments.}
+      \resumeSubHeadingListEnd
+  \resumeSubheading
+      {Lippaus}{May 2021 -- Jan 2024}
+      {Entry-Level Fullstack Software Engineer}{Brazil}
+      \resumeSubHeadingList
+          \resumeItem{Contributed to scaling a fast-growing startup in the beverage distribution sector.} 
+          \resumeItem{Development and maintenance of internal back-office and dashboard interactive control applications using Ruby on Rails, supporting operational workflows and administrative processes.}
+          \resumeItem{\textbullet\ Multi-tenant platform development using Node.js, PostgreSQL, React, and React Native to support nationwide retailer expansion.}
+          \resumeItem{\textbullet\ Asynchronous job processing designed with BullMQ to handle high-volume operations such as orders, notifications, and integrations.}
+          \resumeItem{\textbullet\ Customer-facing features and internal tools delivered end-to-end, balancing business requirements with technical constraints.}
+          \resumeItem{\textbullet\ Project leadership and stakeholder communication, directly collaborating with customers and internal teams to define and deliver solutions.}
+      \resumeSubHeadingListEnd
+
+\section{education}
+\resumeSubHeadingList
+  \resumeSubheading
+      {FAESA}{Vitória, ES}
+      {Bachelor’s Degree in Information Systems}{Feb 2022 -- Dec 2025}
+\resumeSubHeadingListEnd
+
+\end{document}

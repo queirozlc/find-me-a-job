@@ -1,0 +1,43 @@
+  │ … +5 lines
+  └ warning: roboto.sty:150:
+    Requested font "[Roboto-Regular.otf]/OT" at 9.99997pt
+    … +300 lines (ctrl + t to view transcript)
+    note: Writing `/Users/lucasqueiroz/career/resumes/base-pt.pdf` (27.76953125 KiB)
+    note: Skipped writing 2 intermediate files (use --keep-intermediates to keep them)
+
+─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+• Both files built successfully.
+  I am checking page count, extracted contact data, section headers, employment blocks, forbidden tokens, and bullet
+  count.
+  I will append the required log line only after all checks pass.
+
+• Ran 2 commands · ctrl + t to view transcript
+
+• Edited ~/career/state/hunt-2026-09-02-b.md (+1 -0)
+    19  - 18:21 Kestrel dispatched: jobs-tab, past-24h, 5 queries, capture-only. Output state/hunt-2026-09-02-b-kestr
+        el-jobs.out
+    20 +- 18:22 rewrote both base CV summaries and all Experience bullets in the 2026-09-02 voice, rebuilt both PDFs,
+         and verified one page, required content, and forbidden-token checks
+
+─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+• base-en.tex: One page, yes. Summary: I am a Senior Software Engineer with 5+ years building TypeScript, Node.js,
+  React, and Go systems. I build event-driven healthcare scheduling, Epic EMR integrations, and multi-tenant APIs on
+  AWS. I previously built Magazine Luiza's electronic-invoicing microservices. I integrate AI-driven agentic
+  workflows into daily delivery.
+  base-pt.tex: One page, yes. Summary: Eu sou Senior Software Engineer com mais de 5 anos construindo sistemas
+  backend e fullstack em TypeScript, Node.js, React e Go. Eu construo serviços de agendamento em saúde para uma
+  empresa dos EUA: reservas orientadas a eventos, integração com o EMR Epic e APIs multi-tenant na AWS. Antes, eu
+  construí os microsserviços fiscais da emissão de notas eletrônicas no Magazine Luiza. Eu integro fluxos agênticos
+  com IA para acelerar o desenvolvimento.
+  Bullets rewritten: 16 per file. Unconverted bullets: none.
+  Contact blocks, headers, and employment blocks passed extraction. UNVERIFIED, Ruby, and Rails counts are zero.
+
+─ Worked for 2m 25s ─────────────────────────────────────────────────────────────────────────────────────────────────
+ 
+ 
+› Ask Codex to do anything
+ 
+  gpt-5.6-sol high fast · Context 75% left · Context 25% used · Full Access
+EXIT 0

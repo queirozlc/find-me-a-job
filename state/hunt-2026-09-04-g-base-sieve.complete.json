@@ -1,0 +1,9 @@
+{
+  "schema_version": 1,
+  "task_id": "hunt-2026-09-04-g-base-sieve",
+  "status": "complete",
+  "completed_at": "2026-09-04T21:17:11+00:00",
+  "artifacts": [
+    "/Users/lucasqueiroz/career/state/hunt-2026-09-04-g-base-sieve.report.md"
+  ]
+}

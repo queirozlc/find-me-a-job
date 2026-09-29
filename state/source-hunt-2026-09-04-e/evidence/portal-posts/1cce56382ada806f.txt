@@ -1,0 +1,49 @@
+Feed post
+
+Chip Biehn
+  • 3rd+
+Technical Recruiter, Talent Acquisition @ Comcast
+2m • 
+
+Follow
+
+🚀 Comcast Is Hiring: Software Development Engineer in Test (SDET)
+Are you passionate about delivering high-quality software and building scalable test automation solutions? Comcast is looking for a Software Development Engineer in Test (SDET) to join our team in Philadelphia, PA.
+
+What We're Looking For
+✅ 3+ years of experience in manual and automated testing for web and mobile applications
+✅ Strong expertise in:
+Test planning, test case design, execution, and defect management
+API testing using Postman, Bruno, or similar tools
+Automation frameworks such as WebdriverIO, Selenium, or equivalent
+JavaScript and/or TypeScript fundamentals
+✅ Proven analytical, troubleshooting, and debugging skills
+✅ Strong communication and collaboration skills with a quality-first mindset
+
+Bonus Points For Experience With
+⭐ Playwright
+⭐ Mobile automation frameworks (Appium, XCUITest)
+⭐ CI/CD pipelines and automated test integration
+⭐ Git and version control best practices
+⭐ Agile/Scrum development environments
+⭐ Performance and security testing concepts
+
+📍 Location: Philadelphia, PA
+
+At Comcast, you'll have the opportunity to work on products used by millions of customers while helping shape innovative digital experiences through quality engineering and automation.
+
+🔗 Apply Here: https://lnkd.in/gtyRWAdM
+
+📩 Feel free to connect with me directly if you'd like to learn more about the role or discuss whether it may be a fit for your background.… more
+
+Software Development Engineer in Test (SDET) Job at Comcast in Comcast CorporationSoftware Development Engineer in Test (SDET) Job at Comcast in Comcast Corporation
+jobs.comcast.com
+
+Like
+
+
+Comment
+
+Repost
+Send
+

@@ -1,0 +1,53 @@
+{
+  "workers": [
+    {
+      "name": "portal-jobs-a",
+      "portal": "Jobs Search",
+      "surface": "jobs"
+    },
+    {
+      "name": "portal-jobs-b",
+      "portal": "Jobs Search #2",
+      "surface": "jobs"
+    },
+    {
+      "name": "portal-posts",
+      "portal": "Post Search",
+      "surface": "posts"
+    }
+  ],
+  "queries": {
+    "jobs": [
+      "(\"typescript\" or \"node.js\") AND \"senior\" AND \"latam\"",
+      "(\"typescript\" or \"javascript\") AND \"senior\"",
+      "(\"typescript\" or \"javascript\" or \"node\") AND \"senior\" AND \"brazil\"",
+      "(\"react\" or \"typescript\") AND \"senior\" AND \"latam\"",
+      "(\"golang\" or \"go\") AND \"senior\" AND \"latam\"",
+      "(\"node.js\" or \"typescript\") AND \"contractor\" AND \"latam\"",
+      "(\"react\" or \"typescript\") AND \"remote\" AND \"brazil\"",
+      "(\"node.js\" or \"react\") AND \"vaga\" AND \"pj\"",
+      "(\"typescript\" or \"node.js\") AND \"contratando\" AND \"remoto\"",
+      "(\"typescript\" or \"node.js\") AND (\"mid-level\" or \"pleno\") AND (\"latam\" or \"brazil\")"
+    ],
+    "posts": [
+      "(\"typescript\" or \"node.js\") AND \"hiring\" AND \"latam\"",
+      "(\"typescript\" or \"javascript\") AND \"hiring\"",
+      "(\"typescript\" or \"javascript\" or \"node\") AND \"hiring\" AND \"brazil\"",
+      "(\"react\" or \"typescript\") AND \"contractor\" AND \"remote\"",
+      "(\"node.js\" or \"react\") AND \"vaga\" AND \"pj\"",
+      "(\"typescript\" or \"node.js\") AND \"contratando\" AND \"remoto\"",
+      "(\"golang\" or \"go\") AND \"hiring\" AND \"latam\"",
+      "(\"react\" or \"typescript\") AND \"vaga\" AND \"remoto\"",
+      "(\"node.js\" or \"typescript\") AND \"contractor\" AND \"brazil\"",
+      "(\"typescript\" or \"node.js\") AND (\"mid-level\" or \"pleno\") AND (\"latam\" or \"brazil\")"
+    ]
+  },
+  "blocklist": [
+    "BairesDev"
+  ],
+  "limits": {
+    "cards_per_query": 5,
+    "command_timeout_seconds": 30,
+    "settle_seconds": 1.5
+  }
+}

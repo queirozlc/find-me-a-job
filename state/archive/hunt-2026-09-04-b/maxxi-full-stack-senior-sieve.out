@@ -1,0 +1,42 @@
+  ┌─────────────────────────────┬────────────────┐
+  │            Gate             │     Result     │
+  ├─────────────────────────────┼────────────────┤
+  │ Gate 0 — Parse integrity    │ PASS, 8 of 8   │
+  ├─────────────────────────────┼────────────────┤
+  │ Gate 1 — Knockouts          │ FAIL           │
+  ├─────────────────────────────┼────────────────┤
+  │ Gate 2 — Retrieval coverage │ 54 / 100, FAIL │
+  ├─────────────────────────────┼────────────────┤
+  │ Gate 3 — Human scan         │ 88 / 100       │
+  └─────────────────────────────┴────────────────┘
+  
+  Blocking defects:
+
+  1. Five required posting tokens are absent from the whole document: Nest.js, docker-compose, Agile, Scrum, Kanban.
+     Zero occurrences each. DOSSIER.md supports none. Not fixable by writing; needs Lucas or abandonment.
+  2. Entity type absent. The posting contracts in Pessoa Jurídica. The extraction has zero Pessoa Jurídica, PJ, CNPJ.
+     DOSSIER.md supports the fact, so this one is fixable today. Same precedent as
+     reports/brivia-fullstack-pj-gate.md.
+  3. arquitetura de software has Habilidades placement only, 1 of 3 points. The single required-token failure the
+     Architect can fix from supported facts.
+     
+  Unsupported claims, reported not fixed:
+  
+  - Git: DOSSIER.md never names it. Quill's basis is the GitHub URL and .git on disk, both excluded. LinkedIn does
+    not name it either. Earns 3 required points off no dossier support.
+  - prompt engineering: DOSSIER.md fixes the AI token set at Claude Code | Codex | Agentic workflows. Relabelling
+    shared rules as prompt engineering is inference.
+  
+  LinkedIn verified through the Profile Check portal, read-only: all four employers, all four titles, all five date
+  pairs identical, ASCII hyphen throughout.
+    
+  Report: /Users/lucasqueiroz/career/state/maxxi-full-stack-senior-sieve.report.md, copied to
+  /Users/lucasqueiroz/career/reports/maxxi-full-stack-senior-gate.md per the role file.
+
+✻ Worked for 8m 37s · done 1:10 PM
+
+─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+❯ 
+─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  Opus 5 · lucasqueiroz · ctx 15% · cache 99% · [█░░░░░░░░░] 151.1k/1.0M · effort high                          /rc
+  ⏵⏵ auto mode on (shift+tab to cycle) · ← 10 agents

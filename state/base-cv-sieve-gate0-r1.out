@@ -1,0 +1,42 @@
+     reads them, a parser indexes them. Correct for the base artifact, disqualifying for anything sent.
+  2. JavaScript, SQL, REST, Swagger, CI/CD, Vitest, Jest appear in Skills with no Experience evidence, both files.
+     RUBRIC Gate 2 step 4 costs 5 points each, a 35-point standing deduction. Add a true bullet or remove the token.
+  3. Gate 3.4 numbers are blocked on Lucas, not on you. Put them in the DexCare bullets when he supplies them; those
+     are the only unmarked ones.
+     
+  Three questions are recorded in the report, not asked: the FAESA separator conflict, whether the DexCare/Luizalabs
+  location should carry the employer city instead of Remote, and whether English section headers over Portuguese body
+  text in base-pt.pdf are accepted.
+  
+✻ Cogitated for 4m 35s · done 5:13 PM
+
+❯ Two tasks, grade only, never edit.                                                                                 
+                                                                                                                     
+  1. Re-run Gate 0 (all 8 checks) on the rebuilt ~/career/resumes/base-en.pdf and base-pt.pdf. Quill rebuilt them    
+  for visual parity with ~/career/resumes/reference-visual.pdf using the template tabular* header (shape C), on      
+  Lucas's instruction. Report the exact parser cost: which checks fail, and what a parser sees per role. RUBRIC Gate 
+  0.4 is now case-insensitive and allows PT headers (Resumo, Habilidades, Experiência, Formação). Report Gate 2      
+  unevidenced-token deductions and Gate 3 score as before. Write ~/career/reports/base-cv-gate0-r1.md.               
+  2. LinkedIn cross-check. A portal named 'Profile Check' is connected to you, pointed at                            
+  https://www.linkedin.com/in/queiroz-lucas/. Use maestri portal snapshot / text to read the live Experience and     
+  Education sections. Compare every company, title and date on both CVs against the live profile character for       
+  character, and against DOSSIER 'LinkedIn ground truth'. Report every mismatch. Read only; never edit the profile,  
+  never click anything except expand/show-more controls.                                                             
+     If the portal shows a login, checkpoint or authwall page: stop on that task, do not enter any credential, and   
+  report 'AUTH WALL' with the URL from maestri portal info. Do not retry.                                            
+                                                                                                                     
+  Reply with: Gate 0 verdict per file, the parser cost summary, the LinkedIn mismatch list or AUTH WALL. Record      
+  questions in the report, do not ask.                                                                               
+
+  Running Gate 0 checks on rebuilt PDFs
+  ⎿  $ SP=/private/tmp/claude-501/-Users-lucasqueiroz-career--maestri-roles-6bee8897-5a5e-4fc7-b811-a7beae398d68/544c
+     691b-c06b-4e9e-8ccf-894a090cd4f7/scratchpad
+     awk 'NR>=201 && NR<=268 {printf "%3d|%s|\n",NR,$0}' $SP/li-main2.txt
+
+✻ Fiddle-faddling… (1m 37s · ↓ 3.5k tokens · thinking with high effort)
+                                                                                                   ● high · /effort
+─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+❯ 
+─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  Opus 5 · lucasqueiroz · ctx 16% · cache 99% · [█░░░░░░░░░] 156.9k/1.0M · effort high                          /rc
+  ⏵⏵ auto mode on (shift+tab to cycle) · ← 10 agents

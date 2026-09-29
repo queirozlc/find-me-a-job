@@ -1,0 +1,42 @@
+Feed post
+
+Sharon M.
+  • 2nd
+People & Talent Management  | HR Management | IT Industry | HR Business Partner | HRBP | People Experience Partner | Retention Specialist | IT Recruiter | Human Resources & Technology | Global Recruitment
+2h • 
+Connect
+
+🚀 We’re hiring Senior Go Engineers!
+Are you a backend engineer who loves building scalable systems with Go? Or a fullstack engineer who’s strongest on the backend but can also jump into React?
+
+At Kake, we’re currently looking for talented engineers for two exciting opportunities:
+
+💻 Senior Go Engineer
+- Strong hands-on experience with Go/Golang.
+- Experience building scalable backend systems.
+- Solid background with distributed systems and cloud technologies.
+- Comfortable working with technologies like Kafka, SQS, Airflow, Snowflake, or MongoDB.
+
+⚡ Senior Fullstack Engineer – Go + React
+- Strong Go/Golang backend experience.
+- Roughly 80% backend / 20% frontend.
+- Experience with React, Next.js, and/or GraphQL.
+- Background working with distributed systems, data platforms, and scalable APIs.
+
+🌎 Remote | LATAM
+💰 Paid in USD
+
+If you're interested—or know someone who would be a great fit— apply here: https://kake.co/jobs
+
+#Hiring #Go #Golang #React #NextJS #SoftwareEngineering #BackendEngineering #Fullstack #LATAM #RemoteJobs… more
+
+8 reactions8
+
+Like
+
+
+Comment
+
+Repost
+Send
+

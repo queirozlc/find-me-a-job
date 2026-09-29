@@ -1,0 +1,42 @@
+  copy base-en preamble byte-for-byte, including English babel, and remove Spanish percent override. Keep the        
+  Spanish body and required headings. Change only the two role location labels Remoto to literal Remote, as base-en  
+  and CLAUDE rule3 require. This retains Spanish content without changing the approved layout. Rebuild and verify    
+  Spanish accents/headers, exact 15% etc, sixteen bullets and required tokens. Do not edit scripts or bases. Write   
+  new report state/mfs-react-developer-quill-fix1.report.md and sentinel                                             
+  state/mfs-react-developer-quill-fix1.complete.json task-id mfs-react-developer-quill-fix1 using worker_sentinel.py 
+  with tex/pdf/note/report. No grade or delegate. Return report path.                                                
+    
+⏺ I will splice the base-en preamble byte-for-byte onto the Spanish body, switch the two Remoto labels to Remote,
+  rebuild, and verify.
+
+  Ran 1 shell command 
+
+⏺ All checks pass. Now the fix report and sentinel.
+
+  Ran 1 shell command 
+
+⏺ Fix done. Report path: /Users/lucasqueiroz/career/state/mfs-react-developer-quill-fix1.report.md
+
+  What changed:
+  - Preamble replaced byte for byte with the base-en.tex preamble through \begin{document}. English babel restored.
+    Spanish babel line and the \% override removed. diff against base-en is empty.
+  - DexCare and Luizalabs locations now print Remote. Lippaus keeps Vitória, ES, Brazil.
+
+  Verified after rebuild:
+  - Build exit 0. Two pages. Break before the Lippaus entry-level block. No block splits.
+  - Spanish accents and headings survive raw extraction: RESUMEN, HABILIDADES, IDIOMAS, EXPERIENCIA, EDUCACIÓN,
+    Construí, Portugués.
+  - Metrics print as 15%, 25%, 7%, 33%, 20%, 18%, 26%, once each, no space.
+  - 16 of 16 bullets. All 16 required tokens still in Habilidades and one bullet. Caps at 3 held.
+  - Zero Ruby, Rails, UTC, GMT, .NET, MoQ, NUnit tokens.
+     
+  Sentinel state/mfs-react-developer-quill-fix1.complete.json written and verified. Application note unchanged. Not
+  graded, not submitted, no base or script edits.
+
+✻ Crunched for 46s · done 6:28 PM
+
+─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+❯ 
+─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  Fable 5.1 · lucasqueiroz · ctx 13% · cache 98% · [█░░░░░░░░░] 125.9k/1.0M · effort medium                     /rc
+  ⏵⏵ bypass permissions on (shift+tab to cycle) · ← 10 agents

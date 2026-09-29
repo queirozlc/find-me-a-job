@@ -1,0 +1,67 @@
+Feed post
+
+4TRIX IT
+17h • 
+
+Follow
+
+🚀 We're Hiring:  Power Apps / Canvas Apps Full-Stack Developer (Remote | LATAM)
+
+We're looking for talented Power Apps / Canvas Apps Developers across LATAM to join a global project. If you have hands-on experience with Power Platform, Dataverse, and building business applications, plus the ability to work with international teams in English, let's talk!
+
+📍 Location: Remote (LATAM only)
+ 🌎 Work Model: 100% Remote
+ 🗣️ English: Intermediate to Advanced (required)
+
+About the Role
+As a Power Apps / Canvas Apps Full-Stack Developer, you will be responsible for designing, developing, and supporting enterprise business applications using Microsoft Power Platform and modern development technologies.
+You will work throughout the entire application lifecycle, from requirements gathering and solution design to development, deployment, and production support.
+
+🎯 Responsibilities
+Design, development, and support of scalable business applications using Power Apps, Dataverse, and Microsoft Power Platform. Experience translating business requirements into technical solutions, developing integrations, participating in architecture, testing and deployments, troubleshooting issues, and collaborating with global teams while following ALM and development best practices.
+
+Required Qualifications
+Looking for professionals with hands-on experience in Power Apps Canvas Apps, Dataverse, and Microsoft Power Platform, including data modeling, relationships, security, and the delivery of enterprise-grade business applications.
+
+Experience with one or more of the following:
+JavaScript
+TypeScript
+React
+HTML/CSS
+C# / .NET
+Node.js
+
+Understanding of application architecture, authentication, authorization, and security best practices
+Experience with Git, Azure DevOps, or similar source control tools
+Communication
+Intermediate to Advanced English
+Comfortable participating in daily meetings and collaborating directly with international teams and customers
+Strong problem-solving and communication skills
+
+✨ Nice to have experience with Power Fx, Power Automate, REST APIs, Azure Services, SharePoint, SQL Server, and Dataverse integrations, as well as knowledge of Model-Driven Apps, PCF, Power Pages, Dynamics 365, Copilot Studio, ALM, Governance, and Microsoft Power Platform certifications.
+
+What We're Looking For
+Analytical and solution-oriented mindset
+Self-driven professional capable of working independently
+Ownership mentality and accountability
+Strong collaboration skills
+Experience working in Agile/Scrum environments
+Ability to work effectively with distributed teams across different countries
+Experience Required
+4+ years of software development experience
+2+ years of hands-on Microsoft Power Platform experience
+Proven experience delivering business applications using Canvas Apps and Dataverse
+
+📩 How to Apply
+Send your resume in English and salary expectations to: recrutamento@4trixit.com.br… more
+Bruno Servulo and 6 others reactedBruno Servulo and 6 others
+2 reposts2 reposts
+
+Like
+
+
+Comment
+
+Repost
+Send
+

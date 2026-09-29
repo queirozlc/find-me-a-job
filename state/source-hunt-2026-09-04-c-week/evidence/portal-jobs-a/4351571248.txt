@@ -1,0 +1,51 @@
+CARD
+
+Software Engineer II (Verified job)Software Engineer II 
+Teachable
+Brazil (Remote)
+
+Viewed
+ · 
+Posted 5 days ago5 days ago
+
+
+
+HEADER
+Brazil · Reposted 5 days ago · Over 100 people clicked apply
+
+DESCRIPTION
+What is Teachable?Teachable is the platform for experts and businesses who take education seriously. In a world where anyone can ask AI for information, we're the home for those who educate with purpose, modernity, and humanity. We help experts and businesses scale their impact and operations through courses, coaching, and digital downloads that students actually love. From a finance expert teaching Python for investment analysis to a multilingual coach offering business Spanish for executives, Teachable powers human-led learning that drives student trust, connection, and results. With a sleek, intuitive interface and AI as a time-saving partner, the platform enables transformative education rooted in real-world experience. Teachable experts have lived it—that's why they teach it.Are you ready to join a dynamic, cross-cultural team at an exciting turning point in our company’s journey? Part of the global Hotmart Company portfolio, whose platforms have helped creators, experts, and businesses earn more than $10 billion, Teachable continues to cement itself as a true industry leader. Together, Teachable and Hotmart are delivering market-leading products that prioritize student outcomes, business growth, and flexibility. If you have big ideas, relish the chance to challenge convention, and deeply believe in the power of real-world learning to shape the future, we want you on our team!  About your TeamThe commerce pod manages all aspects of payment processing, financial transactions, and third-party integrations on a global scale. We ensure the payment platform remains operational, support diverse global payment methods, and continuously modernize integrations to enhance efficiency and reliability worldwide.In this position, you will work remotely with Teachable’s US-based teams as well as Hotmart employees based in Belo Horizonte and São Paulo. We are hiring talented engineers in Brazil. What is the role?We’re looking to bring on a Software Engineer II with full-stack (front-end leaning OR only front-end) experience who is curious, action-oriented with a growth mindset to join our team. You will be responsible for writing, testing, and deploying Javascript and Ruby code. Breaking down epics into smaller user stories and tasks. Participating in team sprint rituals (stand-up, planning, refinement, retro). On our teams, everyone has the opportunity to share ideas, bring new solutions, and discuss them with other well-experienced engineers. We expect all team members to contribute to our collaborative team culture. In this role, you’ll be able to have a direct impact on projects in an area that is customer-focused, using creativity to navigate through ambiguity. You will partner with a product engineering team of engineers, Product Designer and Product Manager. 
+You will report to the Engineering Manager.We are hiring talented engineers in Brazil. You'll be working on a team of U.S. and Brazil-based technologists. This contract is CLT and paid in $BRL. What You'll Do:
+Write secure, efficient, and high-quality code that adheres to best practices, such as encryption of sensitive data and input validation.
+Develop scalable and reusable code that promotes efficient development, such as creating reusable libraries and components.
+Identify areas for improvement in the codebase and take ownership of small-to-medium-sized systems, such as fixing bugs and optimizing performance.
+Quickly understand documentation and utilize testing techniques, such as unit testing, integration testing, and stress testing, to ensure high-quality code.
+Communicate effectively with team members and stakeholders, such as providing regular status updates and actively seeking feedback.
+Adapt to roadblocks and proactively resolve issues, such as debugging and troubleshooting.
+Align work with customer value by using feedback to prioritize features.
+Balance priorities and seek guidance when needed to make informed decisions.
+About you: 
+2+ years of hands-on full-stack experience building production web applications in an agile, startup environment.
+Proficiency in JavaScript, React, and CSS.  Bonus points for TypeScript and NextJS.
+Familiarity or willingness to work in a full stack capacity.
+Fluency in English 
+An appreciation for iteration, performance measurement, and optimization.
+A passion for solving complex technical problems in both new and legacy codebases.
+A mindset of leaving the codebase better than how you found it.
+Experience collaborating with multiple team members with varying experience levels to design and implement technical projects.
+Ability to work and problem-solve independently.
+A humble, collaborative, customer-focused, and highly curious approach to problem-solving.
+Who upholds Teachable Product Engineering values, including working as part of a diverse team:
+Team oriented
+Trust
+Bias for action
+Continuous improvement
+Quick iteration
+Solve customer problems
+Outcome oriented
+Nice to have:
+Work on remote, distributed teams
+Worked with teams based in different countries
+Knowledge in Ruby on Rails, Go, or any backend languages
+Additional Details:At Teachable, we are committed to providing fair and competitive pay (using market data to inform our pay bands), rewarding high performance, and ensuring all employees have the opportunity and ability to impact Teachable’s overall company value. Base salaries will be reviewed at regular intervals throughout the year, typically following performance review cycles currently conducted annually or in conjunction with a promotion. While Teachable maintains our NY office for local employees to use, we operate as a remote-first culture in order to give our employees added flexibility. In order to maintain connection and create a community beyond the screen, Teachable holds in-person events throughout the year, where employees and teams can come together for bonding, strategic alignment, goal-setting, and celebrations! Teachable encourages individuals from a broad diversity of backgrounds to apply for positions. We are an equal opportunity employer, meaning we're committed to a fair and consistent interview process. Please tell us in your application if you require an accommodation to apply for a job or to perform your job.… more
+

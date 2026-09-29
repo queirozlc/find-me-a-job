@@ -1,0 +1,42 @@
+      pixelHeight: 1056
+
+• Viewed Image
+  └ ~/career/tmp/pdfs/charterup-en-96.png
+
+• Ran 2 commands · ctrl + t to view transcript
+
+─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+• Completed the CharterUP package:
+
+  - /Users/lucasqueiroz/career/resumes/charterup-senior-fullstack-en.tex and /Users/lucasqueiroz/career/resumes/
+    charterup-senior-fullstack-en.pdf
+
+  - /Users/lucasqueiroz/career/resumes/charterup-senior-fullstack-pt.tex and /Users/lucasqueiroz/career/resumes/
+    charterup-senior-fullstack-pt.pdf
+
+  - /Users/lucasqueiroz/career/reports/charterup-senior-fullstack-message.md
+  - /Users/lucasqueiroz/career/reports/charterup-senior-fullstack-draft.md
+
+  Results:
+
+  - Both PDFs build successfully and are one page.
+  - Raw and layout extractions were generated.
+  - Contact details, all required headers, titles, dates, and four employment blocks extract correctly.
+  - Visual renders showed no clipping, overlap, or broken glyphs.
+  - Forbidden-token scan passed; no [UNVERIFIED] claims shipped.
+  - Tailoring emphasizes React, Java usage, AWS, AI-assisted development, Mobile Apps, DevOps, and end-to-end
+    delivery.
+
+  - Unsupported Vue, mentoring, JVM-depth, Data Engineering, and combined leadership claims were omitted and
+    documented.
+
+  - Recruiter message is 100 words; notice period is flagged for Lucas.
+  - No ATS Analyzer was connected in Maestri, so no grading was performed.
+
+─ Worked for 5m 49s ─────────────────────────────────────────────────────────────────────────────────────────────────
+ 
+ 
+› Ask Codex to do anything
+ 
+  gpt-5.6-sol high fast · Context 37% left · Context 63% used · Full Access

@@ -1,0 +1,30 @@
+CARD
+
+
+
+HEADER
+São Paulo, Brazil · 19 hours ago · Over 100 applicants
+
+DESCRIPTION
+Home office | PJ + bônus por performance  Horário: 08h às 17h  Remuneração: a combinar
+Sobre a vaga
+Estamos procurando uma pessoa desenvolvedora para trabalhar com sistemas, automações e integrações.
+O trabalho envolve frontend, backend e infraestrutura, com bastante uso de APIs, Webhooks e ferramentas de automação.
+Você não precisa conhecer toda a nossa stack. Cada pessoa tem experiências diferentes e não há problema em não saber alguma das tecnologias que usamos. Procuramos principalmente uma boa base de desenvolvimento, capacidade de aprender e vontade de resolver problemas.
+Tecnologias que usamos
+Nossa stack inclui:
+- Node.js- React- Python- n8n e Make.com- APIs REST e Webhooks- PostgreSQL- Git- Cloudflare / Workers- GCP- VPS na Hostinger e Hetzner- Docker
+Você pode já ter experiência com algumas delas e não conhecer outras. O importante é conseguir aprender conforme as necessidades do trabalho.
+O que você vai fazer
+- Desenvolver e manter sistemas web- Criar APIs e integrações- Montar automações no n8n e Make- Integrar serviços através de APIs e Webhooks- Trabalhar com bancos de dados- Fazer deploy e manutenção de aplicações- Investigar e corrigir problemas- Melhorar sistemas que já existem
+ É um diferencial
+Experiência com:
+- Next.js- Docker e CI/CD- Cloudflare Workers e Durable Objects- APIs da Meta- Integrações com ferramentas de marketing- Pipelines e processamento de dados
+O que esperamos
+Procuramos alguém com iniciativa, autonomia e vontade de aprender.
+Nem sempre você vai saber como fazer algo de primeira. Faz parte do trabalho pesquisar, testar, perguntar quando necessário e encontrar uma solução.
+ Sobre a Growper
+A Growper é uma empresa de tecnologia focada em sistemas, automações, dados e performance.
+Somos um time enxuto, então você terá contato com diferentes partes dos produtos e da infraestrutura e poderá evoluir bastante junto com o time.
+… more
+

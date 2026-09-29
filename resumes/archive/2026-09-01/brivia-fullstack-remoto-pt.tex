@@ -1,0 +1,124 @@
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage[brazilian]{babel}
+
+% Font options. tectonic runs XeTeX: roboto loads through fontspec, so
+% ligatures are disabled here (CV-SPEC fix 1). glyphtounicode and
+% \pdfgentounicode are pdfTeX-only and are not used.
+\usepackage{fontspec}
+\defaultfontfeatures{Ligatures=NoCommon}
+\usepackage[sfdefault]{roboto}  % Sans-serif font
+
+\pagestyle{empty}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+
+% Section formatting
+\titleformat{\section}{\Large\bfseries\scshape\raggedright}{}{0em}{\MakeLowercase}[\titlerule]
+\titlespacing*{\section}{0pt}{4pt}{3pt}
+
+% Custom commands
+\newcommand{\resumeItem}[1]{\item\small{#1}}
+% #1 Company  #2 Dates  #3 Title  #4 Location. CV-SPEC item 2:
+% template two-column header, with the accepted parser cost recorded in RUBRIC.md.
+\newcommand{\resumeSubheading}[4]{
+\item
+  \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & #2 \\[2pt]
+    \textit{#3} & \textit{#4} \\
+  \end{tabular*}\vspace{5pt}
+}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\newcommand{\resumeSubHeadingList}{\begin{itemize}[leftmargin=0.15in, label={}, nosep]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeRoleGap}{\vspace{5pt}}
+
+\begin{document}
+
+\begin{center}
+  \textbf{\Huge Lucas Queiroz} \\[3pt]
+  \small Vit\'oria, ES, Brasil $|$ +55 (27) 99203-0170 $|$ \href{mailto:sepulchrolucas@gmail.com}{sepulchrolucas@gmail.com} $|$
+  \href{https://linkedin.com/in/queiroz-lucas}{linkedin.com/in/queiroz-lucas} $|$
+  \href{https://github.com/queirozlc}{github.com/queirozlc}
+\end{center}
+\vspace{2pt}
+
+\section{Resumo}
+Senior Software Engineer com mais de 5 anos construindo aplica\c{c}\~oes web fullstack em TypeScript, Node.js e React. Entrega APIs, integra\c{c}\~oes, processamento ass\'incrono e microsservi\c{c}os com CI/CD. Integra agentic workflows orientados por IA \`a engenharia di\'aria.
+
+\section{Habilidades}
+\resumeSubHeadingList
+\resumeItem{\textbf{Linguagens e fullstack:} TypeScript \textbar{} JavaScript \textbar{} Node.js \textbar{} React \textbar{} Go}
+\resumeItem{\textbf{Backend e arquitetura:} APIs \textbar{} OpenAPI/Swagger \textbar{} Express \textbar{} Koa \textbar{} microsservi\c{c}os}
+\resumeItem{\textbf{Dados e mensageria:} PostgreSQL \textbar{} DynamoDB \textbar{} Redis \textbar{} BullMQ \textbar{} RabbitMQ \textbar{} AMQP}
+\resumeItem{\textbf{Qualidade e entrega:} CI/CD \textbar{} Vitest \textbar{} Jest \textbar{} Docker \textbar{} Kubernetes \textbar{} ArgoCD}
+\resumeItem{\textbf{Cloud e opera\c{c}\~oes:} AWS \textbar{} GCP \textbar{} Datadog \textbar{} LaunchDarkly \textbar{} OpenFeature \textbar{} Auth0}
+\resumeItem{\textbf{Ferramentas de IA:} Claude Code \textbar{} Codex \textbar{} Agentic workflows}\resumeSubHeadingListEnd
+
+\section{Experi\^encia}
+\resumeSubHeadingList
+  \resumeSubheading
+      {DexCare}{Jan 2026 - Present}
+      {Senior Software Engineer}{Remoto}
+      \resumeSubHeadingList
+          \resumeItem{\textbullet\ Entrega reservas de consultas em tempo real e disponibilidade de profissionais construindo servi\c{c}os TypeScript orientados a eventos no Node.js com Express e Koa.}
+          \resumeItem{\textbullet\ Reduz o atrito de autentica\c{c}\~ao em 25\% isolando dados de tenants e validando contratos com Auth0 JWT e OpenAPI/Swagger em APIs multi-tenant.}
+          \resumeItem{\textbullet\ Atende leituras e escritas de reservas modelando dados em PostgreSQL com Sequelize e Drizzle ORM, DynamoDB Streams e Redis.}
+          \resumeItem{\textbullet\ Reduz reservas incorretas em 15\% sincronizando hor\'arios por meio de integra\c{c}\~oes entre a plataforma de agendamento e o Epic EMR.}
+          \resumeItem{\textbullet\ Permite que ferramentas de IA produzam c\'odigo test\'avel e de alta qualidade na engenharia di\'aria construindo ambientes Claude Code e Codex com regras compartilhadas, lint, limites de complexidade ciclom\'atica e testes.}
+          \resumeItem{\textbullet\ Reduz o risco de releases em 7\% entregando com flags LaunchDarkly/OpenFeature e monitorando React com Datadog RUM.}
+          \resumeItem{\textbullet\ Reduz em 33\% o atrito ao pilotar novos clientes ajudando a implementar inst\^ancias compartilhadas com configura\c{c}\~oes, segredos e dados isolados.}
+      \resumeSubHeadingListEnd
+  \resumeRoleGap
+  \resumeSubheading
+      {Luizalabs}{Jan 2024 - Jan 2026}
+      {Mid-level Software Engineer}{Remoto}
+      \resumeSubHeadingList
+          \resumeItem{\textbullet\ Entrega emiss\~ao de notas fiscais eletr\^onicas para o e-commerce do Magazine Luiza construindo microsservi\c{c}os fiscais distribu\'idos em Java e Go.}
+          \resumeItem{\textbullet\ Melhora em 20\% a vaz\~ao do processamento de notas e a toler\^ancia a falhas levando a comunica\c{c}\~ao SEFAZ para filas BullMQ ass\'incronas.}
+          \resumeItem{\textbullet\ Mant\'em servi\c{c}os confi\'aveis em produ\c{c}\~ao implantando com Docker e Kubernetes no GCP via ArgoCD, com su\'ites Vitest e Jest como gate do CI/CD.}
+          \resumeItem{\textbullet\ Reduz chamados de suporte em 18\% construindo dashboards de backoffice que deram visibilidade aos fluxos fiscais.}
+      \resumeSubHeadingListEnd
+  \resumeRoleGap
+  \resumeSubheading
+      {Lippaus Distribuidora}{Jan 2023 - Jan 2024}
+      {Mid-level Software Engineer}{Remoto}
+      \resumeSubHeadingList
+          \resumeItem{\textbullet\ Apoia a expans\~ao nacional de varejistas construindo uma plataforma multi-tenant web e mobile sobre PostgreSQL.}
+          \resumeItem{\textbullet\ Aumenta em 26\% a capacidade de processamento de pedidos, notifica\c{c}\~oes e integra\c{c}\~oes implementando jobs ass\'incronos BullMQ.}
+          \resumeItem{\textbullet\ Converte requisitos de clientes em entregas liderando o escopo de projetos e a comunica\c{c}\~ao com stakeholders.}
+      \resumeSubHeadingListEnd
+  \resumeRoleGap
+  \resumeSubheading
+      {Lippaus Distribuidora}{Mar 2021 - Jan 2023}
+      {Entry-level Fullstack Software Engineer}{Remoto}
+      \resumeSubHeadingList
+          \resumeItem{\textbullet\ Apoia fluxos operacionais e administrativos de uma startup de distribui\c{c}\~ao de bebidas desenvolvendo dashboards internos de backoffice em JavaScript.}
+          \resumeItem{\textbullet\ Entrega funcionalidades para clientes de ponta a ponta equilibrando requisitos de neg\'ocio e restri\c{c}\~oes t\'ecnicas.}
+      \resumeSubHeadingListEnd
+\resumeSubHeadingListEnd
+
+\resumeRoleGap
+\section{Forma\c{c}\~ao}
+\resumeSubHeadingList
+  \resumeSubheading
+      {FAESA}{Feb 2022 - Dec 2025}
+      {Bacharelado em Sistemas de Informa\c{c}\~ao}{Vit\'oria, ES, Brasil}
+\resumeSubHeadingListEnd
+
+\end{document}

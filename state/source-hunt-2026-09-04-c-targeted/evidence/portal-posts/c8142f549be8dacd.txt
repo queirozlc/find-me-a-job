@@ -1,0 +1,66 @@
+Feed post
+
+Simran Bisht
+ • 3rd+
+IT Recruiter
+1d • 
+
+Follow
+
+🚨 Hiring: Senior Software Engineer – Go | LLM Evaluation & Repository Validation
+
+We are looking for experienced Software Engineers with strong hands-on expertise in Go to join an exciting AI-focused project involving real-world open-source repositories, code evaluation, testing, and LLM performance assessment.
+
+📍 Location: Bangladesh, Brazil, Colombia, Egypt, Ghana, India, Pakistan, Indonesia, Turkey & Vietnam
+
+💼 Experience: 3+ years in Go | 2–6+ years overall
+👥 Open Positions: 70
+⏳ Contract Duration: 3 months
+🏠 Remote Opportunity
+🚀 Start Date: To be confirmed
+
+What You’ll Do:
+• Analyze and triage GitHub issues across popular open-source libraries
+• Set up and configure complex code repositories
+• Work with Docker and development environments
+• Evaluate unit test coverage and overall test quality
+• Modify, run, and test real-world codebases locally
+• Assess LLM performance in software bug-fixing scenarios
+• Collaborate with researchers to identify challenging repositories and issues for LLM evaluation
+• Potentially lead and mentor junior engineers.
+
+What We’re Looking For:
+• 3+ years of strong hands-on experience with Go
+• Proficiency with Git and Docker
+• Experience with basic software pipeline setup
+• Ability to understand and navigate complex codebases
+• Comfortable running, modifying, and testing real-world projects locally
+• Experience working with well-maintained, widely-used GitHub repositories, preferably repositories with 5,000+ stars
+• Open-source contribution or evaluation experience is a plus.
+
+Nice to Have:
+• Previous experience with LLM research or evaluation projects
+• Experience building or testing developer tools
+• Experience working with automation or AI agents
+
+⏰ Commitment:
+• 40 hours per week
+• 4 hours of daily overlap with PST
+
+🌟 Why Join:
+• Work remotely on cutting-edge AI projects
+• Opportunity to work at the intersection of software engineering and AI research
+• Gain exposure to real-world LLM evaluation and open-source software projects
+
+📩 Interested candidates can apply/share their profiles.
+
+#Hiring #GoLang #Golang #SoftwareEngineer #SeniorSoftwareEngineer #LLM #AI #GenerativeAI #GitHub #Docker #Git #OpenSource #SoftwareEngineering #RemoteJobs #AIJobs #TechJobs… more
+
+Like
+
+
+Comment
+
+Repost
+Send
+

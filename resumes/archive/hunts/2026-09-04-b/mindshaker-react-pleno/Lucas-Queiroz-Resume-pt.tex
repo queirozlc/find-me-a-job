@@ -1,0 +1,128 @@
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage[brazilian]{babel}
+
+% Font options. tectonic runs XeTeX: roboto loads through fontspec, so
+% ligatures are disabled here (CV-SPEC fix 1). glyphtounicode and
+% \pdfgentounicode are pdfTeX-only and are not used.
+\usepackage{fontspec}
+\defaultfontfeatures{Ligatures=NoCommon}
+\usepackage[sfdefault]{roboto}  % Sans-serif font
+
+\pagestyle{empty}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+
+% Section formatting
+\titleformat{\section}{\Large\bfseries\scshape\raggedright}{}{0em}{\MakeLowercase}[\titlerule]
+\titlespacing*{\section}{0pt}{3pt}{2pt}
+
+% Custom commands
+\newcommand{\resumeItem}[1]{\item\small{#1}}
+% #1 Company  #2 Dates  #3 Title  #4 Location. CV-SPEC item 2:
+% template two-column header, with the accepted parser cost recorded in RUBRIC.md.
+\newcommand{\resumeSubheading}[4]{
+\item
+  \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & #2 \\[2pt]
+    \textit{#3} & \textit{#4} \\
+  \end{tabular*}\vspace{3pt}
+}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\newcommand{\resumeSubHeadingList}{\begin{itemize}[leftmargin=0.15in, label={}, nosep]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeRoleGap}{\vspace{3pt}}
+
+\begin{document}
+
+\begin{center}
+  \textbf{\Huge Lucas Queiroz} \\[3pt]
+  \small Vit\'oria, ES, Brasil $|$ +55 (27) 99203-0170 $|$ \href{mailto:sepulchrolucas@gmail.com}{sepulchrolucas@gmail.com} $|$
+  \href{https://linkedin.com/in/queiroz-lucas}{linkedin.com/in/queiroz-lucas} $|$
+  \href{https://github.com/queirozlc}{github.com/queirozlc}
+\end{center}
+\vspace{2pt}
+
+\section{Resumo}
+Eu sou Senior Software Engineer com mais de 5 anos em sistemas fullstack e backend em TypeScript, Node.js, React e Go. Eu construo servi\c{c}os de agendamento em sa\'ude para uma empresa dos EUA, em ingl\^es com equipes internacionais: reservas orientadas a eventos, integra\c{c}\~ao com o EMR Epic, APIs multi-tenant na AWS e o frontend web. Antes, eu constru\'i microsservi\c{c}os fiscais de notas eletr\^onicas no Magazine Luiza. Eu integro fluxos ag\^enticos com IA para acelerar o desenvolvimento.
+\section{Habilidades}
+\resumeSubHeadingList
+\resumeItem{\textbf{Linguagens:} TypeScript \textbar{} JavaScript \textbar{} Node.js \textbar{} Go}
+\resumeItem{\textbf{Frontend:} React \textbar{} hooks \textbar{} composi\c{c}\~ao de componentes \textbar{} gest\~ao de estado \textbar{} tipagem de componentes e props}
+\resumeItem{\textbf{Backend:} Express \textbar{} Koa \textbar{} APIs REST \textbar{} OpenAPI/Swagger \textbar{} BullMQ \textbar{} RabbitMQ \textbar{} AMQP}
+\resumeItem{\textbf{Dados:} PostgreSQL \textbar{} DynamoDB \textbar{} Redis \textbar{} Drizzle ORM \textbar{} Sequelize}
+\resumeItem{\textbf{Cloud e opera\c{c}\~ao:} AWS \textbar{} GCP \textbar{} Docker \textbar{} Kubernetes \textbar{} ArgoCD \textbar{} CI/CD \textbar{} Datadog \textbar{} LaunchDarkly \textbar{} OpenFeature \textbar{} Auth0}
+\resumeItem{\textbf{Testes e ferramentas de IA:} Vitest \textbar{} Jest \textbar{} Claude Code \textbar{} Codex \textbar{} Agentic workflows}\resumeSubHeadingListEnd
+
+\section{Idiomas}
+\resumeSubHeadingList
+\resumeItem{Portugu\^es: Nativo \textbar{} Ingl\^es: Fluente (C1)}
+\resumeSubHeadingListEnd
+
+\section{Experi\^encia}
+\resumeSubHeadingList
+  \resumeSubheading
+      {DexCare}{Mar 2026 - Present}
+      {Senior Software Engineer}{Remoto}
+      \resumeSubHeadingList
+          \resumeItem{\textbullet\ Reduzi o risco de releases em 7\% com flags LaunchDarkly/OpenFeature em componentes React com hooks, composi\c{c}\~ao de componentes e gest\~ao de estado, monitorados no Datadog RUM.}
+          \resumeItem{\textbullet\ Constru\'i APIs REST multi-tenant com Auth0 JWT e OpenAPI/Swagger que isolaram dados, garantiram contratos de API e reduziram o atrito de autentica\c{c}\~ao em 25\%.}
+          \resumeItem{\textbullet\ Constru\'i servi\c{c}os orientados a eventos sobre Express e Koa que entregaram reservas de consultas em tempo real no agendamento em sa\'ude.}
+          \resumeItem{\textbullet\ Integrei fluxos de hor\'arios do EMR Epic que mantiveram hor\'arios sincronizados e reduziram reservas incorretas em 15\%.}
+          \resumeItem{\textbullet\ Modelei leituras e escritas de reservas em PostgreSQL com Sequelize e Drizzle ORM, DynamoDB Streams e Redis, ligados a S3 e RDS via AWS SDK v3.}
+          \resumeItem{\textbullet\ Constru\'i ambientes Claude Code e Codex com regras compartilhadas, lint, limites de complexidade ciclom\'atica e testes que permitiram aos agentic workflows produzir c\'odigo de alta qualidade nas entregas di\'arias.}
+          \resumeItem{\textbullet\ Ajudei a implementar a Shared Platform Initiative (SPI), reduzindo em 33\% o atrito ao pilotar novos clientes ao substituir ambientes por cliente por inst\^ancias compartilhadas com configura\c{c}\~oes, segredos e dados isolados.}
+      \resumeSubHeadingListEnd
+  \resumeRoleGap
+  \resumeSubheading
+      {Luizalabs}{Jan 2024 - Mar 2026}
+      {Mid-level Software Engineer}{Remoto}
+      \resumeSubHeadingList
+          \resumeItem{\textbullet\ Constru\'i microsservi\c{c}os fiscais distribu\'idos em Node.js, Java e Go que entregaram a emiss\~ao de notas fiscais eletr\^onicas do e-commerce do Magazine Luiza.}
+          \resumeItem{\textbullet\ Migrei a comunica\c{c}\~ao SEFAZ para filas BullMQ ass\'incronas, melhorando em 20\% a vaz\~ao de notas e a toler\^ancia a falhas.}
+          \resumeItem{\textbullet\ Constru\'i dashboards de backoffice sobre os microsservi\c{c}os fiscais, dando visibilidade e reduzindo chamados de suporte em 18\%.}
+          \resumeItem{\textbullet\ Implantei servi\c{c}os com Docker e Kubernetes no GCP via ArgoCD, protegendo a produ\c{c}\~ao com Vitest e Jest no gate do CI/CD.}
+      \resumeSubHeadingListEnd
+  \resumeRoleGap
+  \resumeSubheading
+      {Lippaus Distribuidora}{Jan 2023 - Jan 2024}
+      {Mid-level Software Engineer}{Vit\'oria, ES, Brasil}
+      \resumeSubHeadingList
+          \resumeItem{\textbullet\ Constru\'i uma plataforma multi-tenant web e mobile sobre PostgreSQL que apoiou a expans\~ao nacional de varejistas.}
+          \resumeItem{\textbullet\ Processei pedidos, notifica\c{c}\~oes e integra\c{c}\~oes com 26\% mais capacidade usando jobs ass\'incronos BullMQ.}
+          \resumeItem{\textbullet\ Liderei o escopo de projetos e a comunica\c{c}\~ao com stakeholders, convertendo requisitos de clientes em entregas.}
+      \resumeSubHeadingListEnd
+  \resumeRoleGap
+  \resumeSubheading
+      {Lippaus Distribuidora}{Mar 2021 - Jan 2023}
+      {Entry-level Fullstack Software Engineer}{Vit\'oria, ES, Brasil}
+      \resumeSubHeadingList
+          \resumeItem{\textbullet\ Constru\'i funcionalidades para clientes de ponta a ponta, at\'e a produ\c{c}\~ao, equilibrando requisitos de neg\'ocio e restri\c{c}\~oes t\'ecnicas.}
+          \resumeItem{\textbullet\ Desenvolvi dashboards internos de backoffice em JavaScript que apoiaram a opera\c{c}\~ao de uma startup de distribui\c{c}\~ao de bebidas.}
+      \resumeSubHeadingListEnd
+\resumeSubHeadingListEnd
+
+\resumeRoleGap
+\section{Forma\c{c}\~ao}
+\resumeSubHeadingList
+  \resumeSubheading
+      {FAESA}{Feb 2022 - Dec 2025}
+      {Bacharelado em Sistemas de Informa\c{c}\~ao}{Vit\'oria, ES, Brasil}
+\resumeSubHeadingListEnd
+
+\end{document}

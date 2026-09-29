@@ -1,0 +1,42 @@
+    10 -
+    11 -## Round 3 state
+    12 -
+  … Diff preview limited (ctrl + t to view transcript).
+
+• Added ~/career/reports/base-cv-draft.md (+58 -0)
+     1 +# Base CV draft report, fix round 4
+     2 +
+     3 +Date: 2026-09-01. Author: Resume Architect (Quill). Not graded. Hand to the ATS Analyzer.
+     4 +
+     5 +## Deliverables
+     6 +
+     7 +- `~/career/resumes/base-en.tex` -> `base-en.pdf`, `base-en.raw.txt`, `base-en.layout.txt`
+     8 +- `~/career/resumes/base-pt.tex` -> `base-pt.pdf`, `base-pt.raw.txt`, `base-pt.layout.txt`
+     9 +- Final renders: `~/career/reports/visual/base-en-1.png`, `base-pt-1.png`
+    10 +
+    11 +## Round 4 state
+    12 +
+  … Diff preview limited (ctrl + t to view transcript).
+
+• Ran maestri list
+  └ You:
+      - name: "Quill", role: "Resume Architect"
+
+    Connected agents:
+      - name: "Recruiter "
+
+─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+• - EN bullet: “Produce high-quality code in daily delivery by building Claude Code and Codex agent environments with
+    shared rules, lint enforcement, cyclomatic complexity limits, and tests.”
+
+  - Inter-role spacing: 2pt.
+  - Term cap: Claude Code 2/3; Codex 2/3 in each CV.
+  - One page: Yes—EN and PT.
+
+─ Worked for 2m 21s ─────────────────────────────────────────────────────────────────────────────────────────────────
+ 
+ 
+› Ask Codex to do anything
+ 
+  gpt-5.6-sol high fast · Context 60% left · Context 40% used · Full Access

@@ -1,0 +1,11 @@
+{
+  "application_id": "base-en-smoke",
+  "language": "en",
+  "required_tokens": [
+    "TypeScript",
+    "Node.js",
+    "React",
+    "Go"
+  ],
+  "preferred_tokens": []
+}

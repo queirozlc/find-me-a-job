@@ -1,0 +1,128 @@
+CARD
+
+Engenheiro de Software Pl. (Verified job)Engenheiro de Software Pl. 
+UOL EdTech
+Recife, PE
+
+Posted 1 day ago1 day ago
+
+
+
+HEADER
+Recife, Pernambuco, Brazil · Reposted 1 day ago · Over 100 people clicked apply
+
+DESCRIPTION
+Descrição da vaga
+
+Estamos em busca de pessoas apaixonadas por educação e tecnologia!
+
+Queremos que você saiba atuar em um ambiente que exige a união de múltiplas competências e experiências e com foco no resultado para deixarmos nosso legado no mundo.
+
+Se você, assim como nós, tem paixão por educação e tecnologia, o UOL EdTech é para você! 🧡
+
+Confira essa oportunidade e vem ser #EdTecher!
+
+Responsabilidades e atribuições
+
+Desenvolver novas funcionalidades para aplicações Web utilizando Node.js (TypeScript) e Vue.js, React e Next.js.
+Atuar na manutenção e evolução de produtos existentes.
+Participar da construção e evolução de APIs e integrações.
+Escrever código limpo, testável e de fácil manutenção.
+Participar de code reviews e aplicar feedbacks para evolução técnica.
+Trabalhar em conjunto com Produto, Design e demais engenheiros durante todo o ciclo de desenvolvimento.
+Contribuir para melhorias contínuas na qualidade, performance e estabilidade das aplicações.
+Aprender continuamente novas tecnologias e boas práticas de engenharia.
+
+Requisitos e qualificações
+
+Experiência com JavaScript e TypeScript.
+Experiência sólida com desenvolvimento Back-end utilizando Node.js.
+Experiência com desenvolvimento Front-end utilizando React ou Vue.js.
+Experiência na construção e integração de APIs REST.
+Conhecimento de comunicação assíncrona e arquiteturas orientadas a eventos.
+Conhecimento de arquitetura de microsserviços e fundamentos de sistemas distribuídos.
+Experiência com testes automatizados utilizando Jest ou ferramentas similares.
+Conhecimento de bancos de dados relacionais e/ou NoSQL.
+Conhecimento de Git e práticas de versionamento de código.
+Conhecimento de CI/CD e do ciclo de entrega de software.
+Conhecimento de Docker e ambientes conteinerizados.
+Capacidade de investigar problemas, identificar causas e propor soluções.
+Conhecimento de boas práticas de desenvolvimento, qualidade de código e princípios de engenharia de software.
+Capacidade de participar de decisões técnicas dentro do seu contexto de atuação e avaliar impactos das mudanças realizadas.
+
+Informações adicionais
+
+Para se destacar nesta posição, seria legal se você também tivesse:
+
+Familiaridade com domínios que envolvam pagamentos, cobranças recorrentes ou integrações com serviços financeiros.
+Experiência com AWS ou outros provedores de cloud.
+Experiência com mensageria utilizando Kafka, SQS, RabbitMQ ou tecnologias similares.
+Experiência com observabilidade utilizando logs, métricas e tracing, com ferramentas como Datadog, OpenTelemetry ou similares.
+Conhecimento de Redis ou outras soluções de cache.
+Experiência com Next.js ou outros frameworks modernos para aplicações Web.
+Experiência com Inteligência Artificial Generativa, LLMs ou agentes de IA.
+Disponibilidade para atuar no modelo híbrido no escritório de Recife/PE.
+
+VAMOS TRANSFORMAR VIDAS COM EDUCAÇÃO POR MEIO DA TECNOLOGIA?
+
+Somos uma empresa que transforma vidas com educação por meio da tecnologia oferecendo um ecossistema completo com soluções para estudantes, instituições de ensino e empresas.
+
+Trabalhamos duro para oferecer a melhor experiência de aprendizagem digital contribuindo para remover obstáculos, ampliando o acesso à uma educação de qualidade e deixando nosso legado no mundo.
+
+O UOL EdTech faz parte do Grupo UOL, uma empresa 100% brasileira e que revoluciona o universo digital desde 1996 e desse legado, carregamos a credibilidade, o pioneirismo e a inovação em nosso DNA.
+
+Conheça nosso ecossistema 🌐
+
+Oferecemos um ecossistema completo para educação que transforma vidas! Nossas verticais de negócio são:
+
+Para Estudantes: oferecemos a maior plataforma de estudos online, facilitando diariamente o acesso ao conhecimento, empoderamento e transformando o futuro das pessoas. No Brasil, utilizamos a marca Passei Direto e no restante do mundo a marca Studenta.
+Para Empresas: temos duas frentes de atuação, com a Learning.Rocks oferecemos uma solução completa para atender as necessidades de treinamento das empresas, unindo tecnologia e conteúdo multiformatos. Já com a Qulture.Rocks apoiamos empresas a destravarem o potencial dos seus times, com uma plataforma de gestão de pessoas e desempenho.
+Para Instituições de Ensino: somos o parceiro tecnológico de grandes universidades nas ofertas de cursos de especialização 100% online, captando estudantes no Brasil e no mundo.
+
+Somos apaixonados por educação e tecnologia 😍
+
+A tecnologia é nosso combustível estamos sempre em busca de soluções disruptivas e tecnológicas que nos ajudem a romper barreiras para levar nossas soluções em educação para qualquer canto do mundo!
+
+O coletivo é mais forte que o indivíduo 🤝
+
+Estamos sempre em busca do melhor resultado, mesmo que tenhamos que mudar a rota. Estamos na jornada de longo prazo, criando um negócio perene e de alto impacto. Somos #EdTechers e esse é o nosso jeito de ser e fazer!
+
+Nossas diferenças se somam para fazer valer nosso propósito 🧡
+
+Acreditamos na diversidade e pluralidade das pessoas para atingir resultados incríveis! Por isso, não fazemos distinção de pessoas com deficiência, gênero, orientação sexual/afetiva, raça/etnia, idade, origem, constituição familiar e estética.
+
+Conheça os benefícios de ser #EdTecher 🤩
+
+Você terá um pacote de completo de benefícios que fazem toda a diferença:
+
+Vale-alimentação e/ou refeição.
+Plano de saúde e odontológico.
+Seguro de vida.
+Parceria com TotalPass e ZenKlub.
+Licença maternidade e paternidade estendidas.
+Auxílio-creche.
+Descontos de até 50% em pós-graduação e MBA de grandes instituições, como FIA, FAAP e PUCRS.
+
+E Tem Mais, Dá Uma Olhada
+
+No dress code: o importante é você usar o que te faz bem.
+#TáDeParabéns: Day off no aniversário.
+Baby gift: presente para recém-nascidos.
+
+Saiba como funciona nosso processo seletivo 🔎
+
+Nem todos os processos seguem o mesmo formato. Mas, a grande maioria segue um andamento parecido:
+
+Inscrição (essa que você completa aqui na Gupy).
+Entrevista com o time de Recrutamento & Seleção.
+Desafio técnico, pode ser um teste, case ou apresentação de portfólio. Ou até mesmo um bate-papo técnico com o time.
+Entrevista com a liderança da área.
+
+Temos uma dica importante para você 📣
+
+Capriche nas etapas do processo, principalmente no momento da inscrição! Buscamos analisar todas as candidaturas e isso pode levar algum tempo. Por isso, caso esteja se perguntando sobre o prazo para fazermos contato, pedimos sua empatia. 🧡Todas as pessoas que se candidatam às nossas vagas recebem um retorno por meio da Gupy, seja ele positivo ou negativo. Pedimos que acompanhe sua candidatura por aqui e na sua caixa e-mail, sem esquecer de olhar o spam, combinado?
+
+E aí, vamos transformar vidas com educação por meio da tecnologia?
+
+Vem ser #EdTecher!… more
+

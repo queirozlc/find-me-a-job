@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "source": "DOSSIER.md",
+  "policy": "A protected claim can enter a tailored CV only when its status is approved and its evidence names an authorized source.",
+  "protected_claims": [
+    {
+      "id": "code-review",
+      "patterns": [
+        "code review",
+        "code reviews",
+        "pull request review",
+        "pull request reviews",
+        "reviewed pull requests"
+      ],
+      "status": "unverified",
+      "evidence": [],
+      "note": "DOSSIER.md does not authorize an employer or action for this claim."
+    }
+  ]
+}

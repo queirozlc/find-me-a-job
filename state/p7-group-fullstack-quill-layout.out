@@ -1,0 +1,42 @@
+
+⏺ Build passed on the approved preamble. Next I check the layout extraction, then fix the note.
+  
+  Thought for 3s, ran 1 shell command 
+
+⏺ Extraction is clean: 16 bullets, 7 metrics, required tokens placed, blocks intact, Lippaus entry-level and Formação
+  on page 2 as whole blocks. Now the note.
+
+  Ran 1 shell command 
+
+⏺ Note fixed. Now the report and sentinel.
+  
+  Ran 1 shell command 
+
+⏺ Done. Report path:
+  
+  /Users/lucasqueiroz/career/state/p7-group-fullstack-quill-layout.report.md
+
+  Sentinel written and verified: state/p7-group-fullstack-quill-layout.complete.json, task-id
+  p7-group-fullstack-quill-layout.
+ 
+  What changed:
+
+  - Tailored tex now carries the approved base-pt preamble verbatim. Single-column role header, no tabular*. ES, 
+    Brasil replaced by ES, Brazil in four places. Body content untouched: 16 bullets, 7 metrics, titles, dates, and
+    token placements preserved.
+  - PDF rebuilt with tectonic. Two pages. Raw and layout extraction keep every role as one block. Page 2 holds the
+    whole Lippaus entry-level block and Formação. Zero Ruby, Rails, UTC, or GMT tokens.
+  - Application note: submission claim changed to intent wording. Full-time availability claim removed from the
+    message. Screening now says the role asks full-time and Lucas must confirm. Location prints Vitória, ES, Brazil.
+    Message, screening answers, and unknowns preserved.
+  
+  Not done, by design: no grading, no base edit, no delegation, no outward action. Full-time availability is not
+  recorded in the dossier. Lucas confirms it before sending.
+
+✻ Churned for 1m 22s · done 6:17 PM
+
+─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+❯ 
+─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  Fable 5.1 · lucasqueiroz · ctx 9% · cache 97% · [░░░░░░░░░░] 94.8k/1.0M · effort medium                       /rc
+  ⏵⏵ bypass permissions on (shift+tab to cycle) · ← 10 agents

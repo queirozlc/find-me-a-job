@@ -1,0 +1,28 @@
+                                    r Eu; Summary uses I or Eu. Check every title and date against DOSSIER.md        
+    block (Gate 0 not fully         r character. Check zero Ruby or Rails tokens. List every [UNVERIFIED] marker and 
+    PASS, any Gate 1 FAIL) as       o DOSSIER.md.                                                                    
+    numbered, concrete edits, or                                                                                     
+    the line 'none'.                format to ~/career/reports/diana-neves-fullstack-314-26-gate.md. End it with a   
+                                    tect' holding only the defects that block (Gate 0 not fully PASS, any Gate 1     
+    Do not edit any file under       or the line 'none'.                                                             
+    ~/career/resumes/. Do not                                                                                        
+    spawn subagents. Do not         r/resumes/. Do not spawn subagents. Do not report through maestri ask. Append    
+    report through maestri ask.     -diana-neves-fullstack-314-26.md when done, format '- HH:MM <what happened>'     
+    Append one log line to          isting lines. Reply with: Gate 0 PASS/FAIL, Gate 1 PASS/FAIL with the failing    
+    ~/career/state/app-techmunity    the fix list.                                                                   
+    -senior-fullstack-ai.md when  
+    done, format '- HH:MM <what   
+    happened>' from date +%H:%M,  
+    never rewrite existing lines.   . I will write its report, then run the Diana Neves gate you just sent.
+    Reply with: Gate 0            
+    PASS/FAIL, Gate 1 PASS/FAIL   
+    with the failing items, Gate    n 'raw 66\|raw 67\|raw 33\|(44)\|(45)\|(47)\|(55)\|(56)\|(58)\|raw 26\|yes 
+    2 score, Gate 3 score, the      ngenheira-software-senior-gate.md || echo "no stale refs"
+    fix list.                     
+                                    )
+────────────────────────────────────
+❯ Press up to edit queued messages                                                                                 
+────────────────────────────────────
+  Opus 5 · lucasqueiroz · ctx 16%…  ─────────────────────────────────────────────────────────────────────────────────
+  ⏵⏵ auto mode on (shift+tab to · 
+EXIT 0

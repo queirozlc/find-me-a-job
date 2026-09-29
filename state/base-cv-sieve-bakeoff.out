@@ -1,0 +1,42 @@
+  ├────────────────────┼──────┼──────┼──────┼──────┤
+  │ B \makebox+\hfill  │ FAIL │ FAIL │ FAIL │ PASS │
+  ├────────────────────┼──────┼──────┼──────┼──────┤
+  │ C tabular* control │ FAIL │ FAIL │ FAIL │ PASS │
+  └────────────────────┴──────┴──────┴──────┴──────┘
+
+  B and C produce byte-identical raw extractions (diff clean). Both split each role into three blocks, and both emit
+  Mar 2021 - Present after the last role's bullets. The spec's stated cause is wrong: tabular* is not the culprit. B
+  removes tabular*, keeps the horizontal split, and fails identically. Horizontal separation is the cause.
+
+  Macro to adopt, replacing template-rails-original.tex:44-50:
+  
+  % #1 Company  #2 Dates  #3 Title  #4 Location 
+  % One source line. Everything a parser needs for one role lands on one line,
+  % in one text run, in reading order. Bake-off: reports/macro-bakeoff.md
+  \newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \textbf{#1} \textbar{} #3 \textbar{} #2 \textbar{} #4
+    \vspace{-7pt}
+  }
+  
+  Argument order unchanged, so no call site needs editing. \textbar{} extracts as ASCII |. An em dash would put
+  U+2014 in the text layer; an ASCII hyphen would collide with the date separator Gate 0.6 looks for. Keep the field
+  order Company, Title, Dates, Location: a long header wraps only after the date, so a wrap can never separate the
+  date from the title (stress-tested).
+
+  Two blockers found while building, for the Resume Architect: 
+  
+  1. \input{glyphtounicode} and \pdfgentounicode=1 are pdfTeX primitives. Tectonic runs XeTeX and dies on them. Guard
+     with \ifdefined\pdfgentounicode ... \fi.
+  2. CV-SPEC item 1's \DisableLigatures aborts the tectonic build (microtype: pdftex-only). It is also unnecessary. A
+     control probe with the template's roboto font and no fix extracts efficient workflow office profile conflict 
+     flag as plain ASCII, zero U+FB01. Recorded as an open question for you in the report, along with two others. I
+     did not change the spec.
+
+✻ Brewed for 9m 13s · done 5:08 PM
+
+─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+❯ 
+─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  Opus 5 · lucasqueiroz · ctx 10% · cache 94% · [█░░░░░░░░░] 101.5k/1.0M · effort high                          /rc
+  ⏵⏵ auto mode on (shift+tab to cycle) · ← 10 agents

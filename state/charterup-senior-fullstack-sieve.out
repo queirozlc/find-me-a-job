@@ -1,0 +1,42 @@
+  Verdicts
+
+  ┌────────────────────────┬───────────────────┬───────────────────┐
+  │          Gate          │        EN         │        PT         │
+  ├────────────────────────┼───────────────────┼───────────────────┤
+  │ Gate 0 Parse integrity │ PASS              │ PASS              │
+  ├────────────────────────┼───────────────────┼───────────────────┤
+  │ Gate 1 Knockouts       │ PASS with defects │ PASS with defects │
+  ├────────────────────────┼───────────────────┼───────────────────┤
+  │ Gate 2 Retrieval       │ 19/100            │ 16/100            │
+  ├────────────────────────┼───────────────────┼───────────────────┤
+  │ Gate 3 Human scan      │ 92/100            │ 92/100            │
+  └────────────────────────┴───────────────────┴───────────────────┘
+
+  Gate 0. Checks 0.5, 0.6, 0.7, 0.8 FAIL. All four trace only to the two-column tabular* role header. That is the
+  CV-SPEC item 2 accepted exception. Reported, not blocking. No role merges, no role splits into two entries. Both
+  PDFs are 1 page. Ligatures intact: workflow extracts, no U+FB0x, no nulls. Contact block, city and all four section
+  headers recover in both languages.
+
+  LinkedIn cross-check: PASS. All four titles, both company names, all five date ranges match character for
+  character. Both Lippaus roles present and separate.
+
+  Grep result: zero hits for ruby, rails, unverified in both .tex files and in all four extractions.
+ 
+  Gate 1. No hard knockout. The posting states no work-authorization, time-zone, English or degree gate. Location
+  PASS (Remote, Brazil). Years PASS (5 yr 6 mo vs 5+ required). Two required tokens absent verbatim: cross-functional
+  and mentoring.
+ 
+  Fix list: 16 items. The top five: React missing from the Skills block (highest cost, fixable now); Vue absent with
+  no dossier support; cross-functional absent; mentoring absent; JVM backend evidence thin, JVM token absent. Fixes
+  2, 3, 4, 5 and 13 need Lucas, not the Architect.
+  
+  Gate 2 at 19 is not a build defect. CharterUP wants Vue and proven JVM. The dossier supports neither. Fixes 1, 3, 4
+  and 10 recover about 12 points; the rest depends on Lucas's answers.
+  
+✻ Cogitated for 6m 4s · done 7:27 PM
+                                                
+─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+❯ 
+─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  Opus 5 · lucasqueiroz · ctx 12% · cache 91% · [█░░░░░░░░░] 119.3k/1.0M · effort high                          /rc
+  ⏵⏵ auto mode on (shift+tab to cycle) · ← 10 agents

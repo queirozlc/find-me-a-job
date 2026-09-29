@@ -1,0 +1,73 @@
+CARD
+
+Desenvolvedor Back-end SêniorDesenvolvedor Back-end Sênior
+Hook Digital
+São Paulo, SP (Remote)
+
+Viewed
+ · 
+Posted 1 day ago1 day ago
+
+
+
+HEADER
+São Paulo, São Paulo, Brazil · 1 day ago · Over 100 people clicked apply
+
+DESCRIPTION
+Descrição
+
+Buscamos uma pessoa Desenvolvedora Back-end Sênior para atuar na construção, evolução e sustentação de soluções tecnológicas estratégicas da Hook.Essa posição terá atuação direta em projetos que envolvem integrações, APIs, automações, CRM, inteligência artificial e desenvolvimento de soluções customizadas para nossos clientes, com foco em back-end.Mais do que desenvolver código, buscamos alguém com visão sistêmica e de negócio, capaz de compreender o contexto de uma demanda, avaliar impactos, propor soluções e tomar decisões técnicas com autonomia.
+
+Responsabilidades e atribuições
+
+Desenvolver e evoluir aplicações e serviços back-end para projetos estratégicos da Hook;
+Construir e manter APIs RESTful, integrações e automações entre diferentes sistemas e plataformas;
+Desenvolver integrações e conectores com HubSpot, CRMs, ferramentas de marketing, vendas e outros sistemas utilizados pelos clientes;
+Atuar no desenvolvimento e evolução do Leadze, nosso agente de IA, e de outras soluções que envolvam inteligência artificial;
+Entender necessidades técnicas e de negócio, avaliando cenários e propondo soluções eficientes, escaláveis e sustentáveis;
+Conduzir tecnicamente os projetos sob sua responsabilidade, garantindo evolução, qualidade e cumprimento das entregas;
+Definir a melhor abordagem técnica para cada solução, considerando impacto no negócio, esforço, manutenção, escalabilidade e experiência do cliente;
+Desenvolver e manter integrações com APIs externas, bancos de dados e serviços de terceiros;
+Realizar manutenção corretiva e evolutiva das soluções existentes;
+Monitorar aplicações e serviços, identificando causas de falhas e atuando na resolução de problemas;
+Garantir qualidade, segurança, organização e manutenibilidade do código;
+Criar e manter documentação técnica das soluções desenvolvidas;
+Identificar riscos, dependências e impactos técnicos antes e durante a execução dos projetos;
+Propor melhorias contínuas em arquitetura, processos, ferramentas e soluções da área;
+Trabalhar de forma integrada com os squads e demais times envolvidos nas entregas;
+Compartilhar conhecimento técnico e contribuir para a evolução da capacidade de desenvolvimento da área.
+Realizar code reviews de alta qualidade, garantindo padrões e consistência do código
+Apoiar tecnicamente desenvolvedores plenos e juniores, promovendo evolução do time.
+
+Requisitos e qualificações
+
+Experiência sólida em desenvolvimento back-end;
+Inglês intermediário/avançado.
+Domínio de Node/Typescript, com experiência prática no desenvolvimento de aplicações e serviços;
+Experiência avançada com desenvolvimento e integração de APIs REST;
+Experiência com bancos de dados relacionais e NoSQL;
+Conhecimento sólido de Git e boas práticas de versionamento;
+Experiência com integrações entre diferentes sistemas e plataformas;
+Experiência com produtos e arquiteturas Google Cloud e AWS
+Conhecimento de arquitetura de aplicações e capacidade de avaliar diferentes abordagens técnicas;
+Capacidade de compreender problemas de negócio e transformá-los em soluções tecnológicas;
+Perfil analítico, autônomo e organizado;
+Boa comunicação para interagir com diferentes áreas e traduzir questões técnicas de forma clara;
+Capacidade de trabalhar com múltiplos projetos e prioridades em um ambiente dinâmico.
+Conhecimento em Docker e conteinerização.
+
+Benefícios
+
+O Que Oferecemos
+
+Cartão multibenefícios (Caju);
+Psicologia Viva;
+Conexa Saúde;
+WellHub;
+Bônus anual;
+Day off de aniversário;
+Parcerias educacionais (USP/Esalq e Lemonade School);
+Programa de incentivo por indicação.
+
+Crescimento e Oportunidades Estamos em um momento de expansão e buscamos pessoas que queiram crescer junto com a gente. Aqui, crescimento vem com responsabilidade, autonomia e impacto direto no negócio.Você terá a oportunidade de trabalhar em projetos que conectam tecnologia, CRM, integrações e inteligência artificial, resolvendo problemas reais de negócio e construindo soluções que geram impacto para nossos clientes.Se você gosta de desafios técnicos, tem curiosidade para entender o problema antes de construir a solução e busca autonomia para fazer acontecer, queremos conhecer você.Let’s grow Hook!… more
+

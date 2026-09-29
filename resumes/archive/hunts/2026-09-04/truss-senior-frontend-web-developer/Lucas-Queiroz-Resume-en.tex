@@ -1,0 +1,110 @@
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage[english]{babel}
+\usepackage{fontspec}
+\defaultfontfeatures{Ligatures=NoCommon}
+\usepackage[sfdefault]{roboto}
+
+\pagestyle{empty}
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+
+\titleformat{\section}{\Large\bfseries\scshape\raggedright}{}{0em}{\MakeLowercase}[\titlerule]
+\titlespacing*{\section}{0pt}{4pt}{3pt}
+
+\newcommand{\resumeItem}[1]{\item\small{#1}}
+\newcommand{\resumeSubheading}[4]{
+\item
+  \textbf{#1}\\[-1pt]
+  \textit{#3}\\[-1pt]
+  \small #4\\[-1pt]
+  \small #2\vspace{3pt}
+}
+\newcommand{\resumeSubHeadingList}{\begin{itemize}[leftmargin=0.15in, label={}, nosep]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeRoleGap}{\vspace{4pt}}
+
+\begin{document}
+
+\begin{center}
+  \textbf{\Huge Lucas Queiroz} \\[3pt]
+  \small Vit\'oria, ES, Brazil $|$ +55 (27) 99203-0170 $|$ \href{mailto:sepulchrolucas@gmail.com}{sepulchrolucas@gmail.com} $|$
+  \href{https://linkedin.com/in/queiroz-lucas}{linkedin.com/in/queiroz-lucas} $|$
+  \href{https://github.com/queirozlc}{github.com/queirozlc}
+\end{center}
+\vspace{2pt}
+
+\section{Summary}
+I am a Senior Software Engineer with 5+ years building production front-end web applications with TypeScript, Node.js, React, and Go. I build API-driven user interfaces and mature multi-tenant systems for healthcare scheduling. I integrate AI-driven agentic workflows into daily delivery.
+
+\section{Skills}
+\resumeSubHeadingList
+\resumeItem{\textbf{Languages:} TypeScript \textbar{} JavaScript \textbar{} Node.js \textbar{} Go}
+\resumeItem{\textbf{Frontend:} React \textbar{} API-driven state management \textbar{} CSS}
+\resumeItem{\textbf{Testing:} Jest \textbar{} Vitest}
+\resumeItem{\textbf{Domain:} Electronic invoicing \textbar{} Healthcare scheduling}
+\resumeItem{\textbf{Backend and AI tooling:} Express \textbar{} Koa \textbar{} REST APIs \textbar{} PostgreSQL \textbar{} BullMQ \textbar{} Claude Code \textbar{} Codex \textbar{} Agentic workflows}
+\resumeSubHeadingListEnd
+
+\section{Experience}
+\resumeSubHeadingList
+  \resumeSubheading
+      {DexCare}{Mar 2026 - Present}
+      {Senior Software Engineer}{Remote}
+      \resumeSubHeadingList
+          \resumeItem{\textbullet\ Delivered real-time booking and provider availability for healthcare scheduling by building web interfaces with API-driven state~management backed by TypeScript services.}
+          \resumeItem{\textbullet\ Improved shared UI consistency across scheduling surfaces by developing reusable front-end React components with CSS.}
+          \resumeItem{\textbullet\ Reduced wrong bookings by 15\% by building Epic EMR integrations that kept time slots synchronized with hospital records.}
+          \resumeItem{\textbullet\ Reduced authentication friction by 25\% by building multi-tenant REST APIs with Auth0 JWT and OpenAPI/Swagger validation.}
+          \resumeItem{\textbullet\ Improved release confidence across services by using Jest and Vitest for testing, Datadog for debugging, and lint and complexity limits for code quality.}
+          \resumeItem{\textbullet\ Improved daily delivery quality by building agentic workflows with Claude Code and Codex that enforced shared engineering rules.}
+      \resumeSubHeadingListEnd
+  \resumeRoleGap
+  \resumeSubheading
+      {Luizalabs}{Jan 2024 - Mar 2026}
+      {Mid-level Software Engineer}{Remote}
+      \resumeSubHeadingList
+          \resumeItem{\textbullet\ Delivered electronic invoicing across Magazine Luiza\textquotesingle{}s e-commerce operation by building distributed tax microservices in Node.js and Go.}
+          \resumeItem{\textbullet\ Improved invoice processing throughput by 20\% by moving SEFAZ communication to asynchronous BullMQ queues.}
+          \resumeItem{\textbullet\ Cut support tickets by 18\% by building fiscal back-office dashboards in JavaScript for operational visibility.}
+      \resumeSubHeadingListEnd
+  \resumeRoleGap
+  \resumeSubheading
+      {Lippaus Distribuidora}{Jan 2023 - Jan 2024}
+      {Mid-level Software Engineer}{Vit\'oria, ES, Brazil}
+      \resumeSubHeadingList
+          \resumeItem{\textbullet\ Supported nationwide retailer expansion by building a multi-tenant web and mobile platform on PostgreSQL.}
+          \resumeItem{\textbullet\ Increased order and notification processing capacity by 26\% by moving workloads to asynchronous BullMQ jobs.}
+      \resumeSubHeadingListEnd
+  \resumeRoleGap
+  \resumeSubheading
+      {Lippaus Distribuidora}{Mar 2021 - Jan 2023}
+      {Entry-level Fullstack Software Engineer}{Vit\'oria, ES, Brazil}
+      \resumeSubHeadingList
+          \resumeItem{\textbullet\ Supported operational and administrative processes by building internal back-office dashboards in JavaScript.}
+      \resumeSubHeadingListEnd
+\resumeSubHeadingListEnd
+
+\resumeRoleGap
+\section{Education}
+\resumeSubHeadingList
+  \resumeSubheading
+      {FAESA}{Feb 2022 - Dec 2025}
+      {Bachelor\textquotesingle{}s degree, Information Systems}{Vit\'oria, ES, Brazil}
+\resumeSubHeadingListEnd
+
+\end{document}

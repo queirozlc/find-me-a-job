@@ -1,0 +1,42 @@
+  └ Pages:           1
+
+• Viewed Image
+  └ /tmp/quill-final-audit.SdZdbK/nix-senior-fullstack-software-engineer-en.png
+
+• Ran 9 commands · ctrl + t to view transcript
+
+─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+• - /Users/lucasqueiroz/career/resumes/bairesdev-senior-node-typescript-aws-en.pdf: 1 page; extraction and visual
+    checks passed; UNVERIFIED 0; Ruby/Rails 0; blocker: contract type unknown.
+
+  - /Users/lucasqueiroz/career/resumes/nix-senior-fullstack-software-engineer-en.pdf: 1 page; extraction and
+    corrected visual checks passed; UNVERIFIED 0; Ruby/Rails 0; blockers: freelancer restriction and unsupported
+    required skills.
+
+  - /Users/lucasqueiroz/career/resumes/addvisor-desenvolvedor-php-angular-senior-pt.pdf: 1 page; extraction and
+    visual checks passed; UNVERIFIED 0; Ruby/Rails 0; blockers: Barueri hybrid work and unsupported PHP/Angular
+    requirements.
+
+  - /Users/lucasqueiroz/career/resumes/flash-coordenador-engenharia-software-tech-lead-pt.pdf: 1 page; extraction and
+    visual checks passed; UNVERIFIED 0; Ruby/Rails 0; blockers: remote/hybrid conflict and unknown contract type.
+
+  - /Users/lucasqueiroz/career/resumes/jobgether-web-frontend-engineer-en.pdf: 1 page; extraction and visual checks
+    passed; UNVERIFIED 0; Ruby/Rails 0; blockers: travel review and unknown destination. Exactly five PDFs exist. No
+    tailored source artifacts exist. Bases are unchanged.
+
+• Stop hook (blocked)
+  feedback: Ledger guard: work landed under ~/career/ but these ledgers did not move. Append the log line and update
+  the head before you stop, then finish your reply.
+      - app-addvisor-desenvolvedor-php-angular-senior.md (Phase: 3-gate)
+      - app-bairesdev-senior-node-typescript-aws.md (Phase: 2-tailor)
+      - app-flash-coordenador-engenharia-software-tech-lead.md (Phase: 3-gate)
+      - app-jobgether-web-frontend-engineer.md (Phase: 2-tailor)
+      - hunt-2026-09-02.md (Phase: 1-source)
+    Format: `- HH:MM <what happened>` from `date +%H:%M`. Append, never rewrite. If nothing happened worth logging,
+    touch the ledger and stop again.
+ 
+ 
+› Ask Codex to do anything
+ 
+  gpt-5.6-sol high fast · Context 64% left · Context 36% used · Full Access · Main [default]

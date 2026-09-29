@@ -1,0 +1,42 @@
+    465  location, Brazil: geoId=106057199
+
+• Ran 3 commands · ctrl + t to view transcript
+
+─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+• Completed six Jobs-tab runs. Posts Search was not touched.
+
+  Runs and counts (results / kept):
+
+  - ("typescript" or "node.js") AND "senior" AND "latam" — 99 / 3
+  - ("typescript" or "node.js") AND "senior" AND "brazil" — 99+ / 1
+  - ("typescript" or "node.js") AND "pj" AND "remoto" — 99+ / 1
+  - ("golang" or "go") AND "senior" AND "latam" — 28 / 2
+  - ("react" or "typescript") AND "contractor" AND "latam" — 85 / 1
+  - ("node.js" or "typescript") AND "pj" AND "brazil" — 99+ / 0
+
+  Raw postings: 9
+
+  Segment hints:
+
+  - us-direct: 2
+  - br-pj: 0
+  - agency: 6
+  - unclear: 1
+
+  Files updated:
+
+  - /Users/lucasqueiroz/career/jobs/hunt-2026-09-01-jobs-raw.md
+  - /Users/lucasqueiroz/career/keywords/search-log.md
+  - /Users/lucasqueiroz/career/keywords/us-direct.md
+  - /Users/lucasqueiroz/career/keywords/br-pj.md
+  - /Users/lucasqueiroz/career/keywords/agency.md
+  - /Users/lucasqueiroz/career/ATS-KNOWLEDGE.md
+
+  Problems:
+
+  - Remote filter parameter was not observable; its URL change exposed a salary-filter delta, which was removed.
+    Location text was used instead.
+
+  - Six runs produced 9 unique qualifying postings; duplicates and postings older than 24 hours prevented reaching
+    25.

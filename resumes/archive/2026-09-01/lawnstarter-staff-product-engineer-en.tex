@@ -1,0 +1,123 @@
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage[english]{babel}
+
+% Font options. tectonic runs XeTeX: roboto loads through fontspec, so
+% ligatures are disabled here (CV-SPEC fix 1). glyphtounicode and
+% \pdfgentounicode are pdfTeX-only and are not used.
+\usepackage{fontspec}
+\defaultfontfeatures{Ligatures=NoCommon}
+\usepackage[sfdefault]{roboto}  % Sans-serif font
+
+\pagestyle{empty}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+
+% Section formatting
+\titleformat{\section}{\Large\bfseries\scshape\raggedright}{}{0em}{\MakeLowercase}[\titlerule]
+\titlespacing*{\section}{0pt}{4pt}{3pt}
+
+% Custom commands
+\newcommand{\resumeItem}[1]{\item\small{#1}}
+% #1 Company  #2 Dates  #3 Title  #4 Location. CV-SPEC item 2:
+% template two-column header, with the accepted parser cost recorded in RUBRIC.md.
+\newcommand{\resumeSubheading}[4]{
+\item
+  \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & #2 \\[2pt]
+    \textit{#3} & \textit{#4} \\
+  \end{tabular*}\vspace{5pt}
+}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\newcommand{\resumeSubHeadingList}{\begin{itemize}[leftmargin=0.15in, label={}, nosep]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeRoleGap}{\vspace{5pt}}
+
+\begin{document}
+
+\begin{center}
+  \textbf{\Huge Lucas Queiroz} \\[3pt]
+  \small Vit\'oria, ES, Brazil $|$ +55 (27) 99203-0170 $|$ \href{mailto:sepulchrolucas@gmail.com}{sepulchrolucas@gmail.com} $|$
+  \href{https://linkedin.com/in/queiroz-lucas}{linkedin.com/in/queiroz-lucas} $|$
+  \href{https://github.com/queirozlc}{github.com/queirozlc}
+\end{center}
+\vspace{2pt}
+
+\section{Summary}
+AI-native Senior Software Engineer with 5+ years in product engineering, delivering outcome-driven full stack TypeScript systems and measurable product outcomes. Uses Claude Code and Codex daily, builds event-driven healthcare scheduling and multi-tenant APIs on AWS, and works in Advanced/C1 English.
+
+\section{Skills}
+\resumeSubHeadingList
+\resumeItem{\textbf{AI agents and quality:} Claude Code \textbar{} Codex \textbar{} Agentic workflows \textbar{} Vitest \textbar{} Jest}
+\resumeItem{\textbf{Languages and frontend:} TypeScript \textbar{} JavaScript \textbar{} Node.js \textbar{} React \textbar{} React Native \textbar{} Go}
+\resumeItem{\textbf{Backend and data:} Express \textbar{} Koa \textbar{} REST APIs \textbar{} OpenAPI/Swagger \textbar{} PostgreSQL \textbar{} DynamoDB \textbar{} Redis \textbar{} Drizzle ORM \textbar{} Sequelize \textbar{} BullMQ}
+\resumeItem{\textbf{Cloud and observability:} AWS \textbar{} Datadog \textbar{} GCP \textbar{} Docker \textbar{} Kubernetes \textbar{} ArgoCD \textbar{} CI/CD \textbar{} LaunchDarkly \textbar{} OpenFeature \textbar{} Auth0}
+\resumeSubHeadingListEnd
+
+\section{Experience}
+\resumeSubHeadingList
+  \resumeSubheading
+      {DexCare}{Jan 2026 - Present}
+      {Senior Software Engineer}{Remote}
+      \resumeSubHeadingList
+          \resumeItem{\textbullet\ Enable AI coding agents to ship production-ready code in daily production work by building reusable Claude Code and Codex agent workflows with guardrails: shared rules, lint enforcement, cyclomatic complexity limits, and tests.}
+          \resumeItem{\textbullet\ Improve a booking-quality metric by reducing wrong bookings by 15\% through Epic EMR time-slot flows that keep bookable slots synced with hospital records.}
+          \resumeItem{\textbullet\ Lower release risk by 7\% through a controlled rollout of React changes behind LaunchDarkly/OpenFeature flags with Datadog RUM observability.}
+          \resumeItem{\textbullet\ Deliver visit booking and provider availability by building an event-driven architecture with TypeScript and Node.js services on Express and Koa.}
+          \resumeItem{\textbullet\ Strengthen security and reduce authentication friction by 25\% by enforcing Auth0 JWT, tenant isolation, and OpenAPI/Swagger contracts on multi-tenant REST APIs.}
+          \resumeItem{\textbullet\ Serve booking reads and writes by building a PostgreSQL data model with Sequelize and Drizzle ORM, DynamoDB Streams, and Redis, wired to S3 and RDS through AWS SDK v3.}
+          \resumeItem{\textbullet\ Cut new-client pilot friction by 33\% by helping implement the Shared Platform Initiative (SPI), replacing per-customer environments with shared service instances and isolated configuration, secrets, and data stores.}
+      \resumeSubHeadingListEnd
+  \resumeRoleGap
+  \resumeSubheading
+      {Luizalabs}{Jan 2024 - Jan 2026}
+      {Mid-level Software Engineer}{Remote}
+      \resumeSubHeadingList
+          \resumeItem{\textbullet\ Delivered electronic invoice issuing for Magazine Luiza\textquotesingle{}s e-commerce operation by building distributed tax microservices in Node.js, Java, and Go.}
+          \resumeItem{\textbullet\ Improved invoice-processing performance and throughput by 20\% by moving SEFAZ communication to fault-tolerant asynchronous BullMQ queues.}
+          \resumeItem{\textbullet\ Cut support tickets by 18\% and gave operations visibility into fiscal workflows by building back-office dashboards on tax microservices.}
+          \resumeItem{\textbullet\ Kept services production-ready by deploying with Docker and Kubernetes on GCP through ArgoCD, with Vitest and Jest suites gating CI/CD.}
+      \resumeSubHeadingListEnd
+  \resumeRoleGap
+  \resumeSubheading
+      {Lippaus Distribuidora}{Jan 2023 - Jan 2024}
+      {Mid-level Software Engineer}{Remote}
+      \resumeSubHeadingList
+          \resumeItem{\textbullet\ Turned customer requirements into delivered solutions by leading project scoping and stakeholder communication.}
+          \resumeItem{\textbullet\ Built a multi-tenant web and mobile platform by using React Native and PostgreSQL.}
+          \resumeItem{\textbullet\ Increased processing capacity by 26\% for high-volume orders, notifications, and integrations through asynchronous BullMQ jobs.}
+      \resumeSubHeadingListEnd
+  \resumeRoleGap
+  \resumeSubheading
+      {Lippaus Distribuidora}{Mar 2021 - Jan 2023}
+      {Entry-level Fullstack Software Engineer}{Remote}
+      \resumeSubHeadingList
+          \resumeItem{\textbullet\ Delivered customer-facing features end to end by balancing business requirements with technical constraints.}
+          \resumeItem{\textbullet\ Supported operational and administrative workflows by developing internal back-office dashboards in JavaScript.}
+      \resumeSubHeadingListEnd
+\resumeSubHeadingListEnd
+
+\resumeRoleGap
+\section{Education}
+\resumeSubHeadingList
+  \resumeSubheading
+      {FAESA}{Feb 2022 - Dec 2025}
+      {Bachelor\textquotesingle{}s degree, Information Systems}{Vit\'oria, ES, Brazil}
+\resumeSubHeadingListEnd
+
+\end{document}

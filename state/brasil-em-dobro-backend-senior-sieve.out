@@ -1,0 +1,43 @@
+
+⏺ Now the mandatory extraction step.
+
+  Thought for 2m 38s, read 1 file, ran 13 shell commands 
+
+⏺ Report at ~/career/reports/brasil-em-dobro-backend-senior-gate.md. Ledger line appended.
+
+  Gate 0 — PASS. Checks 0.1 to 0.4 PASS. Checks 0.5, 0.6, 0.7 and 0.8 FAIL from the tabular* role header only. That
+  is the accepted exception in RUBRIC.md and CV-SPEC.md item 2. Reported, not blocking. I looked for another cause
+  and found none. Codepoint scan: zero NUL, zero U+FB00-FB06, zero U+FFFD, one dash type only (U+002D). One page.
+
+  Gate 1 — PASS. No FAIL row. Failing items: none.
+  - Location PASS (Vitória, ES, Brasil in the contact line).
+  - English PASS (Inglês Avançado/C1 stated, posting asks Intermediário).
+  - Work authorization, time zone, minimum years, degree: not stated.
+  - Every required knowledge token present verbatim: Typescript, Fastify, Docker, Mysql, SQL, Git. AWS (Diferencial)
+    present too.
+  - Exclusividade and computador próprio are not observable from DOSSIER.md, are not CV fields, and are not FAILs.
+    They go in the apply note screening answers.
+ 
+  Gate 2 — 24/100. Required 28/108, preferred 3/20, stuffing penalty 0. Honest ceiling 28. Missing required: backend
+  in a bullet, testes in Skills. Missing preferred: arquitetura, frameworks, usabilidade, acessibilidade. Keep
+  usabilidade and acessibilidade at 0; the dossier records neither.
+
+  Gate 3 — 92/100. Deductions: 3.2 minus 5 (bullet 2 of the current role carries no posting token), 3.8 minus 3 (9
+  UNVERIFIED markers; MySQL | Mysql | SQL three near-identical adjacent Skills entries; Construí opens 4 of 12
+  bullets). Voice PASS: 12 of 12 bullets first person past tense subject omitted, no bullet starts with Eu or I,
+  Summary uses Eu four times. Titles and dates match LinkedIn ground truth character for character. Zero Ruby or
+  Rails tokens.
+
+  Numbers: all five (15%, 25%, 33%, 20%, 26%) trace to DOSSIER.md D2, D3, D7, L2, P2. mais de 5 anos is derived, not
+  recorded.
+  
+  Fix list for the Architect: none.
+
+✻ Baked for 6m 34s · done 7:56 PM
+                                                                             ✔ Update installed · Restart to update
+─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+❯ 
+─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  Opus 5 · lucasqueiroz · ctx 13% · cache 99% · [█░░░░░░░░░] 129.1k/1.0M · effort high                          /rc
+  ⏵⏵ auto mode on (shift+tab to cycle) · ← 10 agents
+EXIT 0

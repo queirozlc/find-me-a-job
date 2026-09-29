@@ -1,0 +1,42 @@
+⏺ Verdict under the accepted exception: base-en.pdf PASS. base-pt.pdf PASS. Report at
+  ~/career/reports/base-cv-gate0-r7.md.
+
+  0.5, 0.6, 0.7 and 0.8 fail on the raw extraction. The header is the sole cause of all four in both files, tested
+  not assumed: 0.8 returns exactly two construct lines per file (the header's own tabular*), 0.7's diff is 5 hunks
+  and all 5 are header blocks, 0.5 shows 18 blocks with exactly 4 bullet blocks none split, and 0.6's gap comes from
+  the header's second row. The new D7 bullet and the spacing change introduced no new break.
+  
+  No figure mismatch. All seven figures match DOSSIER exactly and sit on the assigned bullets: D2 15%, D3 25%, D5 7%,
+  D7 33%, L2 20%, L3 18%, P2 26%. The nine bullets marked "no number" carry none. Both files agree. Each figure is
+  also on the correct claim, not just the correct bullet. D7's three constraints hold: conceptual only, zero customer
+  names, zero Confluence links.
+  
+  Gate 2 orphans: Swagger, RabbitMQ, AMQP. Deduction 15 points. The 15 splits in two:
+
+  - 10 accepted. RabbitMQ and AMQP are orphans by design per the dossier's Skills-token-only rule. Not a defect.
+  - 5 unintended. Swagger was evidenced in r4 and is not in r7. The rewrite that added the 25% figure to D3 changed
+    "validating requests against OpenAPI/Swagger specs" to "OpenAPI validation", dropping the token. Agentic 
+    workflows is fixed by the D6 bullet.
+  
+  Gate 3: 100/100, both files. First run with no deduction. 3.4 now passes with seven figures against a requirement
+  of three.
+    
+  All 12 job strings, the school name and the education date match ground truth. Rails tokens 0 across six files.
+  UNVERIFIED 0. No term over cap. One page each. Fullstack Labs still absent. Remote/Remoto only, no employer city.
+  The banned "remotely from Brazil" sentence is absent.
+ 
+  Fix list, one item, not blocking:
+  
+  1. Restore Swagger to the D3 bullet, both files. "OpenAPI/Swagger validation" in place of "OpenAPI validation"
+     recovers 5 Gate 2 points without touching the figure or the claim. One word per file.
+ 
+  I am not listing RabbitMQ and AMQP as a fix. Evidencing them in a bullet would mean naming the services that use
+  them, which the dossier forbids. That trade is already your decision.
+  
+✻ Baked for 3m 19s · done 6:19 PM
+                                                                                                   
+─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+❯ 
+─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  Opus 5 · lucasqueiroz · ctx 26% · cache 97% · [██░░░░░░░░] 260.8k/1.0M · effort high                          /rc
+  ⏵⏵ auto mode on (shift+tab to cycle) · ← 10 agents

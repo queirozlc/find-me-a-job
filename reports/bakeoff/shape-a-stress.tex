@@ -1,0 +1,76 @@
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+% pdfTeX-only; tectonic runs XeTeX. Guarded so the file compiles.
+\ifdefined\pdfgentounicode\input{glyphtounicode}\fi
+
+% Font options
+\usepackage[sfdefault]{roboto}  % Sans-serif font
+
+% CV-SPEC item 1 - ligature fix.
+% \DisableLigatures is pdfTeX-only and errors under tectonic (XeTeX).
+% Under tectonic + roboto (fontspec) no ligature fix is needed; see the report.
+\usepackage{microtype}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{\Large\bfseries\scshape\raggedright}{}{0em}{}[\titlerule]
+
+\ifdefined\pdfgentounicode\pdfgentounicode=1\fi
+
+\newcommand{\resumeItem}[1]{\item\small{#1}}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\newcommand{\resumeSubHeadingList}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+% Shape A - one source line per role header
+\newcommand{\resumeSubheading}[4]{
+\vspace{-1pt}\item
+  \textbf{#1} \textbar{} #3 \textbar{} #2 \textbar{} #4
+  \vspace{-7pt}
+}
+\begin{document}
+
+\section{Experience}
+\resumeSubHeadingList
+  \resumeSubheading
+      {Company X}{Jan 2020 - Feb 2021}
+      {Senior Software Engineer}{Vitoria, ES}
+      \resumeSubHeadingList
+          \resumeItem{Built an efficient billing pipeline that cut invoice workflow latency.}
+          \resumeItem{Owned the deployment workflow and made the release process efficient.}
+      \resumeSubHeadingListEnd
+  \resumeSubheading
+      {Magazine Luiza LuizaLabs via Fullstack Labs}{Mar 2021 - Present}
+      {Senior Backend Software Engineer, Platform}{Vitoria, ES, Brazil}
+      \resumeSubHeadingList
+          \resumeItem{Designed an efficient multi-tenant API and its onboarding workflow.}
+          \resumeItem{Automated the review workflow, making incident response efficient.}
+      \resumeSubHeadingListEnd
+\resumeSubHeadingListEnd
+
+\end{document}

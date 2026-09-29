@@ -1,0 +1,45 @@
+{
+  "workers": [
+    {
+      "name": "portal-jobs-a",
+      "portal": "Jobs Search",
+      "surface": "jobs"
+    },
+    {
+      "name": "portal-jobs-b",
+      "portal": "Jobs Search #2",
+      "surface": "jobs"
+    },
+    {
+      "name": "portal-posts",
+      "portal": "Post Search",
+      "surface": "posts"
+    }
+  ],
+  "queries": {
+    "jobs": [
+      "\"node.js\" AND \"remote\" AND \"latam\"",
+      "\"typescript\" AND \"backend\" AND \"remote\" AND \"brazil\"",
+      "(\"node.js\" or \"typescript\") AND \"postgresql\" AND \"remote\" AND \"brazil\"",
+      "(\"react\" AND \"node.js\") AND \"remote\" AND \"pj\"",
+      "\"golang\" AND \"remote\" AND \"brazil\"",
+      "\"integrations\" AND \"backend\" AND \"latam\""
+    ],
+    "posts": [
+      "\"we're hiring\" AND \"node.js\" AND \"remote\" AND \"latam\"",
+      "\"hiring\" AND \"typescript\" AND \"remote\" AND \"brazil\"",
+      "\"contratando\" AND \"node.js\" AND \"remoto\" AND \"pj\"",
+      "\"vaga\" AND \"typescript\" AND \"remoto\" AND \"pj\"",
+      "\"hiring\" AND \"golang\" AND \"remote\" AND \"brazil\"",
+      "\"fullstack\" AND \"react\" AND \"node.js\" AND \"remote\""
+    ]
+  },
+  "blocklist": [
+    "BairesDev"
+  ],
+  "limits": {
+    "cards_per_query": 5,
+    "command_timeout_seconds": 30,
+    "settle_seconds": 1.5
+  }
+}

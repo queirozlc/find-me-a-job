@@ -1,0 +1,42 @@
+
+  Thought for 3m 58s, searched for 1 pattern, read 3 files, ran 18 shell commands 
+
+⏺ Report: ~/career/reports/lawnstarter-staff-product-engineer-gate0.md
+
+  Verdicts
+
+  ┌───────────────────┬─────────────────────────────────────────────────────────────┬────────────┐
+  │       Gate        │                             EN                              │     PT     │
+  ├───────────────────┼─────────────────────────────────────────────────────────────┼────────────┤
+  │ Gate 0 Parse      │ PASS, 4 accepted header exceptions (0.5-0.8, tabular* only) │ PASS, same │
+  ├───────────────────┼─────────────────────────────────────────────────────────────┼────────────┤
+  │ Gate 1 Knockouts  │ PASS, the posting states none                               │ PASS       │
+  ├───────────────────┼─────────────────────────────────────────────────────────────┼────────────┤
+  │ Gate 2 Retrieval  │ 38 / 100                                                    │ 36 / 100   │
+  ├───────────────────┼─────────────────────────────────────────────────────────────┼────────────┤
+  │ Gate 3 Human scan │ 91 / 100                                                    │ 91 / 100   │
+  └───────────────────┴─────────────────────────────────────────────────────────────┴────────────┘
+  
+  Fix list: 19 items. 10 are [DOSSIER-OK] rewordings. 7 are [BLOCKED] pending a fact from Lucas. 2 are report-only.
+ 
+  Key findings
+
+  1. The shipped PDFs do not match their .tex. EN PDF says production outcomes, en.tex:62 says product outcomes. PT
+     drifts the same way. Every bullet and role header matches; only the Summary drifts. Cost: the token product is
+     absent from both PDFs, and the posting title is Staff Software Engineer, Product. A rebuild recovers it.
+  2. Gate 0 is otherwise clean. No ligature loss, one page each, contact block in the body, headers verbatim in both
+     languages. All four titles, both company spellings and all five date ranges match the DOSSIER LinkedIn block
+     character for character. grep -rniE 'ruby|rails|unverified' on both .tex files: zero hits.
+  3. Gate 2 is the real failure surface. Absent verbatim: evals, prompts, rollback, documented, marketplace, 
+     post-launch review. Present in substance but not as the posting's token: guardrails, architecture, data model,
+     rollout, security, performance, runbooks, metric, lead-level, PM/designer.
+  4. Two shipped claims trace to no DOSSIER fact and carry no [UNVERIFIED] marker: "beverage distribution startup"
+     (tex:111) and "Supported nationwide retailer expansion" (tex:102). Flagged for Lucas, not deleted. 
+    
+✻ Cooked for 6m 55s · done 7:20 PM
+                                                
+─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+❯ 
+─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  Opus 5 · lucasqueiroz · ctx 13% · cache 99% · [█░░░░░░░░░] 127.1k/1.0M · effort high                          /rc
+  ⏵⏵ auto mode on (shift+tab to cycle) · ← 10 agents

@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "task_id": "p7-group-fullstack-quill",
+  "status": "complete",
+  "completed_at": "2026-09-04T20:12:50+00:00",
+  "artifacts": [
+    "/Users/lucasqueiroz/career/resumes/hunts/2026-09-04-g/p7-group-fullstack/Lucas-Queiroz-Resume-pt.tex",
+    "/Users/lucasqueiroz/career/resumes/hunts/2026-09-04-g/p7-group-fullstack/Lucas-Queiroz-Resume-pt.pdf",
+    "/Users/lucasqueiroz/career/resumes/hunts/2026-09-04-g/p7-group-fullstack/application-note.md",
+    "/Users/lucasqueiroz/career/state/p7-group-fullstack-quill.report.md"
+  ]
+}

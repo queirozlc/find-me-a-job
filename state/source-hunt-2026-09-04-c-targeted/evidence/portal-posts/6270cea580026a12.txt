@@ -1,0 +1,96 @@
+Feed post
+
+Juliana Verissimo
+  • 2nd
+Tech Recruiter | US Remote Roles | Engineering Talent Specialist
+2d • 
+
+Follow
+
+🚀 Senior Software Engineers — Your Language, Your Opportunity!
+
+We’re hiring experienced Senior Software Engineers / Tech Lead-level professionals for an exciting LLM Evaluation & Repository Validation project.
+
+You’ll work with real-world, widely-used GitHub repositories with 5,000+ stars, helping evaluate how AI models understand, modify, test, and fix complex codebases.
+
+🔍 What will you work on?
+• Analyze and triage GitHub issues
+• Set up and configure complex repositories
+• Dockerize development environments
+• Evaluate unit test coverage and quality
+• Modify and run real-world codebases
+• Assess LLM performance in bug-fixing scenarios
+• Collaborate with AI researchers
+• Potentially lead junior engineers
+
+🎯 What we’re looking for
+• 3+ years of experience with your primary programming language
+• Strong Git & Docker skills
+• Ability to navigate complex codebases
+• Experience running, modifying, and testing projects locally
+• Open-source experience is a plus
+• LLM/AI evaluation or developer tooling experience is a bonus
+
+💻 OPEN POSITIONS
+
+🐍 Senior Software Engineer – Python
+LLM Evaluation & Repository Validation
+👉 Apply here: https://lnkd.in/egCEzdVD
+
+🟨 Senior Software Engineer – JavaScript
+LLM Evaluation & Repository Validation
+👉 Apply here: https://lnkd.in/e5vU2P_G
+
+☕ Senior Software Engineer – Java
+LLM Evaluation & Repository Validation
+👉 Apply here: https://lnkd.in/efgdVtyb
+
+⚙️ Senior Software Engineer – C++
+LLM Evaluation & Repository Validation
+👉 Apply here: https://lnkd.in/eWm6vF-4
+
+🦀 Senior Software Engineer – Rust
+LLM Evaluation & Repository Validation
+👉 Apply here: https://lnkd.in/etZcaGqt
+
+💎 Senior Software Engineer – Ruby
+LLM Evaluation & Repository Validation
+👉 Apply here: https://lnkd.in/eXaXVtWS
+
+🐹 Senior Software Engineer – Go
+LLM Evaluation & Repository Validation
+👉 Apply here: https://lnkd.in/eSpX-F29
+
+🔷 Senior Software Engineer – C#
+LLM Evaluation & Repository Validation
+👉 Apply here: https://lnkd.in/eDjRWCBr
+
+📍 Locations: Bangladesh, Brazil, Colombia, Egypt, Ghana, India, Indonesia, Turkey & Vietnam.
+🌎 Remote
+⏰ 40 hours/week
+🕐 4 hours/day overlap with PST
+📅 3-month engagement
+💼 Contractor assignment
+
+If you’re a Senior Software Engineer who enjoys working with challenging codebases and wants to contribute to the evaluation of the next generation of AI coding agents, this opportunity could be for you.
+
+👉 Choose your language and apply above!
+
+Know someone who would be a great fit? Tag them or share this post!
+
+#Hiring #SoftwareEngineering #AI #LLM #OpenSource #TechJobs #RemoteJobs #Python #JavaScript #Java #Cpp #Rust #Ruby #Golang #CSharp… more
+
+
+16 reactions16
+4 comments4 comments
+•
+2 reposts2 reposts
+
+Like
+
+
+Comment
+
+Repost
+Send
+

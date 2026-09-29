@@ -1,0 +1,43 @@
+    contact=1
+    … +33 lines (ctrl + t to view transcript)
+    -rw-r--r--@ 1 lucasqueiroz  staff   3.6K Sep  2 19:35 resumes/techmunity-senior-fullstack-ai-en.raw.txt
+    -rw-r--r--@ 1 lucasqueiroz  staff   6.9K Sep  2 19:34 resumes/techmunity-senior-fullstack-ai-en.tex
+
+• Edited ~/career/resumes/techmunity-senior-fullstack-ai-en.tex (+2 -2)
+    62  \section{Summary}
+    63 -I am a Senior Software Engineer with 5+ years building Node.js/TypeScript, React, Go, and AWS systems. I buil
+        d event-driven healthcare scheduling, Epic EMR integrations, and multi-tenant APIs. I have Advanced/C1 Englis
+        h proficiency and work daily in English with a US team. I integrate AI-driven workflows into delivery. I have
+         worked in high-growth startup/scaleup environments [UNVERIFIED] and owned technically difficult systems end-
+        to-end [UNVERIFIED].
+    63 +I am a Senior Software Engineer with 5+ years building Node.js/TypeScript, React, Go, and AWS systems. I buil
+        d event-driven healthcare scheduling, Epic EMR integrations, and multi-tenant APIs. I have Advanced/C1 Englis
+        h proficiency and work daily in English with a US team. I integrate AI-driven workflows into delivery. I have
+         worked in \mbox{high-growth startup/scaleup environments} [UNVERIFIED] and owned technically difficult syste
+        ms end-to-end [UNVERIFIED].
+    64
+  … Diff preview limited (ctrl + t to view transcript).
+
+• Ran 3 commands · ctrl + t to view transcript
+
+• Edited ~/career/state/app-techmunity-senior-fullstack-ai.md (+1 -0)
+    22  - 19:31 Quill dispatched: tailor from base-en.tex. Output state/techmunity-senior-fullstack-ai-quill.out
+    23 +- 19:36 Quill wrote the English CV, PDF, extraction files, recruiter message, and draft report; one-page buil
+        d and required checks passed
+
+─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+• Completed the /Users/lucasqueiroz/career/resumes/techmunity-senior-fullstack-ai-en.pdf, /Users/lucasqueiroz/career/
+  reports/techmunity-senior-fullstack-ai-message.md, and /Users/lucasqueiroz/career/reports/techmunity-senior-
+  fullstack-ai-draft.md.
+  The PDF has one page. Four employment blocks and the education block extract.
+  There are 18 markers on lines 63, 69-70, 79, and 83. The report explains each marker.
+  Ruby/Rails has zero source hits. guardrails extracts correctly twice.
+
+─ Worked for 4m 57s ─────────────────────────────────────────────────────────────────────────────────────────────────
+ 
+ 
+› Ask Codex to do anything
+ 
+  gpt-5.6-sol high fast · Context 49% left · Context 51% used · Full Access
+EXIT 0

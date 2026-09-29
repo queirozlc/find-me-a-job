@@ -1,0 +1,87 @@
+CARD
+
+100% remoto | Igma - Desenvolvedor(a) Full-Stack Sênior100% remoto | Igma - Desenvolvedor(a) Full-Stack Sênior
+Igma
+São Paulo, SP (Remote)
+
+Posted 1 day ago1 day ago
+
+
+
+HEADER
+São Paulo, São Paulo, Brazil · 1 day ago · Over 100 people clicked apply
+
+DESCRIPTION
+Sobre a Igma 🚀
+
+A Igma é uma empresa de tecnologia que cria produtos digitais críticos: sites, plataformas e apps que
+
+funcionam, crescem e deixam marca. Atuamos onde a entrega não pode falhar, com o cuidado técnico de quem já transformou grandes empresas. Unimos estratégia, engenharia e design para resolver problemas reais com consistência e impacto. Nos orgulhamos de entregar produtos tecnicamente memoráveis.
+
+ 👀 O que buscamos?
+
+Estamos em busca de uma Pessoa Desenvolvedora Full-Stack para se juntar ao nosso Chapter de desenvolvimento, fortalecer o time de projetos e criar produtos digitais para as maiores empresas do Brasil.
+
+Unimos tecnologia e design para resolver problemas complexos de empresas. Criamos produtos digitais que revolucionam o relacionamento entre empresas e consumidores.
+
+🧑‍💻 Na Igma, Você Será Responsável Por
+
+Desenvolver e manter aplicações escaláveis, performáticas e com foco em experiência do usuário.
+Atuar tanto no frontend quanto no backend, contribuindo para a evolução completa dos produtos.
+Colaborar com designers, PMs e demais desenvolvedores para transformar ideias em soluções de alta qualidade.
+Garantir a qualidade do código e seguir boas práticas de engenharia.
+Participar ativamente de discussões técnicas, code reviews e decisões de arquitetura.
+Contribuir para a melhoria contínua dos processos, ferramentas e padrões do time.
+Desenvolver e manter aplicações escaláveis, performáticas e com foco em experiência do usuário.
+Atuar tanto no frontend quanto no backend, contribuindo para a evolução completa dos produtos.
+Colaborar com designers, PMs e demais desenvolvedores para transformar ideias em soluções de alta qualidade.
+Garantir a qualidade do código e seguir boas práticas de engenharia.
+Participar ativamente de discussões técnicas, code reviews e decisões de arquitetura.
+Contribuir para a melhoria contínua dos processos, ferramentas e padrões do time.
+
+ 🧡 Premissas culturais
+
+Coragem para realizar o que acredita
+Excelência na busca constante por superação
+Disposição genuína para se conectar com pessoas, sejam colegas, clientes ou parceiros
+Transparência para trabalhar em um ambiente de confiança
+Energia e intensidade para resolver problemas e entregar valor
+
+Etapas Do Nosso Processo Seletivo
+
+Cadastro
+Entrevista inicial
+Fit Cultural
+Entrevista técnica
+Proposta
+Contratação
+
+Requisitos
+
+Experiência comprovada de ao menos 4 anos com desenvolvimento full-stack.
+Experiência com desenvolvimento frontend utilizando React, Next.js ou tecnologias similares.
+Experiência com desenvolvimento backend utilizando Node.js, NestJS ou tecnologias equivalentes.
+Conhecimento em arquiteturas modernas e boas práticas de desenvolvimento.
+Experiência com integração de APIs REST e/ou GraphQL.
+Conhecimento em bancos de dados relacionais e não relacionais.
+Controle de versão com Git.
+Boas práticas de testes automatizados (unitários e integração).
+Familiaridade com pipelines de CI/CD.
+Conhecimento em cloud e ambientes de deploy será considerado um diferencial.
+
+Benefícios
+
+🏠 Oportunidade 100% remota
+
+💙 Plano de Saúde e Odonto com coparticipação
+
+🧘 Auxílio Cuidado e Desenvolvimento por meio de reembolsos
+
+🏃 Wellhub e incentivos de à práticas de esportes
+
+💳 Cartão multi-benefício Caju
+
+💻 Auxílio Remoto para investimento em equipamentos
+
+🏖️ 30 dias de férias remuneradas… more
+

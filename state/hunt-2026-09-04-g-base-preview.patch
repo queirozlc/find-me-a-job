@@ -1,0 +1,108 @@
+--- resumes/base-en.tex	2026-09-04 11:58:23
++++ resumes/hunts/2026-09-04-g/base-preview/base-en.tex	2026-09-04 17:19:50
+@@ -27,6 +27,8 @@
+ \urlstyle{same}
+ \raggedbottom
+ \raggedright
++\clubpenalty=10000
++\widowpenalty=10000
+ 
+ % Section formatting
+ \titleformat{\section}{\Large\bfseries\scshape\raggedright}{}{0em}{\MakeLowercase}[\titlerule]
+@@ -35,16 +37,18 @@
+ % Custom commands
+ \newcommand{\resumeItem}[1]{\item\small{#1}}
+ % #1 Company  #2 Dates  #3 Title  #4 Location. CV-SPEC item 2:
+-% template two-column header, with the accepted parser cost recorded in RUBRIC.md.
++% single-column header. Company, title, dates and location print as
++% consecutive lines so raw and layout extraction keep one block per role.
+ \newcommand{\resumeSubheading}[4]{
+ \item
+-  \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+-    \textbf{#1} & #2 \\[2pt]
+-    \textit{#3} & \textit{#4} \\
+-  \end{tabular*}\vspace{3pt}
++  {\samepage
++  \textbf{#1}\newline
++  \textit{#3}\newline
++  #2\newline
++  \textit{#4}\par}\nopagebreak\vspace{3pt}
+ }
+ \renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+-\newcommand{\resumeSubHeadingList}{\begin{itemize}[leftmargin=0.15in, label={}, nosep]}
++\newcommand{\resumeSubHeadingList}{\begin{itemize}[leftmargin=0.15in, label={}, nosep, beginpenalty=10000]}
+ \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+ \newcommand{\resumeRoleGap}{\vspace{3pt}}
+ 
+--- resumes/base-pt.tex	2026-09-04 11:58:23
++++ resumes/hunts/2026-09-04-g/base-preview/base-pt.tex	2026-09-04 17:19:50
+@@ -27,6 +27,8 @@
+ \urlstyle{same}
+ \raggedbottom
+ \raggedright
++\clubpenalty=10000
++\widowpenalty=10000
+ 
+ % Section formatting
+ \titleformat{\section}{\Large\bfseries\scshape\raggedright}{}{0em}{\MakeLowercase}[\titlerule]
+@@ -35,16 +37,18 @@
+ % Custom commands
+ \newcommand{\resumeItem}[1]{\item\small{#1}}
+ % #1 Company  #2 Dates  #3 Title  #4 Location. CV-SPEC item 2:
+-% template two-column header, with the accepted parser cost recorded in RUBRIC.md.
++% single-column header. Company, title, dates and location print as
++% consecutive lines so raw and layout extraction keep one block per role.
+ \newcommand{\resumeSubheading}[4]{
+ \item
+-  \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+-    \textbf{#1} & #2 \\[2pt]
+-    \textit{#3} & \textit{#4} \\
+-  \end{tabular*}\vspace{3pt}
++  {\samepage
++  \textbf{#1}\newline
++  \textit{#3}\newline
++  #2\newline
++  \textit{#4}\par}\nopagebreak\vspace{3pt}
+ }
+ \renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+-\newcommand{\resumeSubHeadingList}{\begin{itemize}[leftmargin=0.15in, label={}, nosep]}
++\newcommand{\resumeSubHeadingList}{\begin{itemize}[leftmargin=0.15in, label={}, nosep, beginpenalty=10000]}
+ \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+ \newcommand{\resumeRoleGap}{\vspace{3pt}}
+ 
+@@ -52,7 +56,7 @@
+ 
+ \begin{center}
+   \textbf{\Huge Lucas Queiroz} \\[3pt]
+-  \small Vit\'oria, ES, Brasil $|$ +55 (27) 99203-0170 $|$ \href{mailto:sepulchrolucas@gmail.com}{sepulchrolucas@gmail.com} $|$
++  \small Vit\'oria, ES, Brazil $|$ +55 (27) 99203-0170 $|$ \href{mailto:sepulchrolucas@gmail.com}{sepulchrolucas@gmail.com} $|$
+   \href{https://linkedin.com/in/queiroz-lucas}{linkedin.com/in/queiroz-lucas} $|$
+   \href{https://github.com/queirozlc}{github.com/queirozlc}
+ \end{center}
+@@ -102,7 +106,7 @@
+   \resumeRoleGap
+   \resumeSubheading
+       {Lippaus Distribuidora}{Jan 2023 - Jan 2024}
+-      {Mid-level Software Engineer}{Vit\'oria, ES, Brasil}
++      {Mid-level Software Engineer}{Vit\'oria, ES, Brazil}
+       \resumeSubHeadingList
+           \resumeItem{\textbullet\ Constru\'i uma plataforma multi-tenant web e mobile sobre PostgreSQL que apoiou a expans\~ao nacional de varejistas.}
+           \resumeItem{\textbullet\ Processei pedidos, notifica\c{c}\~oes e integra\c{c}\~oes com 26\% mais capacidade usando jobs ass\'incronos BullMQ.}
+@@ -111,7 +115,7 @@
+   \resumeRoleGap
+   \resumeSubheading
+       {Lippaus Distribuidora}{Mar 2021 - Jan 2023}
+-      {Entry-level Fullstack Software Engineer}{Vit\'oria, ES, Brasil}
++      {Entry-level Fullstack Software Engineer}{Vit\'oria, ES, Brazil}
+       \resumeSubHeadingList
+           \resumeItem{\textbullet\ Desenvolvi dashboards internos de backoffice em JavaScript que apoiaram a opera\c{c}\~ao de uma startup de distribui\c{c}\~ao de bebidas.}
+           \resumeItem{\textbullet\ Constru\'i funcionalidades para clientes de ponta a ponta equilibrando requisitos de neg\'ocio e restri\c{c}\~oes t\'ecnicas.}
+@@ -123,7 +127,7 @@
+ \resumeSubHeadingList
+   \resumeSubheading
+       {FAESA}{Feb 2022 - Dec 2025}
+-      {Bacharelado em Sistemas de Informa\c{c}\~ao}{Vit\'oria, ES, Brasil}
++      {Bacharelado em Sistemas de Informa\c{c}\~ao}{Vit\'oria, ES, Brazil}
+ \resumeSubHeadingListEnd
+ 
+ \end{document}

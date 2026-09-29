@@ -1,0 +1,71 @@
+CARD
+
+Software Engineer, Data Feeds (Verified job)Software Engineer, Data Feeds 
+Chainlink Labs
+Brazil (Remote)
+
+Viewed
+ · 
+Be an early applicant
+ · 
+Posted 6 hours ago6 hours ago
+
+
+
+HEADER
+Brazil · Reposted 7 hours ago · 49 people clicked apply
+
+DESCRIPTION
+About Chainlink
+
+Chainlink is the industry-standard oracle platform bringing the capital markets onchain and powering the majority of decentralized finance (DeFi). The Chainlink stack provides the essential data, interoperability, compliance, and privacy standards needed to power advanced blockchain use cases for institutional tokenized assets, lending, payments, stablecoins, and more. Since inventing decentralized oracle networks, Chainlink has enabled tens of trillions in transaction value and now secures the vast majority of DeFi.
+
+Many of the world’s largest financial services institutions have also adopted Chainlink’s standards and infrastructure, including Swift, Euroclear, Mastercard, Fidelity International, UBS, S&P Dow Jones Indices, FTSE Russell, WisdomTree, ANZ, and top protocols such as Aave, Lido, GMX and many others. Chainlink leverages a novel fee model where offchain and onchain revenue from enterprise adoption is converted to LINK tokens and stored in a strategic Chainlink Reserve. Learn more at chain.link.
+
+About The Role
+
+As a Software Engineer on the Data Feeds team, you’ll collaborate with an experienced technical team of other engineers, distributed systems computing experts, and security experts, who are all committed to building a world-changing decentralized infrastructure. You’ll develop and build highly scalable, secure, and reliable software that will change the way smart contracts function at a fundamental level, with a focus on Data Feeds. You’ll have the opportunity to learn and master the latest research concerning distributed systems, cryptography, blockchains, game theory, consensus algorithms, and decentralized applications. You will be given a high level of autonomy/ownership over your projects, the opportunity to expand your scope of knowledge, and the chance to help build the decentralized infrastructure of the future.
+
+Your Impact
+
+Designing and implementing new features within the Data Product space, such as trust-minimized off-chain computation & the aggregation of external data in various blockchain environments, and many more problems
+Design and own the end to end delivery of new and existing data products that power the largest market share of Defi by total value secured (TVS)
+Learn more about the underlying technology in the blockchain ecosystem (Solana, Avalanche, Polygon, Ethereum, and more).
+Build our core products with Smart Contracts using Solidity, Move, and Rust.
+Partner with the research team to build cutting-edge products
+Think creatively about attack vectors, possible failures, and disaster scenarios, modeling them in reproducible test environments, and developing fixes
+Managing the architectural vision for new subsystems in the core Chainlink node
+Implementing resilient distributed systems to achieve extremely high reliability in a variety of blockchain environments
+
+Requirements
+
+At least 4-6+ years of professional software engineering experience working in a collaborative product-driven environment
+Experience in blockchain and other Web 3.0 technologies
+Experience developing smart contracts that secured meaningful value on-chain
+Knowledge of computer science fundamentals and systems design concepts
+Experience owning multi month long projects, including communication of progress, dependencies, and risk mitigation directly with stakeholders and partners
+Experience building distributed systems and low-latency systems
+B.S. or higher in computer science, software engineering, mathematics or related technical field
+
+Desired
+
+Experience in Golang or any other strongly-typed programming language
+Experience working with a globally distributed team
+Experience working in or with market data
+
+Our Stack
+
+Golang, Solidity, TypeScript, Rust, Postgres, Terraform, AWS
+
+All roles with Chainlink Labs are global and remote-based. Unless otherwise stated, we ask that you try to overlap some working hours with Eastern Standard Time (EST).
+
+We carefully review all applications and aim to provide a response to every candidate within two weeks after the job posting closes. The closing date is listed on the job advert, so we encourage you to take the time to thoughtfully prepare your application. We want to fully consider your experience and skills, and you will hear from us regarding the status of your application shortly after the closing date.
+
+Commitment to Equal Opportunity
+
+Chainlink Labs is an equal opportunity employer. All qualified applicants will receive equal consideration for employment in compliance with applicable laws, regulations, or ordinances. If you need assistance or accommodation due to a disability or special need when applying for a role or in our recruitment process, please contact us via this form.
+
+Global Data Privacy Notice for Job Candidates and Applicants
+
+Information collected and processed as part of your Chainlink Labs Careers profile, and any job applications you choose to submit, is subject to our Recruiting Privacy Policy. By submitting your application, you are agreeing to our use and processing of your data as required.… more
+

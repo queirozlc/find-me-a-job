@@ -1,0 +1,47 @@
+CARD
+
+Pessoa Engenheira de Software Senior (Verified job)Pessoa Engenheira de Software Senior 
+Conta Simples
+Brazil (Remote)
+
+Viewed
+ · 
+Posted 2 days ago2 days ago
+ · 
+Easy Apply
+
+
+
+HEADER
+Brazil · 2 days ago · Over 100 applicants
+
+DESCRIPTION
+Modelo de trabalho:📍 Modelo de trabalho 100% remoto Sobre o time:Somos a principal plataforma de gestão de despesas, e garantimos isso através de um time que desenvolve o produto garantindo soluções seguras, escaláveis e de alta qualidade para nossos clientes. Trabalhamos em um ambiente ágil e colaborativo.
+Desafios da posição: Participar ativamente de todo o processo de construção do nosso produto(definição, planejamento, desenvolvimento, implantação, monitoria, sustentação). Além disso, é importante conduzir iniciativas com autonomia.
+Seu dia a dia na Conta Simples:
+Atuar com autonomia em todo o ciclo de vida do desenvolvimento de software;
+Trabalhar com boas práticas de desenvolvimento e design de código, promovendo qualidade e manutenibilidade dos projetos novos e atuais;
+Definir e implementar soluções que atendam os requisitos de qualidade com autonomia;
+Contribuir no desenvolvimento de outros desenvolvedores;
+Conduzir iniciativas, definições e alinhamentos com outras áreas com autonomia;
+Monitorar e operar as soluções em produção, garantindo performance, confiabilidade e qualidade;
+Utilizar ferramentas de IA (assistentes de código, agentes e automações) de forma crítica para acelerar o ciclo de delivery, mantendo os padrões de qualidade, segurança e manutenibilidade do código;
+Colaborar com times multidisciplinares, trazendo insights técnicos e contribuindo com a estratégia de produto.
+
+O que esperamos de você:
+Experiência sólida em desenvolvimento e arquitetura de software;
+Domínio de POO e boas práticas como SOLID, Design Patterns e Clean Code;
+Experiência com Node.js com TypeScript (ou Java, ou Kotlin, ou Go);
+Conhecimento e experiência em React e React Native;
+Sólidos conhecimentos em testes automatizados (Jest, Mocha, Testing Library, etc.);
+Experiência com bancos de dados SQL e NoSQL;
+Conhecimento em Cloud Computing (AWS Serverless é um diferencial);
+Domínio de protocolos de comunicação, APIs REST e boas práticas de integração;
+Experiência prática com uso de ferramentas de IA no fluxo de desenvolvimento, com capacidade de avaliar criticamente os resultados gerados, além de contribuir com evolução de skills e Agentes de IA no fluxo de desenvolvimento de software.
+Mentalidade protagonista, com autonomia para liderar iniciativas e propor melhorias.
+
+Será diferencial se você tiver:
+ Experiência na área de Abertura de Conta em Fintech.
+
+Dá uma olhada (em alguns) dos benefícios de ser Simpler:🏥 Plano de saúde (amplitude nacional) sem custo de mensalidade e coparticipação para os nossos #Simplers e até +2 dependentes legais 🦷 Plano odontológico (amplitude nacional) sem custo de mensalidade e coparticipação para os nossos #Simplers e até +2 dependentes legais🍕 Flex food no cartão Ifood Benefícios💻 Auxílio home office no cartão Ifood Benefícios💪 Wellhub extensivo a dependentes legais (filho(a)s e cônjuges)🎂 Birthday-off (para você curtir o seu dia com quem você ama!)📚 Parceria com Instituições Educacionais 🧠 Zenklub (Saúde Mental) - Plataforma de saúde mental com 04 sessões de terapia gratuitas por mês para todo Simpler🔒 Seguro de vida👶 Licença parental estendida (maternidade 180 dias e paternidade 45 dias), válida também para mães e pais adotantes, com as mesmas regras aplicadas a não adotantes🎒 Auxílio Creche - Para filhos de até 1 ano de idade✈️ Onhappy (Viagens) - Benefício de viagens com descontos exclusivos em hotéis, passagens e experiências para você viajar melhor e mais🐾 Guapeco (Saúde Pet) - Parceria de saúde pet com condições especiais para você cuidar do seu melhor amigo, no modelo de adesão individual… more
+

@@ -1,0 +1,11 @@
+EXPERIENCE
+ Company X                                                                  Jan 2020 - Feb 2021
+ Senior Software Engineer                                                            Vitoria, ES
+   Built an efficient billing pipeline that cut invoice workflow latency.
+   Owned the deployment workflow and made the release process efficient.
+
+ Company Y                                                                   Mar 2021 - Present
+ Senior Software Engineer                                                           Vitoria, ES
+   Designed an efficient multi-tenant API and its onboarding workflow.
+   Automated the review workflow, making incident response efficient.
+

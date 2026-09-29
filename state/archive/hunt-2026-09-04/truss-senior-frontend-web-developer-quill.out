@@ -1,0 +1,42 @@
+
+
+⏺ I will read the required files and the current Truss state, then complete the final checks and write the reports.
+
+  Thought for 16s, ran 7 shell commands 
+
+⏺ The source has newer edits than the built PDF, which still shows the old two DexCare bullets. I'll rebuild from the
+  current source and run checks, starting by reviewing report samples for formatting. · summarized
+
+  Ran 1 shell command 
+
+⏺ Now I rebuild the PDF from the current source and run all checks.
+  
+  Thought for 6s, ran 1 shell command 
+
+⏺ Build produced the PDF. I now confirm the exit code and render the page for a visual check, then write the two
+  reports.
+
+  Read 1 file, ran 1 shell command 
+
+⏺ Visual check passes. I now write the draft report and the task report.
+ 
+⏺ Write(~/career/reports/truss-senior-frontend-web-developer-draft.md)
+  ⎿  Wrote 60 lines to ../../../reports/truss-senior-frontend-web-developer-draft.md
+      1 # Truss Senior Front-End Web Developer Resume Draft
+      2 
+      3 ## Scope 
+      4 
+      5 - Language: English.
+      6 - Base: `resumes/base-en.tex`.
+      7 - Positioning: TypeScript, Node.js, React, and Go.
+      8 - Output: one tailored source and one PDF.
+      9 - Posting primary language: JavaScript and TypeScript. Accepted.
+     … +68 lines 
+
+✻ Newspapering… (1m 18s · ↓ 5.6k tokens)
+
+─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+❯ 
+─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  Fable 5.1 · lucasqueiroz · ctx 10% · cache 98% · [█░░░░░░░░░] 101.1k/1.0M · effort medium                     /rc
+  ⏵⏵ bypass permissions on (shift+tab to cycle) · ← 10 agents

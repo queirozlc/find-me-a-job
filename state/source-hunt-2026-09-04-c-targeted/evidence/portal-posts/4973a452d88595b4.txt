@@ -1,0 +1,60 @@
+Feed post
+
+Mindshaker Talent
+6h • 
+
+Follow
+
+Programador Vue (Sénior)
+100% remoto · Contrato PJ (B2B) · Aberto a toda a América Latina
+
+Sobre a Mindshaker Talent
+A Mindshaker Talent é a divisão de recrutamento técnico e consultoria em engenharia de software da Mindshaker, em atividade desde 2007, com equipas em Lisboa, Porto e Madrid.
+
+O nosso princípio é simples, Engineers Hiring Engineers: todo o candidato que apresentamos é avaliado por um engenheiro sénior, não por um recrutador. Se não o contratássemos nós próprios, não o enviamos ao cliente.
+
+Sobre a vaga
+Procuramos alguém para construir e manter aplicações Vue com código previsível e bem componentizado.
+Procuramos alguém que desenha a solução antes de a escrever, que defende as suas escolhas técnicas com dados e que eleva o nível de quem trabalha ao seu lado.
+
+Responsabilidades
+- Conduzir o desenho técnico das soluções e as decisões de arquitetura do projeto
+- Desenvolver interfaces em Vue 3 com Composition API
+- Estruturar o estado da aplicação e a navegação
+- Manter e evoluir componentes partilhados entre produtos
+- Mentorar engenheiros menos experientes e elevar o nível técnico da equipa
+
+Requisitos
+- Mais de 6 anos de experiência profissional na função
+- Experiência prática com Vue 3: Composition API e script setup
+- Experiência prática com Pinia e Vue Router
+- Experiência prática com TypeScript em componentes e props tipadas
+- Experiência prática com Vitest e Vue Test Utils
+- Inglês B2 ou superior, para trabalho diário com equipas internacionais
+- Disponibilidade para trabalho 100% remoto em contrato PJ (B2B)
+
+Diferenciais
+- Nuxt para SSR e SSG
+- Performance de renderização e lazy loading
+- Design systems
+
+O que oferecemos
+- Projetos internacionais com clientes na Europa, Estados Unidos e Canadá
+- Trabalho 100% remoto, com faturação em EUR ou USD
+- Processo de seleção direto, com avaliação técnica feita por engenheiros seniores
+- Contacto próximo e transparente ao longo de todo o processo
+
+Como se candidatar
+Envie o seu CV para leonardo.viana@mindshaker-talent.com com o assunto "Programador Vue · Sénior".… more
+
+Show translation
+1 reaction1
+
+Like
+
+
+Comment
+
+Repost
+Send
+

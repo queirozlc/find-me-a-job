@@ -1,0 +1,42 @@
+  in the body. Four employment blocks segment correctly, both Lippaus roles distinct. All dates Mon YYYY - Mon YYYY
+  with ASCII hyphen. Raw and layout extraction identical. No images, no tables.
+
+  Gate 1 — FAIL, two knockouts.
+  1. Minimum years. Posting requires 6+ years. LinkedIn earliest start is Mar 2021, so 5 years 6 months today. CV
+     states 5+ years, which is accurate. Not fixable on the document.
+  2. Required-skill presence. 14 of 26 required tokens absent.
+
+  LinkedIn verification: 9 of 9 employer, title and date strings match exactly. DexCare Mar 2026 - Present, Luizalabs
+  Jan 2024 - Mar 2026, Lippaus Jan 2023 - Jan 2024 and Mar 2021 - Jan 2023, FAESA Feb 2022 - Dec 2025. Zero defects.
+  Profile not edited.
+ 
+  Gate 2 — 39/100, FAIL. 12 tokens at 3 points, 14 at 0. Stuffing penalty 0.
+ 
+  Gate 3 — 88/100. Reported only. Losses at 3.1 (posting title absent, 8/15) and 3.2 (bullet order, 15/20).
+
+  Blocking defects, exact:
+  1. 6+ years versus 5 years 6 months. No document fix permitted.
+  2. Nine required tokens absent as one cluster: MCP, MCP servers, tools, resources, Anthropic Messages API, tool 
+     use, function calling, prompt engineering, skill engineering. No DOSSIER support.
+  3. code review absent. No DOSSIER support. LinkedIn Luizalabs carries a code-review claim, but it is not in
+     DOSSIER.md, so it is unusable.
+  4. OWASP absent.
+  5. IaC absent. Quill was right to refuse ArgoCD as IaC.
+  6. Azure absent, but the posting writes AWS/GCP/Azure as alternatives and both AWS and GCP score 3.
+
+  Unsupported claim found, not fixed: with production ownership in the Summary. DOSSIER.md records ownership as an
+  open question ("which of these he personally owned versus used"). It also earns 0 retrieval points, because the
+  Summary is neither Skills nor Experience.
+
+  The Architect inferred none of the eight forbidden areas. Verified by grep: Anthropic 0, MCP 0, tool use 0,
+  function calling 0, OWASP 0, Azure 0, IaC 0, code review 0.
+
+  Report: /Users/lucasqueiroz/career/state/etho-it-agentic-full-stack-sieve.report.md
+
+✻ Sautéed for 6m 36s · done 1:18 PM
+
+─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+❯ 
+─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  Opus 5 · lucasqueiroz · ctx 14% · cache 92% · [█░░░░░░░░░] 143.0k/1.0M · effort high                          /rc
+  ⏵⏵ auto mode on (shift+tab to cycle) · ← 10 agents

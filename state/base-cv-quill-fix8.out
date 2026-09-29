@@ -1,0 +1,42 @@
+
+    … +107 lines (ctrl + t to view transcript)
+
+• Edited 2 files (+2 -2)
+  └ ~/career/resumes/base-en.tex (+1 -1)
+    80            \resumeItem{\textbullet\ Keep bookable slots synced with hospital records and reduce wrong bookings
+         by 15\% by integrating Epic EMR time-slot flows.}
+    81 -          \resumeItem{\textbullet\ Isolate tenant data, enforce API contracts, and reduce authentication fric
+        tion by 25\% using Auth0 JWT and OpenAPI validation on multi-tenant REST APIs.}
+    81 +    \resumeItem{\textbullet\ Isolate tenant data, enforce API contracts, and reduce authentication friction b
+        y 25\% using Auth0 JWT and OpenAPI/Swagger validation on multi-tenant REST APIs.}
+    82            \resumeItem{\textbullet\ Serve booking reads and writes by modeling data in PostgreSQL with Sequeli
+        ze and Drizzle ORM, DynamoDB Streams, and Redis, wired to S3 and RDS through AWS SDK v3.}
+
+  └ ~/career/resumes/base-pt.tex (+1 -1)
+    80            \resumeItem{\textbullet\ Mant\'em hor\'arios sincronizados e reduz reservas incorretas em 15\% inte
+        grando fluxos de hor\'arios do EMR Epic.}
+    81 -          \resumeItem{\textbullet\ Isola dados, garante contratos de API e reduz o atrito de autentica\c{c}\~
+        ao em 25\% com Auth0 JWT e OpenAPI em REST APIs multi-tenant.}
+  … Diff preview limited (ctrl + t to view transcript).
+
+• Ran 2 commands · ctrl + t to view transcript
+
+─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+• The two PDFs rebuilt successfully. I’m refreshing both extraction forms now and checking the resulting page counts.
+
+• Ran 5 commands · ctrl + t to view transcript
+
+─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+• D3: “• Isolate tenant data, enforce API contracts, and reduce authentication friction by 25% using Auth0 JWT and
+  OpenAPI/Swagger validation on multi-tenant REST APIs.”
+
+  Page count: EN 1, PT 1.
+
+─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+ 
+ 
+› Ask Codex to do anything
+ 
+  gpt-5.6-sol high fast · Context 90% left · Context 10% used · Full Access

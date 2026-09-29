@@ -1,0 +1,42 @@
+    10 +- `resumes/jobgether-backend-core-apis-pt.pdf`
+    11 +- `resumes/jobgether-backend-core-apis-pt.raw.txt`
+    12 +- `resumes/jobgether-backend-core-apis-pt.layout.txt`
+
+  └ ~/career/reports/jobgether-backend-core-apis-message.md (+22 -0)
+  … Diff preview limited (ctrl + t to view transcript).
+
+• Ran 2 commands · ctrl + t to view transcript
+
+─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+• Completed the Jobgether partner-company package:
+
+  - /Users/lucasqueiroz/career/resumes/jobgether-backend-core-apis-en.tex and /Users/lucasqueiroz/career/resumes/
+    jobgether-backend-core-apis-en.pdf
+
+  - /Users/lucasqueiroz/career/resumes/jobgether-backend-core-apis-pt.tex and /Users/lucasqueiroz/career/resumes/
+    jobgether-backend-core-apis-pt.pdf
+
+  - /Users/lucasqueiroz/career/reports/jobgether-backend-core-apis-message.md
+  - /Users/lucasqueiroz/career/reports/jobgether-backend-core-apis-draft.md
+
+  Results:
+
+  - Both PDFs build successfully and are one page.
+  - Raw and layout extractions were generated.
+  - Contact details, required headers, titles, dates, and all four employment blocks extract correctly.
+  - Visual renders showed no clipping, overlap, or broken glyphs.
+  - Forbidden-token scan passed; no [UNVERIFIED] claims shipped.
+  - Tailoring prioritizes Node.js, TypeScript, Go usage, Core APIs, microservices, SQL, DynamoDB, Redis, Express, CI/
+    CD, Datadog, Docker, and Kubernetes.
+
+  - Unsupported infrastructure, warehouse, on-call, mentoring, and investigation claims were omitted and documented.
+  - Application message is 92 words; notice period remains flagged for Lucas.
+  - No ATS Analyzer was connected in Maestri, so no grading was performed.
+
+─ Worked for 3m 48s ─────────────────────────────────────────────────────────────────────────────────────────────────
+ 
+ 
+› Ask Codex to do anything
+ 
+  gpt-5.6-sol high fast · Context 21% left · Context 79% used · Full Access

@@ -1,0 +1,42 @@
+    140 +| Node.js | Paola Gesé — SeniorFrontendDeveloper | 1 | preferred |
+    141 +| AWS Lambda | Paola Gesé — SeniorFrontendDeveloper | 1 | preferred |
+    142 +
+    143 +### PT-BR arm
+    144 +
+    145 +No new Portuguese-language posting was placed in this segment.
+    146 +
+    147 +### ES arm
+    148 +
+    149 +No new Spanish-language posting was placed in this segment.
+
+• Ran printf 'log rows: '; rg -c 'Posts wave hunt-2026-09-04-b' /Users/lucasqueiroz/career/keywords/search-log.md;
+  │ printf 'raw queries: '; rg -c '^### Query ' /Users/lucasqueiroz/career/jobs/hunt-2026-09-04-b-posts-raw.md;
+  │ printf 'raw captures: '; rg -c '^#### Capture ' /Users/lucasqueiroz/career/jobs/hunt-2026-09-04-b-posts-raw.md;
+  │ … +2 lines
+  └ log rows: 10
+    raw queries: 10
+    … +59 lines (ctrl + t to view transcript)
+    The complete verbatim evidence is in `/Users/lucasqueiroz/career/jobs/hunt-2026-09-04-b-posts-raw.md`. Exact
+    query and filter records are appended to `/Users/lucasqueiroz/career/keywords/search-log.md`.
+
+• Explored
+  └ Read MEMORY.md
+
+• Ran maestri note write "hunt-2026-09-04-b-status" $'# Hunt 2026-09-04-b status\n\nState: POSTS DONE\nSurface: Post
+  │ Search only\nExact query: ("typescript" or "node.js") AND ("mid-level" or "pleno") AND ("latam" or
+  │ "brazil")\nRecency: Past 24 hours, applied through the UI after each query\nReviewed: 17 posts\nCaptured: 8
+  │ … +3 lines
+  └ (no output)
+
+─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+• POSTS DONE. Reviewed 17 cards. Captured 8 unique openings.
+  Raw: /Users/lucasqueiroz/career/jobs/hunt-2026-09-04-b-posts-raw.md
+  Report: /Users/lucasqueiroz/career/state/hunt-2026-09-04-b-kestrel-posts.report.md
+
+─ Worked for 14m 29s ────────────────────────────────────────────────────────────────────────────────────────────────
+ 
+ 
+› Ask Codex to do anything
+ 
+  gpt-5.6-luna high fast · Context 20% left · Context 80% used · Full Access

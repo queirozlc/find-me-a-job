@@ -1,0 +1,71 @@
+Feed post
+
+Mariana Gama
+  • 3rd+
+Freelance Recruiter | IT & High-Growth Teams | Healthcare Recruitment | International Recruiter | Talent Acquisition | People Focused | Psychology Background
+21h • Edited • 
+
+Follow
+
+Some of the remote engineering roles I'm working on ( please reach out only if based in the listed region):
+
+🔹 Senior Backend Engineer — UK/Europe
+ Python, FastAPI, PostgreSQL, ClickHouse, LLMs, AI data platforms. 5-15 yrs.
+ 🔹 Senior/Staff Backend Engineer — US/Canada/Europe
+ TypeScript/Node.js + Python, distributed systems, DB/queue at scale, voice/AI infra. 5+ yrs.
+ 🔹 Staff Software Engineer (Platform) — US/Canada/Europe
+ Node.js, TypeScript, GraphQL, PostgreSQL, MongoDB, AI SaaS. 6+ yrs.
+ 🔹 Senior Software Engineer (Infrastructure) — US/Canada
+ Node.js, TypeScript, Pulumi/IaC, Kubernetes, cloud infra for AI agents. 6-12 yrs.
+ 🔹 Principal Engineer, Frontend — US or EU
+ React/Next.js, TypeScript, Solana, real-time DeFi trading.
+ 🔹 Research Crawling Engineer — US/Europe 
+ Go, Rust, Python or Java/C++, large-scale crawling, anti-bot.
+ 🔹 Web Scraping Specialist — Remote EU/US/
+ Python/JavaScript, Scrapy/Selenium/Playwright, petabyte-scale scraping, AWS/GCP/Azure.
+ 🔹 Senior Data Engineer — Europe
+ Python, SQL, Airflow, dbt, ClickHouse/BigQuery/Snowflake, fintech pipelines.
+ 🔹 Senior (Rust/C++) Backend Engineer — Europe
+ Rust or C++, PostgreSQL, Kafka/Redis/RabbitMQ, low-latency financial systems.
+ 🔹 Backend Engineer — EU
+ Rust or TypeScript, APIs, event-driven systems, DeFi/fintech/payments.
+ 🔹 Senior Software Engineer (Solvers) — CET +/-4
+ TypeScript & Go (Rust a plus), distributed systems, smart contracts, MEV.
+ 🔹 Founding Mobile Engineer (React Native) — North America or Europe
+ Advanced React Native, trading apps, embedded wallets, crypto.
+ 🔹 Founding Backend Engineer (Staff) — North America or Europe
+ High-throughput trading systems, ledger/settlement, SVM & EVM.
+ 🔹 Site Reliability Engineer — EU
+ Linux, networking, automation (Ansible), scripting, FIX Protocol.
+ 🔹 Head of Infrastructure — Europe
+ Kubernetes, AWS, GCP, Pulumi, IaC, HIPAA, observability. Hands-on role.
+ 🔹 Staff Backend Engineer — US/Europe
+ Python, PostgreSQL, AWS Lambda, System Design, AI/ML. Insurtech.
+ 🔹 Senior C++ Low-Latency Developer — UK/NL/FR
+ C++20, distributed systems, low latency, multicast, FIX, HFT.
+ 🔹 Principal/Staff Software Engineer — Europe
+ Python, AI, LLMs, agent orchestration, healthcare, Rust/Go/TypeScript.
+ 🔹 Senior ML Engineer — Brazil
+ CUDA, PyTorch, Python, foundation models, distributed training, GPU, C++.
+ 🔹 Full Stack Engineer — UK
+ Golang, frontend + backend, APIs, cloud infra, microservices. 7+ yrs.
+ 🔹 Forward Deployed Engineer — US
+ 🔹 Forward Deployed Engineer — Europe
+ Python, SQL, data tooling, pipelines, AI integrations.
+ 🔹 Forward Deployed Engineer — US
+ LLMs, agent frameworks, prompt engineering, SQL/Python/JS, APIs/webhooks.
+ 🔹 Senior Full Stack Engineer — EU
+ PHP, Symfony, React.js, MySQL, Docker, GitLab CI/CD. Healthcare SaaS.
+
+#Hiring #RemoteJobs #SoftwareEngineering #Web3Jobs #FintechJobs #BackendEngineer #TechRecruiting #DeFi… more
+4 reactions4
+2 comments2 comments
+
+Like
+
+
+Comment
+
+Repost
+Send
+

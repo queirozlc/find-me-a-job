@@ -1,0 +1,19 @@
+{
+  "application_id": "turbi-fullstack-senior-golang-web",
+  "language": "pt",
+  "required_tokens": [
+    "GoLang",
+    "React",
+    "microsserviços",
+    "sistemas distribuídos",
+    "Kubernetes",
+    "Git",
+    "Linux/Unix",
+    "OAuth 2.0",
+    "HTTP",
+    "CSS",
+    "JavaScript",
+    "Swagger"
+  ],
+  "preferred_tokens": []
+}

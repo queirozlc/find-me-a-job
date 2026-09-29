@@ -1,0 +1,27 @@
+{
+  "application_id": "mfs-react-developer",
+  "language": "es",
+  "required_tokens": [
+    "React.js",
+    "JavaScript",
+    "TypeScript",
+    "Node.js 18",
+    "Next.js",
+    "APIs RESTful",
+    "JSON Web Token (JWT)",
+    "PostgreSQL",
+    "Agile",
+    "Git",
+    "AWS",
+    "HTML",
+    "CSS",
+    "Babel",
+    "Webpack",
+    "NPM"
+  ],
+  "preferred_tokens": [
+    "MoQ",
+    "NUnit",
+    "Unit Testing"
+  ]
+}

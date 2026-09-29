@@ -1,0 +1,79 @@
+Lucas Queiroz
+
+Vitória, ES, Brazil | +55 (27) 99203-0170 | sepulchrolucas@gmail.com | linkedin.com/in/queiroz-lucas | github.com/queirozlc
+
+SUMMARY
+AI-native Senior Software Engineer with 5+ years in product engineering, delivering outcome-driven full stack TypeScript
+systems and measurable product outcomes. Uses Claude Code and Codex daily, builds event-driven healthcare scheduling
+and multi-tenant APIs on AWS, and works in Advanced/C1 English.
+
+SKILLS
+AI agents and quality: Claude Code | Codex | Agentic workflows | Vitest | Jest
+Languages and frontend: TypeScript | JavaScript | Node.js | React | React Native | Go
+Backend and data: Express | Koa | REST APIs | OpenAPI/Swagger | PostgreSQL | DynamoDB | Redis | Drizzle ORM | Sequelize | BullMQ
+Cloud and observability: AWS | Datadog | GCP | Docker | Kubernetes | ArgoCD | CI/CD | LaunchDarkly | OpenFeature | Auth0
+
+EXPERIENCE
+DexCare
+Senior Software Engineer
+
+Jan 2026 - Present
+Remote
+
+• Enable AI coding agents to ship production-ready code in daily production work by building reusable Claude Code and Codex
+agent workflows with guardrails: shared rules, lint enforcement, cyclomatic complexity limits, and tests.
+• Improve a booking-quality metric by reducing wrong bookings by 15% through Epic EMR time-slot flows that keep bookable slots
+synced with hospital records.
+• Lower release risk by 7% through a controlled rollout of React changes behind LaunchDarkly/OpenFeature flags with Datadog
+RUM observability.
+• Deliver visit booking and provider availability by building an event-driven architecture with TypeScript and Node.js services on
+Express and Koa.
+• Strengthen security and reduce authentication friction by 25% by enforcing Auth0 JWT, tenant isolation, and OpenAPI/Swagger
+contracts on multi-tenant REST APIs.
+• Serve booking reads and writes by building a PostgreSQL data model with Sequelize and Drizzle ORM, DynamoDB Streams, and
+Redis, wired to S3 and RDS through AWS SDK v3.
+• Cut new-client pilot friction by 33% by helping implement the Shared Platform Initiative (SPI), replacing per-customer
+environments with shared service instances and isolated configuration, secrets, and data stores.
+
+Luizalabs
+Mid-level Software Engineer
+
+Jan 2024 - Jan 2026
+Remote
+
+• Delivered electronic invoice issuing for Magazine Luiza's e-commerce operation by building distributed tax microservices in
+Node.js, Java, and Go.
+• Improved invoice-processing performance and throughput by 20% by moving SEFAZ communication to fault-tolerant
+asynchronous BullMQ queues.
+• Cut support tickets by 18% and gave operations visibility into fiscal workflows by building back-office dashboards on tax
+microservices.
+• Kept services production-ready by deploying with Docker and Kubernetes on GCP through ArgoCD, with Vitest and Jest suites
+gating CI/CD.
+
+Lippaus Distribuidora
+Mid-level Software Engineer
+
+Jan 2023 - Jan 2024
+Remote
+
+• Turned customer requirements into delivered solutions by leading project scoping and stakeholder communication.
+• Built a multi-tenant web and mobile platform by using React Native and PostgreSQL.
+• Increased processing capacity by 26% for high-volume orders, notifications, and integrations through asynchronous BullMQ jobs.
+
+Lippaus Distribuidora
+Entry-level Fullstack Software Engineer
+
+Mar 2021 - Jan 2023
+Remote
+
+• Delivered customer-facing features end to end by balancing business requirements with technical constraints.
+• Supported operational and administrative workflows by developing internal back-office dashboards in JavaScript.
+
+EDUCATION
+FAESA
+Bachelor's degree, Information Systems
+
+Feb 2022 - Dec 2025
+Vitória, ES, Brazil
+
+
