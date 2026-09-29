@@ -116,10 +116,6 @@ waiting for Lucas). Record the result and the policy line in the token table.
 blacklisted, or gray zone and not on the whitelist, FAILS. Fix type: `CV
 FIX`, remove it, or `LUCAS CONFIRMATION` for a gray-zone token.
 
-**Step 1d, anchor fit, reported.** For each posting token placed in a bullet,
-check that the role's domain and platform fit it (for example an AWS service
-in a GCP-only role). A poor fit is a `CV FIX` suggestion to move the token to
-a better role. It does not block.
 
 **Step 2.** For each token, search the raw extracted text:
 
@@ -230,7 +226,6 @@ Evidence checked, Evidence found, Why it failed, Fix type, Next action.>
 <full token table with requirement weight, claim result, Skills policy line,
 placement and points>
 Blocked claims: <list or none>
-Anchor-fit suggestions: <list or none>
 Required CLAIM tokens without Skills and Experience placement: <list>
 GAP tokens: <list>
 

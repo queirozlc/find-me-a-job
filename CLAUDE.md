@@ -71,11 +71,12 @@ Full rule: `ATS-KNOWLEDGE.v2.md` section 2.
   posting asks for an umbrella token, the Architect adds it without asking:
   in `Skills` and in one Experience bullet. The posting decides what enters
   the CV, not a confirmation from Lucas.
-- **Anchored placement.** The bullet goes in the role where the token fits
-  best: the role's domain first (fiscal and invoicing at Luizalabs,
-  healthcare scheduling at DexCare, orders and distribution at Lippaus), then
-  the role's platform (AWS services at DexCare, GCP at Luizalabs). Write it
-  as part of work that role really did.
+- **Anchored placement.** The bullet goes in the role whose domain fits the
+  token best (fiscal and invoicing at Luizalabs, healthcare scheduling at
+  DexCare, orders and distribution at Lippaus). Write it as part of that
+  role's work.
+- **Interview defense is Lucas's responsibility** (Lucas, 2026-09-29).
+  Agents never drop, move, or soften a token because of interview risk.
 - **Stack depth.** For a requested high-level token, add its umbrella
   building blocks in `Skills` next to it (NestJS: Express, Fastify).
 - **Only what the posting asks.** Umbrella tokens the posting does not ask

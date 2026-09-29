@@ -97,13 +97,11 @@ The **Skills policy** in `DOSSIER.md`:
 ### 2.3 Placement and relations
 
 - **Anchored placement.** A `CLAIM` token goes into one bullet of the role
-  where it fits best. First the role's domain: fiscal and invoicing at
-  Luizalabs, healthcare scheduling at DexCare, orders and distribution at
-  Lippaus. Then the role's platform: AWS services at DexCare, GCP at
-  Luizalabs. Write it as part of work that role really did. Example: SQS
-  goes into a fiscal or invoicing flow at Luizalabs, or into booking events
-  at DexCare where AWS fits the platform. The Analyzer reports a poor fit as a
-  move suggestion.
+  whose domain fits it best: fiscal and invoicing at Luizalabs, healthcare
+  scheduling at DexCare, orders and distribution at Lippaus. Write it as part
+  of that role's work. Example: SQS goes into a fiscal or invoicing flow at
+  Luizalabs. Interview defense is Lucas's responsibility; agents never filter
+  a token for interview risk.
 - **Only what the posting asks.** An umbrella token that the posting does not
   ask for stays out, except base CV content and stack-depth blocks.
 - **Stack depth: requested token plus its building blocks.** When the posting

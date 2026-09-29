@@ -125,7 +125,7 @@ language or runtime must be JavaScript, TypeScript, Node.js, or Go. Triage
 drops postings with another primary stack before tailoring. For an accepted
 posting, resolve each posting token with the claim policy in `CLAUDE.md`
 section 4.1 and the DOSSIER Skills policy. Place each `CLAIM` token in
-`Skills` and in one bullet of the role whose domain and platform fit it best,
+`Skills` and in one bullet of the role whose domain fits it best,
 as part of work that role really did. Add the stack-depth building blocks.
 Never write a `GAP` token. Do not add claim-status markers.
 
