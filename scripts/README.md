@@ -45,27 +45,28 @@ python3 scripts/cache_linkedin_identity.py \
   --output state/<hunt-id>-linkedin-identity.json
 ```
 
-Before Sieve, create the deterministic gate report and reduced review packet:
+After each Quill build, verify the CV against the Posting Analysis spec
+(`RUBRIC.md` Part 2):
 
 ```sh
 python3 scripts/resume_gate.py \
   --base resumes/base-en.tex \
   --tailored resumes/hunts/<hunt-id>/<application>/Lucas-Queiroz-Resume-en.tex \
   --pdf resumes/hunts/<hunt-id>/<application>/Lucas-Queiroz-Resume-en.pdf \
-  --posting jobs/<application>.md \
   --manifest state/<application>-manifest.json \
   --identity-cache state/<hunt-id>-linkedin-identity.json \
   --claim-allowlist claim-allowlist.json \
   --report state/<application>-deterministic-gate.json \
-  --review-packet state/<application>-review-packet.md \
   --sentinel state/<application>-deterministic-gate.complete.json
 ```
 
-The application manifest is JSON with `application_id`, `language`,
-`required_tokens`, and `preferred_tokens` (`CLAIM` tokens only), plus optional
-`gap_tokens` and `preferred_gap_tokens`. The gate blocks when a token from the
-DOSSIER `### Blacklist` or a GAP token is added to the CV, and when required
-coverage (RUBRIC points, GAPs in the denominator) is below 70. `--dossier`
+The manifest is the spec that Sieve writes before the build (`RUBRIC.md`
+Part 1). The gate reads `language`, `required_tokens`, `preferred_tokens`
+(`CLAIM` only), `gap_tokens`, `preferred_gap_tokens`, `anchors` (token to
+base-CV company name), and `stack_depth_tokens`. It blocks when an anchored
+token is not in its role, a stack-depth token is not in Skills, a DOSSIER
+`### Blacklist` token or a GAP token is added, or required coverage is below
+70. `--dossier`
 defaults to `DOSSIER.md`. Self-check: `cd scripts && python3 -B
 test_resume_gate.py`. Quill and Sieve write their own
 atomic sentinels with `worker_sentinel.py` after all required artifacts exist.

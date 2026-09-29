@@ -107,10 +107,12 @@ or regulated-domain qualification.
 
 ## 5. Role separation
 
-- The Resume Architect **writes** and never grades.
-- The ATS Analyzer **grades** and never edits.
-- Never collapse these two seats. A writer that grades itself grades
-  generously.
+- The ATS Analyzer **analyzes the posting before the build** and writes the
+  spec. It never edits a CV.
+- The Resume Architect **executes the spec** and never decides tokens.
+- `scripts/resume_gate.py` verifies the built CV. Order and checks:
+  `RUBRIC.md` (Lucas, 2026-09-29).
+- Never collapse the two seats.
 
 ## 6. Worker delegation and monitoring
 

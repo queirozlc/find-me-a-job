@@ -1,254 +1,195 @@
-# ATS Analyzer Rubric v3
+# ATS Rubric v4
 
-Owned by the ATS Analyzer. Deterministic, reproducible, and honest about what
-it is: **our rubric, not a simulation of any vendor's proprietary score.**
-Never present these numbers as coming from an ATS.
+Two parts, in pipeline order (Lucas, 2026-09-29):
 
-Read `~/career/ATS-KNOWLEDGE.md` first. Every rule here traces to it.
+1. **Posting Analysis**, before the build. Sieve reads the posting and writes
+   the spec. The go/no-go decision happens here, so no CV is built for a
+   posting that fails.
+2. **CV Verification**, after the build. `scripts/resume_gate.py` checks the
+   CV against the base CV and the spec. No LLM review runs after the build.
+
+This is **our rubric, not a simulation of any vendor's proprietary score.**
+Never present these numbers as coming from an ATS. Rules trace to
+`ATS-KNOWLEDGE.v2.md`.
 
 ---
+
+# Part 1. Posting Analysis (Sieve, before the build)
 
 ## Inputs
 
-1. The resume file, as a file on disk. Not pasted text. The file is the
-   artifact under test.
-2. The job description, as raw text, saved to `~/career/jobs/<slug>.md`.
-3. The target segment: `us-direct`, `br-pj`, or `agency`.
-4. The `ats_profile` from the manifest, detected per `ATS-KNOWLEDGE.v2.md`
-   section 3. `generic` when no pattern matched.
-5. The **Skills policy** in `DOSSIER.md`: attested umbrella, blacklist,
-   gray zone, whitelist.
+1. The posting, as raw text, saved to `~/career/jobs/<slug>.md`.
+2. The `ats_profile` detected at intake (`ATS-KNOWLEDGE.v2.md` section 3).
+   `generic` when no pattern matched.
+3. The **Skills policy** in `DOSSIER.md`: attested umbrella, blacklist, gray
+   zone, whitelist.
+4. The base CV for the posting language, `resumes/base-<lang>.tex`, and the
+   role domains in `CLAUDE.md` section 4.1.
 
-## Mandatory extraction step
+## Step 1. Role Eligibility (blocking)
 
-Do this before any judgement. Reasoning over the source document instead of
-the extracted text is the single way this analysis becomes worthless.
+Extract these from the posting. Do not infer them. If the posting is silent,
+mark `not stated`, never `pass`.
+
+| Check | Result |
+|---|---|
+| Work authorization / entity type | PASS / FAIL / not stated |
+| Location or time-zone overlap | PASS / FAIL / not stated |
+| Minimum years of experience | PASS / FAIL / not stated |
+| English proficiency requirement | PASS / FAIL / not stated |
+| Degree requirement | PASS / FAIL / not stated |
+
+Judge against `DOSSIER.md`. Technical tokens are not judged here. For each
+FAIL, give the exact posting sentence, the evidence checked, and the fix type:
+`LUCAS CONFIRMATION` when the DOSSIER is silent, `ROLE MISMATCH` when verified
+facts contradict the requirement. Never convert silence into a claim that
+Lucas lacks experience.
+
+## Step 2. Tokens
+
+Extract every hard requirement. Classify it as `required` or `preferred`
+from the posting's own words. Discard soft skills and buzzwords.
+
+Resolve each token with the Skills policy (`CLAUDE.md` section 4.1):
+
+| Result | Source | Goes to |
+|---|---|---|
+| `CLAIM` | umbrella or whitelist | `required_tokens` / `preferred_tokens` |
+| `GAP` | blacklist | `gap_tokens` / `preferred_gap_tokens` |
+| `ASK` | gray zone, no whitelist entry | `ask_tokens` and the gap lists: a question for Lucas, `GAP` until he answers |
+
+## Step 3. Spec
+
+For each `CLAIM` token, write:
+
+- **Anchor.** The role whose domain fits best (fiscal and invoicing at
+  Luizalabs, healthcare scheduling at DexCare, orders and distribution at
+  Lippaus). Use the company name exactly as the base CV prints it. Skip the
+  anchor when the base CV already has the token in an Experience bullet.
+- **Stack depth.** Umbrella building blocks that go in Skills next to a
+  high-level token (NestJS: Express, Fastify). Only for tokens the posting
+  asks.
+
+## Step 4. Projected coverage
+
+Quill places every `CLAIM` token in Skills and in one bullet, so each earns 3
+points. Coverage is known before the build:
 
 ```
-pdftotext -layout resume.pdf - > extracted-layout.txt   # human reading order
-pdftotext          resume.pdf - > extracted-raw.txt     # parser reading order
+required_coverage = 100 * required_CLAIM / (required_CLAIM + required_GAP)
 ```
 
-`extracted-raw.txt` is the closest available approximation of what a parser
-receives after text extraction. **Judge the File Readability Check and Resume
-Evidence Check on the raw file.**
-If the two files disagree about ordering, the layout is unsafe.
+`ASK` tokens count as `GAP` until Lucas answers.
 
-For DOCX use `python-docx`, or unzip and read `word/document.xml`.
+## Step 5. ATS profile and form pack
+
+Apply the adjustments of the detected profile (`ATS-KNOWLEDGE.v2.md`
+section 4) as build instructions:
+
+| Profile | Instruction to Quill |
+|---|---|
+| `ashby`, `workday`, `workable`, criteria profiles | One explicit sentence per required `CLAIM` token that a model can quote |
+| `greenhouse` | Domain or industry word in each role line or first bullet |
+| `workday` | Total years stated and supported by dates |
+| `linkedin-easy-apply` | List required `CLAIM` tokens missing from the cached LinkedIn Skills. Lucas edits the profile; agents never do |
+| `gupy` | No build. Coverage against the master Gupy profile, then the form pack |
+
+Write the form pack: every screening question the posting or form shows, with
+a true answer from the DOSSIER, or `LUCAS CONFIRMATION`.
+
+## Step 6. Verdict
+
+| Verdict | Condition | Next action |
+|---|---|---|
+| `NO-GO` | Role Eligibility `ROLE MISMATCH`, or projected coverage below 70 with no `ASK` that could lift it | Abandon. No build |
+| `NO-GO` | `workable` and a must-have required token is `GAP` | Report to Lucas. No build |
+| `ASK` | An `ASK` token or `LUCAS CONFIRMATION` decides the verdict | Maestro asks Lucas, in one batch per hunt |
+| `GO` | Everything else | Build |
+
+## Outputs
+
+1. `state/<application>-manifest.json`, the spec:
+
+```json
+{
+  "application_id": "<slug>",
+  "language": "en",
+  "ats_profile": "ashby",
+  "required_tokens": ["NestJS", "SQS"],
+  "preferred_tokens": ["GraphQL"],
+  "gap_tokens": [],
+  "preferred_gap_tokens": [],
+  "ask_tokens": [],
+  "anchors": {"NestJS": "Luizalabs", "SQS": "Luizalabs"},
+  "stack_depth_tokens": ["Express", "Fastify"],
+  "build_instructions": ["One quotable sentence per required token"],
+  "projected_required_coverage": 100,
+  "verdict": "GO"
+}
+```
+
+2. `reports/<application>-analysis.md`: the verdict, the Role Eligibility
+   table, the token table (token, required or preferred, result, policy line,
+   anchor), projected coverage, and the form pack. No preamble.
 
 ---
 
-## File Readability Check (binary, blocking)
+# Part 2. CV Verification (script, after the build)
 
-Any FAIL here stops the analysis. Report it and nothing else. There is no
-point scoring a document that does not survive extraction.
+`scripts/resume_gate.py` runs on the built CV. Exit `0` PASS, `1` FAIL, `2`
+could not run. A FAIL goes back to Quill with the failure list. Two rounds
+maximum, then escalate to Lucas.
+
+| Check | FAIL condition |
+|---|---|
+| `pdf_extraction` | PDF text is empty |
+| `sections` | A section header of the CV language is missing |
+| `contact` | Email, city, LinkedIn, or GitHub missing from the PDF text |
+| `layout` | Preamble differs from the base CV |
+| `roles` | Company, title, dates, or location differ from the base CV |
+| `linkedin_identity` | A role field is not in the cached LinkedIn snapshot |
+| `experience_completeness` | A base bullet or metric was removed |
+| `forbidden_terms` | Ruby, Rails, or a time-zone statement |
+| `claim_allowlist` | A protected claim introduced without approval |
+| `required_token_placement` | A required `CLAIM` token is not in Skills and in Experience |
+| `spec_placement` | An anchored token is not in its role, or a stack-depth token is not in Skills |
+| `blacklist` | A DOSSIER blacklist token was added |
+| `gap_tokens_written` | A `GAP` token was written |
+| `required_coverage` | Below 70 |
+
+File Readability items that the script does not test (segmentation, reading
+order, glyphs, forbidden constructs) are properties of the base layout. The
+`layout` and `roles` checks lock them, so they are verified once per base CV
+change, in the base round.
+
+## Base round (only when a base CV changes)
+
+Sieve runs the full File Readability Check on the base PDF:
+
+```
+pdftotext -layout base.pdf - > extracted-layout.txt
+pdftotext          base.pdf - > extracted-raw.txt
+```
 
 | # | Check | FAIL condition |
 |---|---|---|
 | 0.1 | Text layer exists | Raw extraction is empty or garbage |
-| 0.2 | Glyph integrity | Any `\x00`, `?`, or missing fi/fl/ff. Grep the raw text for `office`, `profile`, `efficient`, `workflow`, `conflict` and confirm they are intact |
-| 0.3 | Contact block recoverable | Email, phone, city, LinkedIn URL all present in raw text, in the body, not a header or footer |
-| 0.4 | Section headers present verbatim | EN: `Summary`, `Skills`, `Language`, `Experience`, `Education`. PT (`-pt` files): `Resumo`, `Habilidades`, `Idiomas`, `Experiência`, `Formação`. Recoverable as standalone lines, case-insensitive (uppercase rendering is allowed) |
-| 0.5 | **Employment-block segmentation** | Any two roles merged into one block, or one role split into two, in the raw stream. Highest-value check in this rubric |
-| 0.6 | Date parseability | Every role has `Mon YYYY - Mon YYYY` on the same line as, or adjacent to, its title |
-| 0.7 | Reading order | Raw and layout extraction disagree on the order of any two adjacent content blocks |
+| 0.2 | Glyph integrity | `\x00`, `?`, or broken fi/fl/ff in `office`, `profile`, `efficient`, `workflow`, `conflict` |
+| 0.3 | Contact block recoverable | Email, phone, city, LinkedIn in the body, not a header or footer |
+| 0.4 | Section headers verbatim | EN `Summary`, `Skills`, `Language`, `Experience`, `Education`; PT `Resumo`, `Habilidades`, `Idiomas`, `Experiência`, `Formação` |
+| 0.5 | Employment-block segmentation | Two roles merged, or one role split, in the raw stream |
+| 0.6 | Date parseability | Each role has `Mon YYYY - Mon YYYY` next to its title |
+| 0.7 | Reading order | Raw and layout extraction disagree on two adjacent blocks |
 | 0.8 | No forbidden constructs | Table, text box, image of text, contact icon, photo |
 
-Output: a table of 8 rows, PASS or FAIL, and for each FAIL the exact offending
-text from the extraction.
-
----
-
-## Role Eligibility Check (binary, blocking)
-
-Extract these from the job description. Do not infer them. If the posting is
-silent, mark `not stated`, never `pass`.
-
-| Check | Source | Result |
-|---|---|---|
-| Work authorization / entity type | posting | PASS / FAIL / not stated |
-| Location or time-zone overlap | posting | PASS / FAIL / not stated |
-| Minimum years of experience | posting | PASS / FAIL / not stated |
-| English proficiency requirement | posting | PASS / FAIL / not stated |
-| Degree requirement | posting | PASS / FAIL / not stated |
-
-Technical skill tokens are not judged here. The Resume Evidence Check handles
-them with the Skills policy and coverage.
-
-For every explicit non-skill requirement above, absent resume evidence is a
-FAIL.
-Do not infer evidence from an unrelated title, employer, or location.
-
-A failed status is not a sufficient result. Report one row for each failed
-requirement:
-
-| Field | Required content |
-|---|---|
-| Requirement | Short literal name of the mandatory requirement |
-| Posting text | The exact posting sentence that creates the requirement |
-| Evidence checked | Exact files, profile fields, or other approved sources checked |
-| Evidence found | Matching evidence, conflicting evidence, or `none found` |
-| Why it failed | One direct sentence that connects the requirement to the evidence gap |
-| Fix type | `CV FIX`, `LUCAS CONFIRMATION`, or `ROLE MISMATCH` |
-| Next action | The one action needed to continue, or `abandon this posting` |
-
-Use `CV FIX` only when an approved source already contains the fact. Use
-`LUCAS CONFIRMATION` when the approved sources are silent. Use `ROLE MISMATCH`
-when verified facts contradict the requirement or Lucas confirms that he does
-not meet it. Never convert silence into a claim that Lucas lacks experience.
-
----
-
-## Resume Evidence Check (claim truth and placement blocking, coverage scored 0-100)
-
-Exact-token matching. This models the lexical floor, which is what most real
-recruiter search still is.
-
-**Step 1.** Extract every hard requirement from the posting. Classify each as
-`required` or `preferred` using the posting's own words. Discard soft skills
-and buzzwords. They are not retrieval tokens.
-
-**Step 1b.** Resolve each token with the Skills policy (`CLAUDE.md` section
-4.1): `CLAIM` (umbrella or whitelist) or `GAP` (blacklist, or gray zone
-waiting for Lucas). Record the result and the policy line in the token table.
-
-**Step 1c, blocked claim, blocking.** Any token added for the posting that is
-blacklisted, or gray zone and not on the whitelist, FAILS. Fix type: `CV
-FIX`, remove it, or `LUCAS CONFIRMATION` for a gray-zone token.
-
-
-**Step 2.** For each token, search the raw extracted text:
-
-| Placement | Points |
-|---|---|
-| Absent entirely | 0 |
-| In `Skills` only | 1 |
-| In `Experience` only | 2 |
-| In `Skills` and in one `Experience` bullet, in context | 3 |
-
-**Step 3.**
-
-```
-coverage = 100 * sum(points * requirement_weight)
-                 / sum(3 * requirement_weight)
-requirement_weight: required = 3, preferred = 1
-```
-
-`GAP` tokens earn 0 and stay in the denominator.
-
-Also compute `required_coverage` with the same formula over required tokens
-only.
-
-**Step 4, hard result.** The Resume Evidence Check FAILS when:
-
-- Step 1c found a blocked claim, or
-- a required `CLAIM` token earns fewer than 3 placement points, or
-- `required_coverage` is below 70 (Lucas, 2026-09-29).
-
-A `GAP` never produces a `CV FIX`. It lowers `required_coverage`. Its fix
-type is `LUCAS CONFIRMATION` for a gray-zone token, and `ROLE MISMATCH` for a
-blacklisted token. Preferred tokens affect the score but do not block.
-
-For each required `CLAIM` token below 3 points, state exactly which placement
-is missing and use `CV FIX`. The Architect adds it; it needs no confirmation. If the same
-underlying fact fails both checks, list it once in the Decision Explanation
-and cross-reference it here. Do not present one fact gap as two independent
-reasons.
-
-**Step 5, stuffing penalty.** Subtract 5 points per token that appears 4 or
-more times. This is a human-reaction penalty, not a machine one.
-
-**Report, always:** the full token table with placement and points. The number
-alone is useless. The table is the deliverable.
-
----
-
-## ATS Profile Check (reported; one blocking case)
-
-Apply the adjustments of the detected profile in `ATS-KNOWLEDGE.v2.md`
-section 4. One row per adjustment: PASS, FAIL, or `not applicable`.
-
-| Profile | Check |
-|---|---|
-| all | Form pack exists and lists every screening question with a true answer |
-| `ashby`, `workday`, `workable`, criteria profiles | Every required `CLAIM` token has one explicit sentence that a model can quote |
-| `greenhouse` | Domain or industry word in each role line or first bullet |
-| `workday` | Total years stated and supported by dates |
-| `linkedin-easy-apply` | Every required `CLAIM` token is in the cached LinkedIn profile Skills. Report the missing ones to Lucas; agents never edit the profile |
-| `gupy` | No tailored CV. Coverage is computed against the master Gupy profile |
-| `workable` | **Blocking:** a required token marked must-have is a `GAP`. Report it to Lucas before he applies, because Workable can auto-disqualify |
-
----
-
-## Recruiter Readability Score (reported, not blocking, scored 0-100)
-
-Recruiters scan fast, non-linearly, anchored on headers. The one peer-reviewed
-eye-tracking result found time on **Experience** and **Education** the
-strongest predictors of approval.
-
-| # | Check | Points |
-|---|---|---|
-| 3.1 | Target title appears in the top 15% of the document | 15 |
-| 3.2 | The 3 most relevant bullets are in the most recent role, in its first 3 lines | 20 |
-| 3.3 | Every bullet starts with a clear past-tense action verb and describes an outcome. No present-tense duty lists and no "Responsible for" phrasing | 15 |
-| 3.4 | At least 3 bullets carry a real, defensible number | 15 |
-| 3.5 | Experience completeness: no verified role, bullet, or metric from the selected base was removed. Prefer 1 page; allow 2 when complete content does not fit | 10 |
-| 3.6 | No unsupported buzzwords ("team player", "results-driven", "passionate") | 10 |
-| 3.7 | Skills grouped by category, not one undifferentiated wall | 10 |
-| 3.8 | Scannable: consistent spacing, bold titles, adequate white space | 5 |
-
----
-
-## Report format
-
-Emit exactly this. No preamble.
-
-```
-# ATS Analysis — <resume file> vs <job slug>
-Segment: <us-direct | br-pj | agency>   Date: <YYYY-MM-DD>
-
-## Verdict
-<READY | BLOCKED: <clear check name>>
-
-## Decision Explanation
-<For READY: `No blocking reason.`>
-<For BLOCKED: one table with these columns: Check, Requirement, Posting text,
-Evidence checked, Evidence found, Why it failed, Fix type, Next action.>
-<List each root cause once. A status or score without this table is invalid.>
-
-## File Readability Check
-<8-row table, PASS/FAIL, offending text quoted for each FAIL>
-
-## Role Eligibility Check
-<table>
-
-## Resume Evidence Check: NN/100, required coverage NN/100, <PASS | FAIL>
-<full token table with requirement weight, claim result, Skills policy line,
-placement and points>
-Blocked claims: <list or none>
-Required CLAIM tokens without Skills and Experience placement: <list>
-GAP tokens: <list>
-
-## ATS Profile Check: <profile>
-<table from the ATS Profile Check>
-
-## Recruiter Readability Score: NN/100
-<8-row table>
-
-## Defects, ranked by cost
-1. <defect> — <check> — <exact fix, quoting the text to change>
-2. ...
-
-## Match limits
-<preferred tokens not placed, or none>
-```
+Recruiter readability is a build rule for Quill (`CV-SPEC.md`): target title
+near the top, the three most relevant bullets first in the most recent role,
+past-tense XYZ bullets, at least 3 real numbers, no buzzwords, grouped Skills.
 
 ## Prohibitions
 
-- Never edit the resume. Report defects, hand them to the Resume Architect.
-- Never write only `FAIL`, `BLOCKED`, or a score. Always give the exact reason
-  and next action in the Decision Explanation.
-- Never emit a single blended "ATS score". The checks are separate on purpose.
+- Sieve never edits a CV. Quill never grades.
+- Never guess a requirement the posting did not state.
+- Never put a blacklisted or unanswered gray-zone token in the spec.
 - Never claim a vendor produces these numbers.
-- Never guess a job requirement the posting did not state.
-- Never ask the Architect to add a blacklisted or unanswered gray-zone token.
+- Never drop, move, or soften a token for interview risk.

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Run deterministic CV gates and prepare the reduced ATS review packet."""
+"""Verify a built CV against the base CV and the posting spec (manifest)."""
 
 from __future__ import annotations
 
@@ -153,6 +153,18 @@ def bullets(value: str) -> list[str]:
     return [latex_to_text(item[0]).removeprefix("• ") for item in balanced_arguments(experience_source(value), "resumeItem", 1)]
 
 
+def role_sources(value: str) -> dict[str, str]:
+    """Experience source per role, keyed by folded company name."""
+    source = experience_source(value)
+    starts = [match.start() for match in re.finditer(r"\\resumeSubheading\b", source)] + [len(source)]
+    result: dict[str, str] = {}
+    for begin, end in zip(starts, starts[1:]):
+        heading = balanced_arguments(source[begin:end], "resumeSubheading", 4)
+        if heading:
+            result[folded(heading[0][0])] = source[begin:end]
+    return result
+
+
 def metrics(value: str) -> set[str]:
     return set(re.findall(r"\b\d+(?:\.\d+)?\s*%", latex_to_text(experience_source(value))))
 
@@ -293,6 +305,17 @@ def check_resume(
             token_failures.append(f"{token}: missing from {' and '.join(missing)}")
     add("required_token_placement", token_failures)
 
+    # Posting Analysis spec: each anchored token sits in its role's bullets,
+    # and each stack-depth token sits in Skills.
+    by_role = role_sources(tailored)
+    spec_failures = [
+        f"{token}: not in the {company} role"
+        for token, company in dict(manifest.get("anchors", {})).items()
+        if not contains_token(by_role.get(folded(str(company)), ""), str(token))
+    ]
+    spec_failures += [f"{token}: stack-depth token missing from Skills" for token in manifest.get("stack_depth_tokens", []) if not contains_token(skills, str(token))]
+    add("spec_placement", spec_failures)
+
     # A token counts as written for the posting only when the base CV lacks it,
     # so facts already in the base (Java at Luizalabs) never fail these checks.
     def introduced(token: str) -> bool:
@@ -333,63 +356,15 @@ def write_json_atomic(path: Path, payload: dict[str, Any]) -> None:
     temporary.replace(path)
 
 
-def review_packet(
-    manifest: dict[str, Any],
-    posting: str,
-    delta: dict[str, Any],
-    claims: dict[str, Any],
-    report: dict[str, Any],
-) -> str:
-    return "\n".join(
-        (
-            f"# ATS review packet: {manifest.get('application_id', 'unknown')}",
-            "",
-            "The deterministic gate did not grade semantic truth or recruiter readability.",
-            "The ATS Analyzer must grade those items and must not edit the CV.",
-            "",
-            "## Application manifest",
-            "",
-            "```json",
-            json.dumps(manifest, ensure_ascii=False, indent=2),
-            "```",
-            "",
-            "## Posting",
-            "",
-            posting.rstrip(),
-            "",
-            "## CV delta",
-            "",
-            "```json",
-            json.dumps(delta, ensure_ascii=False, indent=2),
-            "```",
-            "",
-            "## Claim manifest",
-            "",
-            "```json",
-            json.dumps(claims, ensure_ascii=False, indent=2),
-            "```",
-            "",
-            "## Deterministic gate",
-            "",
-            "```json",
-            json.dumps(report, ensure_ascii=False, indent=2),
-            "```",
-            "",
-        )
-    )
-
-
 def parse_args(argv: list[str]) -> argparse.Namespace:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--base", type=Path, required=True)
     parser.add_argument("--tailored", type=Path, required=True)
     parser.add_argument("--pdf", type=Path, required=True)
-    parser.add_argument("--posting", type=Path, required=True)
     parser.add_argument("--manifest", type=Path, required=True)
     parser.add_argument("--identity-cache", type=Path, required=True)
     parser.add_argument("--claim-allowlist", type=Path, required=True)
     parser.add_argument("--report", type=Path, required=True)
-    parser.add_argument("--review-packet", type=Path, required=True)
     parser.add_argument("--sentinel", type=Path, required=True)
     parser.add_argument("--dossier", type=Path, default=DOSSIER_PATH)
     return parser.parse_args(argv)
@@ -400,7 +375,6 @@ def main(argv: list[str] | None = None) -> int:
     try:
         base = args.base.read_text(encoding="utf-8")
         tailored = args.tailored.read_text(encoding="utf-8")
-        posting = args.posting.read_text(encoding="utf-8")
         manifest = load_json(args.manifest)
         identity = load_json(args.identity_cache)
         claims = load_json(args.claim_allowlist)
@@ -417,8 +391,6 @@ def main(argv: list[str] | None = None) -> int:
             "delta": delta,
         }
         write_json_atomic(args.report, report)
-        args.review_packet.parent.mkdir(parents=True, exist_ok=True)
-        args.review_packet.write_text(review_packet(manifest, posting, delta, claims, report), encoding="utf-8")
         write_json_atomic(
             args.sentinel,
             {
@@ -427,13 +399,13 @@ def main(argv: list[str] | None = None) -> int:
                 "application_id": manifest.get("application_id"),
                 "status": "complete" if passed else "blocked",
                 "completed_at": now(),
-                "artifacts": [str(args.report.resolve()), str(args.review_packet.resolve())],
+                "artifacts": [str(args.report.resolve())],
             },
         )
     except (OSError, ValueError, json.JSONDecodeError, GateError) as error:
         print(f"error: {error}", file=sys.stderr)
         return 2
-    print(json.dumps({"status": report["status"], "report": str(args.report), "review_packet": str(args.review_packet)}))
+    print(json.dumps({"status": report["status"], "report": str(args.report)}))
     return 0 if passed else 1
 
 

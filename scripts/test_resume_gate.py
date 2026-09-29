@@ -52,3 +52,15 @@ tailored_gap = cv("TypeScript | NestJS | Kafka", "Built tax services in Node.js,
 checks, _ = check_resume(base, tailored_gap, "text", manifest, {"snapshot": ""}, {}, [])
 assert {check["name"]: check for check in checks}["gap_tokens_written"]["failures"] == ["GAP token written: Kafka"]
 print("PASS: blacklist, GAP, and required coverage checks")
+
+two_roles = cv("TypeScript | NestJS", "Built tax services in NestJS.").replace(
+    r"\section{Education}",
+    r"\resumeSubheading{DexCare}{Apr 2026 - Present}{Engineer}{Remote}\resumeItem{Built scheduling APIs.}\section{Education}",
+)
+spec = {"anchors": {"NestJS": "Luizalabs", "SQS": "DexCare"}, "stack_depth_tokens": ["Express"]}
+checks, _ = check_resume(base, two_roles, "text", spec, {"snapshot": ""}, {}, [])
+assert {check["name"]: check for check in checks}["spec_placement"]["failures"] == [
+    "SQS: not in the DexCare role",
+    "Express: stack-depth token missing from Skills",
+]
+print("PASS: spec anchors and stack depth")

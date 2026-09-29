@@ -103,7 +103,7 @@ reasoning, Codex for light portal manipulation. Commands verified on
 | Seat | Agent | Role | When | Launch command | Reset cmd |
 | ---- | ----- | ---- | ---- | -------------- | --------- |
 | Maestro | Recruiter | — | Always | `claude --model fable --effort high` (Lucas, 2026-09-02: Claude runs the Maestro seat) | `/clear` |
-| ATS Analyzer | Sieve | `ATS Analyzer` | Every application | `claude --model fable --effort high` for routine delta review; `claude --model opus --effort high` only for unresolved semantic ambiguity | `/clear` |
+| ATS Analyzer | Sieve | `ATS Analyzer` | Every application | `claude --model fable --effort high` for routine Posting Analysis; `claude --model opus --effort high` only for unresolved semantic ambiguity | `/clear` |
 | Resume Architect | Quill | `Resume Architect` | Every application | `claude --dangerously-skip-permissions --model "claude-fable-5-1[1m]" --effort medium` (swapped by Lucas 2026-09-04, observed live) | `/clear` |
 | Market Scout | Kestrel | `Market Scout` | Fallback only when the deterministic source runner cannot parse a LinkedIn layout | `codex -m gpt-5.6-luna -c model_reasoning_effort=high -c service_tier=fast` | `/new` |
 | Profile SEO | Codex | — | Only when the profile itself needs work. Not part of the application. | unchanged (luna, fast) | `/new` |
@@ -171,11 +171,13 @@ Quill's `.out`, and let Quill fan out five subagents nobody polled.
 
 ## Delivery shape
 
+- Order per application (Lucas, 2026-09-29): intake, Posting Analysis
+  (Sieve), go/no-go (Maestro), build (Quill), verification (script). See
+  `RUBRIC.md`.
 - One posting per Architect dispatch. The Architect never spawns subagents.
 - One posting per Analyzer dispatch.
-- When the Architect completes one CV, dispatch that CV to the Analyzer and
-  dispatch the next queued posting to the Architect. Do not wait for all CVs
-  or for the Posts search to finish.
+- Sieve analyzes posting N+1 while Quill builds posting N. Only `GO`
+  postings reach Quill. `ASK` questions go to Lucas in one batch per wave.
 - `batch` means a surface wave or queue. It never means multiple postings in
   one worker dispatch.
 - Tailored files go under
@@ -188,13 +190,14 @@ Quill's `.out`, and let Quill fan out five subagents nobody polled.
 - Cache the LinkedIn profile once per hunt at
   `state/<hunt-id>-linkedin-identity.json` with
   `scripts/cache_linkedin_identity.py`. Every application in that hunt uses
-  the same cache. Sieve does not read the portal again for each CV.
-- Run `scripts/resume_gate.py` before Sieve. It verifies PDF extraction,
-  identity fields, required-token placement, forbidden terms, base Experience
-  completeness, metrics, approved layout, and `claim-allowlist.json`.
-- Send Sieve the generated review packet. It contains only the posting, CV
-  delta, claim manifest, and deterministic gate report. Sieve reads the full
-  CV only when the packet identifies semantic ambiguity.
+  the same cache. Nobody reads the portal again for each CV.
+- Sieve writes the spec, `state/<application>-manifest.json`, before the
+  build. Quill executes it and adds nothing outside it.
+- Run `scripts/resume_gate.py` after each build. It verifies PDF extraction,
+  identity fields, token and spec placement, blacklist, GAP tokens, required
+  coverage, forbidden terms, base Experience completeness, metrics, approved
+  layout, and `claim-allowlist.json`. A FAIL goes back to Quill, two rounds
+  maximum. No LLM review runs after the build.
 - Every Quill and Sieve task writes an atomic completion sentinel with
   `scripts/worker_sentinel.py`. The terminal reply is secondary evidence.
 - One language per tailored CV, decided by Maestro at intake. See `CV-SPEC.md`.
@@ -236,17 +239,14 @@ Do not guess these. Each was checked against the live CLI.
 
 ## Review checks
 
-- **Hard.** The File Readability Check, Role Eligibility Check, and required
-  part of the Resume Evidence Check must fully PASS: no unsupported claim,
-  every required `CLAIM` token in `Skills` and in one relevant `Experience`
-  bullet, required coverage at least 70. A `GAP` token is never written. A
-  failed hard check means no package. See `CLAUDE.md` section 4.1.
-- **Reported, not blocking.** Preferred-token coverage in the Resume Evidence
-  Check and the Recruiter Readability Score travel with the package.
-- **Required failure explanation.** Every blocked result must quote the exact
-  posting requirement, name the evidence checked and found, explain why the
-  evidence does not satisfy the requirement, classify the fix as `CV FIX`,
-  `LUCAS CONFIRMATION`, or `ROLE MISMATCH`, and give one next action.
+- **Before the build.** Posting Analysis returns `GO`: Role Eligibility
+  passes and projected required coverage is at least 70. See `RUBRIC.md`
+  Part 1 and `CLAUDE.md` section 4.1.
+- **After the build.** `resume_gate.py` passes (`RUBRIC.md` Part 2). A failed
+  check means no package.
+- **Reported, not blocking.** Preferred coverage travels with the package.
+- **Required explanation.** Every `NO-GO` or `ASK` quotes the exact posting
+  requirement, the evidence checked, and one next action.
 
 ## Delivery
 
