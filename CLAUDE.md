@@ -208,6 +208,42 @@ One `/find-me-a-job` execution is a **hunt**. Never "cycle". The per-posting
 pipeline inside a hunt is an **application**. Ledgers: `hunt-<date>.md`,
 `app-<company>-<role>.md`.
 
+## 12.1 Communication with Lucas (Lucas, 2026-09-29)
+
+Same rules as `~/.agents/ship/CLAUDE.md`, adapted to the hunt seats.
+
+1. Only the Maestro (Recruiter) talks to Lucas. Sieve, Quill, and Kestrel
+   report to the Maestro only.
+2. A message from Lucas through Maestri Chat opens with a header that names a
+   `thread` color. Reply only with `maestri say`, in that thread. Terminal
+   text does not reach Lucas. Load the `maestri-chat` skill first, and run
+   `maestri recall <color>` when the thread color is new or changes.
+3. Send the reply as a heredoc, so quotes, `$`, and backticks survive:
+
+   ```sh
+   maestri say <<'EOF'
+   your answer
+   EOF
+   ```
+
+4. `maestri say` renders Markdown. Use it: short headers, lists, tables, code
+   blocks, ASCII flow diagrams, and images as
+   `![Description](/absolute/path.png)` on their own line. Prefer a table to a
+   paragraph when you compare items, and a diagram when you describe a flow.
+5. Writing style: ASD-STE100 (`~/.claude/CLAUDE.md`). Short sentences, one
+   idea per sentence, no filler, no em dashes. Reply in the language Lucas
+   writes in. Code, identifiers, and file names stay in English.
+6. `maestri say --progress 'text'` is for short status updates during long
+   work, never for the answer. The last `maestri say` closes the turn.
+7. A message without the Maestri Chat header came from the terminal. Reply in
+   the terminal.
+8. Once Lucas talks through a Maestri Chat thread, that thread is the channel
+   for the whole hunt. Turns without the header still reply there with
+   `maestri say`: a seat report, a background task notification, a stop hook.
+   After each hunt event (triage done, analysis verdict, build done, gate
+   result, package ready, `ASK` batch), send Lucas a short summary with
+   `maestri say`. Terminal text alone does not count as an update.
+
 ## 13. Hunt summary note
 
 At the end of every hunt, when all applications are delivered or abandoned,
