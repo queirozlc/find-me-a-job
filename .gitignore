@@ -2,3 +2,28 @@
 __pycache__/
 *.pyc
 tmp/
+
+# Hunt and application runtime (like ship)
+state/*
+!state/.gitkeep
+
+# Per-posting output
+jobs/*
+!jobs/.gitkeep
+reports/*
+!reports/.gitkeep
+resumes/applied/
+resumes/archive/
+resumes/hunts/
+
+# Build output
+*.layout.txt
+*.raw.txt
+resumes/*.pdf
+
+# Hunt logs and personal notes
+keywords/search-log.md
+*-interview-*.md
+
+# Local agent config
+.codex/config.toml
